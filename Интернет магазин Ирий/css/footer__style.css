@@ -1,0 +1,97 @@
+/*Подвал сайта*/
+
+footer {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.podvalCol {
+  padding-left: 5%;
+}
+
+.podval {
+  padding: 2% 0;
+  background-color: #27AE60;
+  margin: auto;
+}
+
+.podval h3 {
+  color: #F2C94C;
+  cursor: pointer;
+}
+
+.podval a {
+color: white;
+}
+
+.podval a:hover {
+  box-shadow: 0 1px #fff;
+}
+
+.podvalCol li {
+  padding: 2% 0;
+  height: 100%;
+}
+
+.nomer {
+  font-size: 18px;
+}
+
+.podvalColSoc{
+  margin: auto;
+  padding: 0 1%;
+}
+
+.logotype a {
+  margin-right: 1%;
+}
+
+@media (min-width:  1025px) and (max-width: 1400px) {
+
+/*Адаптивность футера*/
+
+ .logotype {
+  margin-left: 4%;
+}
+}
+
+@media (min-width:  768px) and (max-width: 1200px) {
+
+  .podvalCol {
+  padding-left: 0;
+}
+
+ .logotype {
+  margin-left: 0;
+}
+}
+
+@media (min-width:  580px) and (max-width: 768px) {
+
+  .podvalCol {
+  padding-left: 0;
+}
+
+ .logotype {
+  margin-left: 0;
+}
+
+}
+
+@media (min-width:  360px) and (max-width: 580px) {
+
+  .podvalCol {
+  padding-left: 0;
+}
+
+ .logotype {
+  margin-left: 0;
+}
+
+ .logotype a img {
+  width: 10%;
+}
+
+}

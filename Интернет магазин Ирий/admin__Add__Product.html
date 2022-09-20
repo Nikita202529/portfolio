@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/admin__Add__Product__Style.css">
+	<link rel="stylesheet" href="css/admin__sorting.css">
+	<link rel="stylesheet" href="css/header__admin__style.css">
+	<link rel="stylesheet" href="css/nav__admin__style.css">
+	<link rel="stylesheet" href="css/footer__admin__style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<script src="js/admin.js"></script>
+	<title>Добавить товар</title>
+</head>
+<body>
+	<!-- Создание шапки -->
+	<header>
+		<div class="container">
+			<div class="row">
+		 		<div class="logo d-flex col-5 col-sm-5 col-md-6 col-lg-5 col-xl-5 col-xxl-5 row my-auto">
+           					<a href="index.html" class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-6"><img  class="logoImg" src="img/Лого.svg" alt="logo"></a>
+           					<a class="btn col-10 col-sm-10 col-md-6 col-lg-6 col-xl-5 col-xxl-4 my-auto mx-auto personal_Area" href="#" role="button">
+              				Добавить товар</a>
+         		 	</div>
+          		<div class="rightPartHeader my-auto ms-auto col-7 col-sm-7 col-md-6 col-lg-6 col-xl-7 col-xxl-7 row">
+          	<!-- Иконки шапки -->
+          			<div class="iconsHeader d-flex col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 col-xxl-2 ms-auto my-auto">
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+               			 	<i class="bi bi-bag"></i>
+              			</a>
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+              				<i class="bi bi-envelope-open"></i>
+              			</a>
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+              				<i class="bi bi-bell"></i>
+              			</a>
+          			</div>
+          	<!-- Аватарка и ИФ -->
+          			<div class="profile d-flex col-4 col-md-4 col-lg-7 col-xl-5 col-xxl-5">
+          				<img src="img/Пушкин.png" alt="avatar" class="me-auto ms-auto my-auto">
+          				<p  id = 'FIO_header'class="my-auto avatar__FIO">Александр Петров</p>
+          			</div>
+          	<!-- Выход из профиля -->
+          			<div class="exit col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 my-auto">
+          				<button type="button" class="btn btn-outline">Выйти</button>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+	</header>
+
+<!-- Тело страницы -->
+	<main class="row">
+		
+		<!-- Бокавая панель навигации -->
+		<nav>
+				<!-- Иконки меню -->
+			<sidebar class="icons__Menu" id="icon_1">
+				<ul id="icon_arr_1" class="row">
+					
+					<li  class="col-12"><span><i class="bi bi-list"></i></span></li>
+					<li id="icon_2" class="col-12"><i class="bi bi-person-circle"></i></li>
+					<li id="icon_3" class="col-12"><i class="bi bi-envelope"></i></li>
+					<li id="icon_4" class="col-12"><i class="bi bi-chat"></i></li>
+					<li id="icon_5" class="col-12"><i class="bi bi-headset"></i></li>
+				</ul>
+				<ul id="icon_arr_2" class="col-12 row">
+					<li id="icon_6" class="col-12"><span><i class="bi bi-house-door"></i></span></li>
+					<li id="icon_7" class="col-12"><span><i class="bi bi-bag"></i></span></li>
+					<li id="icon_8" class="col-12"><i class="bi bi-bar-chart"></i></li>
+					<li id="icon_9" class="col-12"><i class="bi bi-patch-check"></i></li>
+					<li id="icon_10" class="col-12"><i class="bi bi-book"></i></li>
+					<li id="icon_11" class="col-12"><i class="bi bi-folder"></i></li>
+				</ul>
+				<ul id="icon_arr_3" class="col-12 row">
+					<li id="icon_12" class="col-12"><span><i class="bi bi-person-plus"></i></span></li>
+					<li id="icon_13" class="col-12"><i class="bi bi-eye"></i></li>
+					<li id="icon_14" class="col-12"><i class="bi bi-cart3"></i></li>
+					<li id="icon_15" class="col-12"><i class="bi bi-file-earmark-text"></i></li>
+					
+				</ul>
+			</sidebar>
+			<!-- Текст меню -->
+			<sidebar id ="menu" class="text__Menu_none">    
+				<div  class='menu_private'>
+					<ul class="col-12">
+						<li id="iconClose" class="col-2 ms-auto mb-2"><i class="bi bi-x ms-auto"></i></li>
+						<li><a href="admin.html">ПРОФИЛЬ</a></li>
+						<li><a href="admin__Messages.html">Сообщения</a></li>
+						<li><a href="admin__Notice.html">Уведомления</a></li>
+						<li><a href="admin__Help.html">Помощь</a></li>
+					</ul>
+					<ul class="col-12">
+						<li><span><a href="">МОЯ ФЕРМА</a></span></li>
+						<li><span><a href="admin__Products.html">Мои товары</a></span></li>
+						<li><a href="admin__Rating.html">Рейтинг и отзывы</a></li>
+						<li><a href="">Эффективность</a></li>
+						<li><a href="">О ферме</a></li>
+						<li class="mb-4"><a href="">Реквизиты</a></li>
+					</ul>
+					<ul class="col-12">
+						<li><span><a href="">КАК ПОКУПАТЕЛЬ</a></span></li>
+						<li><a href="">Посмотреть товары</a></li>
+						<li><a href="">Мои заказы</a></li>
+						<li><a href="">Мои отзывы</a></li>
+					</ul>
+				</div>
+			</sidebar>
+		</nav>
+
+
+		<!-- Основной раздел -->
+		<div class="col-11 mb-4">
+			<!-- Создаем форму отправки данных -->
+			<form action="" class="col-11 ms-auto row">
+				<h2 class="mt-5 col-10 ms-auto ms-md-0">Добавить товар</h2>
+				<div class="col-12 row mt-4 ms-auto ms-lg-0">
+					<label for="name" class="col-4 me-2 me-sm-0 col-sm-3 col-lg-2 col-xxl-1 my-auto me-xxl-3">Название:</label>
+					<input type="text" placeholder="Название товара" class="form-control-input col-7 col-sm-5 col-lg-3 col-xxl-3">
+				</div>
+				<!-- Блок фотографии и видео-->
+				<div class="col-12 row mt-5">
+					<!-- Раздел фотографии -->
+					<div class="col-11 col-md-12 col-xl-8 row ms-3 mb-5">
+						<h3 class="col-12">Фотогрфии</h3>
+						<div class="col-12 row photo__section">
+							<!-- Добавляем карусель -->
+				<div id="carouselExampleIndicators1" class="carousel slide col-12 col-md-6" data-bs-ride="carousel">
+					<div class="carousel-inner">
+        					<div class="carousel-item active">
+          						<div class="row photo__tovars mx-auto mt-3">
+          							<div class="col-10 col-sm-6 mx-auto">
+          								<img id="myImg4" src="img/Десерт.png" class="col-12 img__slide" alt="Мои товары 1">
+          								<h4 class="text-center mt-2"><span>Документ</span></h4>
+          								<a class="btn pb-1 p-0 mx-auto col-12" href="#" role="button"><i class="bi bi-x-circle"></i></a>
+          							</div>
+          							<div class="col-10 col-sm-6 mx-auto">
+          								<img id="myImg4" src="img/Десерт.png" class="col-12 d-sm-flex d-none img__slide" alt="Мои товары 1">
+          								<h4 class="text-center mt-2 d-sm-block d-none"><span>Документ</span></h4>
+          								<a class="btn pb-1 p-0 mx-auto col-12 d-sm-block d-none" href="#" role="button"><i class="bi bi-x-circle"></i></a>
+          							</div>
+								</div>
+									</div>
+						<div class="carousel-item">
+          						<div class="row photo__tovars mx-auto mt-3">
+          							<div class="ccol-10 col-sm-6 mx-auto">
+          								<img id="myImg4" src="img/Десерт.png" class="col-12 img__slide" alt="Мои товары 1">
+          								<h4 class="text-center mt-2"><span>Документ</span></h4>
+          								<a class="btn pb-1 p-0 mx-auto col-12" href="#" role="button"><i class="bi bi-x-circle"></i></a>
+          							</div>
+          							<div class="col-10 col-sm-6 mx-auto">
+          								<img id="myImg4" src="img/Десерт.png" class="col-12 d-sm-flex d-none img__slide" alt="Мои товары 1">
+          								<h4 class="text-center mt-2 d-sm-block d-none"><span>Документ</span></h4>
+          								<a class="btn pb-1 p-0 mx-auto col-12 d-sm-block d-none" href="#" role="button"><i class="bi bi-x-circle"></i></a>
+          							</div>
+								</div>
+						</div>
+					</div>
+						<button class="carousel-control-prev prev mt-auto" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+		      				<i class="bi bi-chevron-left iv me-auto" aria-hidden="true"></i>
+		      				<span class="visually-hidden">Назад</span>
+		    				</button>
+		   				<button class="carousel-control-next next mt-auto" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+		        				<i class="bi bi-chevron-right in ms-auto" aria-hidden="true"></i>
+		      				<span class="visually-hidden">Вперед</span>
+		    			</button>
+				</div>
+				<!-- Конец карусели -->
+				<!-- Форма загрузки файлов -->
+				<div class="example-2 modal__content__doc text-center col-12 col-md-6 row ms-2">
+    					<input type="file" name="file" id="file" class="input-file">
+    					<label for="file" class="btn btn-tertiary js-labelFile mt-4">
+      					<i class="bi bi-cloud-arrow-up"></i>
+      					<span class="js-fileName">Загрузить фото</span>
+    					</label>
+    					<button type="submit" class="btn btnModel col-8 col-md-6 mx-auto mt-2">Загрузить</button>
+    					<div class="col-12 row">
+	    					<div class="col-12 col-sm-6 row mt-3 mx-auto mx-md-0">
+	    						<h4 class="col-12"><span>Размер</span></h4>
+	    						<p class="col-12">843 MB</p>
+	    					</div>
+	    					<div class="col-12 col-sm-6 row mt-3 ms-auto mx-auto mx-md-0">
+	    						<h4 class="col-12"><span>Загрузка</span></h4>
+	    						<div class="col-12 progress mb-3 p-0">
+						          <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						        </div>
+	    					</div>
+    					</div>
+				</div>
+						</div>
+					</div>
+					<!-- Конец раздела -->
+				</div>
+				<!-- Раздел Видео -->
+				<div class="col-11 col-md-12 col-xl-6 row mt-3 mt-xl-0 ms-1">
+					<h3 class="col-12">Видео</h3>
+					<div class="col-12 pt-0">
+						<label for="href" class="col-12">Вставте сслыку на видео:</label>
+						<input type="text" name="href" placeholder="Ссылка на видео" class="col-8 form-control-input">
+					</div>
+				</div>
+				<!-- Конец раздела -->
+				<!-- Конец блока фотографии и видео -->
+				<!-- Начало блока состав и описание -->
+				<div class="col-12 mx-auto row mt-5">
+					<div class="col-12 col-md-6">
+						<label for="composition" class="mb-3 col-12">
+							Состав
+						</label>
+        				<textarea class="form-control-input mb-3 col-12" placeholder="Опишите состав" id="exampleFormControlTextarea1" name="composition"></textarea>
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="discript" class="mb-3 col-12">
+							Описание
+						</label>
+        				<textarea class="form-control-input mb-3 col-12" placeholder="Введите описание товара" id="exampleFormControlTextarea2" name="discript"></textarea>
+					</div>
+				</div>
+				<!-- Конец блока состав и описание -->
+				<!-- Начало блока вкладок и разделов -->
+				<div class="col-12 row mt-4 mb-4">
+					<div class="col-12 col-sm-5 col-md-4 col-xl-3 col-xxl-2">
+						<button id='btn_inf' type="button" class="btn mt-2 col-12 tablink" onclick="openPage('price', this, 'red')" id="defaultOpen">Цена</button>
+						<button id="btn_about" type="button" class="btn mt-2 col-12 tablink" onclick="openPage('provide', this, 'green')">Могу предоставить</button>
+						<button class="btn mt-2 col-12 tablink" type="button" onclick="openPage('KKAL', this, 'blue')">ККАЛ</button>
+						<button id="btn_about" type="button" class="btn mt-2 col-12 tablink" onclick="openPage('term', this, 'green')">Срок годности</button>
+					</div>
+					<!-- Блок цена -->
+					<div id="price" class="tabcontent col-sm-7 col-lg-6 ms-0 ms-lg-3 mt-2">
+						<div class="col-12 row">
+							<label for="price" class="col-12 col-md-3 col-xl-2 my-auto mt-3 mt-sm-0">Рубли:</label>
+							<input type="number" name="price" class="col-5 col-md-4 ms-2 ms-md-0">
+							<!-- Сортировка кнопка -->
+							<div class="custom-select col-5 col-lg-4">
+		  						<select>
+		    						<option value="0">100 гр</option>
+		    						<option value="1">1 кг</option>
+		    						<option value="2">1 л</option>
+		  						</select>
+							</div>
+						</div>
+						<div class="col-12 row mt-3">
+							<label for="price" class="col-12 col-md-3 col-xl-2 my-auto">Масса:</label>
+							<input type="number" name="price" class="col-5 col-md-4 ms-2 ms-md-0">
+							<!-- Сортировка кнопка -->
+							<div class="custom-select col-5 col-lg-4">
+		  						<select>
+		    						<option value="0">Гр</option>
+		    						<option value="1">Кг</option>
+		    						<option value="2">Мл</option>
+		    						<option value="3">Л</option>
+		  						</select>
+							</div>
+							<p class="mt-2">*масса на 1 штуку</p>
+						</div>
+					</div>
+					<!-- Конец блока цена -->
+					<!-- Блок Могу предоставить -->
+					<div id="provide" class="tabcontent tabcontent__none col-12 col-sm-7 ms-0 ms-xl-3 mt-2">
+						<div class="col-12 row">
+							<label for="discript" class="mb-3 col-12 mt-3 mt-sm-0">
+								Могу предоставить
+							</label>
+	        				<textarea class="form-control-input mb-3 col-12" placeholder="Напишите об услугах, которые вы можете предоставить" id="exampleFormControlTextarea4" name="discript"></textarea>
+						</div>
+					</div>
+					<!-- Конец блока Могу предоставить -->
+					<!-- Блок ККАЛ -->
+					<div id="KKAL" class="tabcontent tabcontent__none col-12 col-sm-7 ms-0 ms-xl-3 mt-2">
+						<div class="col-12 row">
+							<label for="discript" class="mb-3 col-12 mt-3 mt-sm-0">
+								ККАЛ
+							</label>
+	        				<textarea class="form-control-input mb-3 col-12" placeholder="Напишите о калорийности продукта" id="exampleFormControlTextarea5" name="discript"></textarea>
+						</div>
+					</div>
+					<!-- Конец блока ККАЛ -->
+					<!-- Блок Срок годности -->
+					<div id="term" class="tabcontent tabcontent__none col-12 col-sm-7 col-xl-8 ms-0 ms-xl-3 row mt-2">
+							<div class="col-12 row">
+								<div class="col-12 col-xl-6 row">
+									<label for="discript" class="col-12 mb-3 mt-3 mt-sm-0">
+										Срок годности
+									</label>
+			        				<div class="col-12 row">
+										<label for="price" class="col-2 col-sm-12 col-md-2 my-auto me-2 me-sm-0">С</label>
+										<input type="date" name="price" class="col-9 col-md-10 ms-auto ms-sm-0">
+									</div>
+									<div class="col-12 row mt-3">
+										<label for="price" class="col-2 col-sm-12 col-md-2 my-auto me-2 me-sm-0">По</label>
+										<input type="date" name="price" class="col-9 col-md-10 ms-auto ms-sm-0">
+									</div>
+								</div>
+								<div class="col-12 col-xl-6 row">
+									<label for="discript" class="mb-3 col-12 mt-3 mt-xl-0">
+										Условия хранения
+									</label>
+			        				<textarea class="form-control-input mb-3 col-12" placeholder="Укажите условия хранения продукта" id="exampleFormControlTextarea6" name="discript"></textarea>
+								</div>
+							</div>
+					</div>
+					<!-- Конец блока Срок годности -->
+				</div>
+				<!-- Конец блока вкладок и разделов -->
+				<!-- Кнопка сохранить -->
+				<button class="btn col-5 col-md-3 col-xxl-2 mx-auto btn__save" type="submit">Сохранить</button>
+			</form>
+		</div>
+	
+		
+	</main>
+
+
+	<footer class="pt-3">
+	<div class="container row mx-auto">
+      <div class="col-xxl-2 logotype">
+            <a href="#"><img src="img/ВК.svg" alt=""></a>
+            <a href="#"><img src="img/Твиттер.svg" alt=""></a>
+            <a href="#"><img src="img/Инст.svg" alt=""></a>
+      </div>
+      <div class="col-xl-12 col-xxl-10 footer__links my-auto">
+            <a href="#">О нас</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Стать партнером</a>
+            <a href="#">Помощь</a>
+            <a href="#">Контакты</a>
+            <a href="#">FERMERSMARCET</a>
+            <a href="#">Оплата и доставка</a>
+      </div>
+      <div class="col-6 footer__links__1200 my-auto mx-auto row text-center">
+            <a href="#" class="mx-auto">О нас</a>
+            <a href="#" class="ms-auto">Пользовательское соглашение</a>
+            <a href="#" class="mx-auto">Стать партнером</a>
+            <a href="#" class="mx-auto">Помощь</a>
+            <a href="#" class="mx-auto">Контакты</a>
+            <a href="#" class="mx-auto">FERMERSMARCET</a>
+            <a href="#" class="mx-auto">Оплата и доставка</a>
+      </div>
+      <div class="col-xxl-2 logotype_1399 text-center mt-3">
+            <a href="#"><img src="img/ВК.svg" alt="Вконтакте"></a>
+            <a href="#"><img src="img/Твиттер.svg" alt="Твиттер"></a>
+            <a href="#"><img src="img/Инст.svg" alt="Инстаграмм"></a>
+      </div>
+      <div class="col-5 mt-4 mx-auto text-center COPYRiGHT">
+      	<p class="mx-auto">COPYRiGHT © 2012-2021 FERMERSMARCET</p>
+      </div>
+ 	</div>
+	</footer>
+
+
+
+<script src='js/nav.js'></script>
+<script src='js/indexAdmin.js'></script>
+<script src='js/sorting.js'></script>
+<script src='js/admin__products.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+</body>
+</html>

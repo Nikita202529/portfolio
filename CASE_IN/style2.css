@@ -1,0 +1,135 @@
+.information, .advice, .advice1 {
+	background-color: #f1f1f1;
+	padding: 0 !important;
+	border-radius: 10px !important;
+}
+
+.information1 {
+	padding: 0 !important;
+	border-radius: 10px;
+}
+
+.profil {
+	position: sticky !important;
+	top: 0;
+	background-color: #f1f1f1;
+	border-radius: 10px !important;
+}
+
+.avatar {
+	padding: 0;
+	border-radius: 10px;
+	margin-left: 0;
+	float: left;
+	width: 100%;
+}
+
+hr {
+	color: #333 !important;
+}
+
+.graph {
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.advice1 li {
+	list-style-type: none;
+}
+
+.advice a, .advice1 a {
+	text-decoration: none;
+}
+
+.test_a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.test_a:hover {
+	color: inherit;
+}
+
+.test, .test img {
+	border-radius: 10px;
+}
+
+.test:hover {
+	background-color: #ebf0f7;
+}
+
+body {
+	background-color: #ddd !important;
+}
+
+.tests {
+	background-color: #fff !important;
+}
+
+/* Поиск по структуре */
+
+#myInput {
+	color: #000 !important;
+    background-image: url('/css/searchicon.png'); 
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 10px 12px 10px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    border-radius: 10px 10px 0 0;
+}
+
+#myInput:focus {
+	outline:none;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #e8e8e8; /* Add a hover effect to all links, except for headers */
+}
+
+.radius {
+	border-radius: 0 0 10px 10px;
+	padding-bottom: 5%;
+}
+
+.radius1 {
+	border-radius: 10px 10px 0 0;
+}
+/* Поиск по структуре */
+.parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.autorith {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}

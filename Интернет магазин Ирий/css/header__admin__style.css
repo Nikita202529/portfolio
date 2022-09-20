@@ -1,0 +1,101 @@
+/*Стили шапка сайта*/
+
+header {
+  height: 110px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 100%;
+}
+
+
+.iconsHeader i {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.iconsHeader i:hover {
+  color: #DF1103;
+}
+
+.profile img {
+  height: 60%;
+}
+
+.exit .btn{
+  font-size: 15px;
+  font-weight: 700;
+  color: #27AE60;
+}
+
+.exit .btn:hover{
+  color: #DF1103;
+}
+
+.personal_Area {
+  background-color: #27AE60;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.personal_Area:hover {
+  color: #fff;
+  background-color: #1b6535;
+}
+
+
+@media (min-width:  0px) and (max-width: 991px) {
+
+/*Адаптивность Автарка и фио раздел Шапка*/
+.avatar__FIO {
+  display: none;
+}
+
+
+}
+
+@media (min-width:  0px) and (max-width: 767px) {
+
+/*Адаптивность Лого и ЛК раздел Шапка*/
+.personal_Area {
+  display: none;
+}
+
+
+}
+
+@media (min-width:  0px) and (max-width: 520px) {
+
+/*Адаптивность раздел Шапка*/
+header {
+  height: 130px;
+}
+
+.rightPartHeader {
+  margin-left: 0 !important;
+}
+
+.personal_Area {
+  font-size: 11px;
+}
+
+.profile img {
+  height: 50%;
+}
+
+.iconsHeader i {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.logoImg {
+  width: 120%;
+}
+}

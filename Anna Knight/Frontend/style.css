@@ -1,0 +1,528 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    font-family: 'Lora', serif !important;
+    font-weight: 400;
+    font-size: 15px !important;
+    color: #453E31 !important;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Philosopher', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1 {
+    font-size: 64px !important;
+    line-height: 113%;
+    letter-spacing: 0.105em;
+    margin-bottom: 7px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.065em;
+    margin-bottom: 30px;
+    color: #453E31;
+}
+
+h3 {
+    font-size: 20px !important;
+    line-height: 27px;
+    letter-spacing: 0.065em;
+    text-align: center;
+    margin-bottom: 0 !important;
+    /* border-bottom: 1px solid #fff; */
+}
+
+h4 {
+    font-size: 18px !important;
+    line-height: 22px;
+    font-weight: 700 !important;
+    letter-spacing: 0.045em;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+
+p {
+    line-height: 147%;
+    letter-spacing: 0.02em;
+}
+
+header {
+    background-image: url(./img/backgroundMain1400.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+}
+
+nav {
+    color: #fff;
+    height: 80px;
+}
+
+nav a:hover {
+    box-shadow: 0 -1px 0 0 inset #fff;
+}
+
+.mainOffer {
+    color: #fff;
+    height: 60%;
+}
+
+.mainOffer h1 {
+    font-size: 64px;
+}
+
+.mainOffer span {
+    font-family: 'Philosopher', sans-serif !important;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.045em;
+    border-bottom: 2px solid #fff;
+    border-radius: 2%;
+}
+
+.mainOffer p {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.045em;
+}
+
+.btnCTA, .ctaCart {
+    border: 2px solid #E25C54;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnCTA:hover, .ctaCart:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    border: 2px solid #df241a;
+    cursor: pointer;
+}
+
+.btnCTA {
+    width: 230px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.ctaCart {
+    height: 50px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #df241a !important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 1);
+    outline: 0;
+    box-shadow: 0 0 0 1px !important;
+}   
+
+.btnList {
+    color: #fff;
+    background-color: inherit;
+    border-color: none !important;
+    border: none !important;
+}
+
+
+/* Style for sections */
+
+section {
+    margin-top: 70px !important;
+}
+
+.aboutMeArticle {
+    width: 1px;
+    box-shadow: -1px 0 0 0 #453E31 !important;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+/* Section portfolio style*/
+
+.tab:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 0 0 #453E31;
+}
+
+.activeTab {
+    border-bottom: 2px solid #453E31;
+}
+
+.gallery {
+    display: none;
+}
+
+.activeGallery {
+    display: block;
+}
+
+.btnVisible {
+    border: none;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #453E31;
+}
+
+.btnVisible:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 0 0 #453E31;
+}
+
+.benefitsImg div img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.line {
+    height: 1px;
+    display: block;
+    background-color: #fff;
+}
+
+.wrapperCart {
+    height: 420px;
+}
+
+.cart {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    background: url(./img/cartBackground.png) no-repeat;
+    background-size: cover !important;
+}
+
+.personalShooting {
+    background: url(./img/backgroundCartOne.png) no-repeat;
+}
+
+.lookbook {
+    background: url(./img/backgroundCartTwo.png) no-repeat;
+}
+
+.forBrands {
+    background: url(./img/backgroundCartThree.png) no-repeat;
+}
+
+.modelTests {
+    background: url(./img/backgroundCartFour.png) no-repeat;
+}
+
+.photoDay {
+    background: url(./img/backgroundCartFive.png) no-repeat;
+}
+
+.retouch {
+    background: url(./img/backgroundCartSix.png) no-repeat;
+}
+
+/* section reviews */
+
+.slideCart {
+    background-size: contain;
+    height: 560px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.titelCartSlide {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2%;
+    line-height: 147%;
+    letter-spacing: 0.02em;
+    height: 250px;
+}
+
+.slideCartOne {
+    background: url(./img/reviewsOne.png) no-repeat;
+}
+
+.slideCartTwo {
+    background: url(./img/reviewsTwo.png) no-repeat; 
+}
+
+.slideCartThree {
+    background: url(./img/reviewsThree.png) no-repeat;
+}
+
+.slideCartFour {
+    background: url(./img/reviewsFour.png) no-repeat; 
+}
+
+.titelCartSlide {
+    background: url(./img/cartBackground.png) no-repeat;
+    background-size: cover;
+}
+
+.wrapperTitelContact {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.wrapperFormContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.wrapperFormContact h3 {
+    padding: 50px 0 30px 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.formContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formContact p {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+
+.formContact input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #453E31;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    margin-bottom: 24px;
+    padding-left: 15px;
+}
+
+.ctaBtnContact {
+    width: 240px;
+    height: 60px;
+    color: #fff;
+    background-color: #E25C54;
+    border: 2px solid #E25C54;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+}
+
+.ctaBtnContact:hover {
+    background-color: #df241a;
+    cursor: pointer;
+}
+
+footer {
+    overflow-x: hidden !important;
+    background-color: #110807;
+    margin-top: 70px;
+    box-sizing: border-box;
+    height: 230px;
+    align-items: center;
+}
+
+.titelAnnaKnight {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.titelAnnaKnight h2 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.footerNav a {
+    margin-right: 25px;
+    color: #fff;
+}
+
+.footerNav a:hover {
+    box-shadow: 0 -1px 0 0 inset #fff;
+    color: #fff;
+}
+
+.social img {
+    margin-right: 7px;
+}
+
+@media (max-width: 1100px) {
+    
+header {
+    background-image: url(./img/backgroundMain900.png);
+}
+
+}
+
+@media (max-width: 1000px) {
+    
+    .slideCartOne {
+        background: url(./img/reviewsOneTablet.png) no-repeat;
+    }
+    
+    .slideCartTwo {
+        background: url(./img/reviewsTwoTablet.png) no-repeat; 
+    }
+    
+    .slideCartThree {
+        background: url(./img/reviewsThreeTablet.png) no-repeat;
+    }
+    
+    .slideCartFour {
+        background: url(./img/reviewsFourTablet.png) no-repeat; 
+    }
+    footer {
+        height: 330px;
+    }
+    
+    }
+
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        height: 580px;
+        background: rgba(37, 23, 23, 0.9);
+    }
+
+    .slideCartOne {
+        background: url(./img/reviewsOne.png) no-repeat;
+    }
+    
+    .slideCartTwo {
+        background: url(./img/reviewsTwo.png) no-repeat; 
+    }
+    
+    .slideCartThree {
+        background: url(./img/reviewsThree.png) no-repeat;
+    }
+    
+    .slideCartFour {
+        background: url(./img/reviewsFour.png) no-repeat; 
+    }
+}
+
+@media (max-width: 690px) {
+    
+    header {
+        background-image: url(./img/backgroundMain700.png);
+    }
+}
+
+@media (max-width: 550px) {
+    
+    header {
+        background-image: url(./img/backgroundMain500.png);
+        height: 500px;
+        box-sizing: border-box;
+    }
+
+    .navbar-collapse {
+        height: 500px;
+    }
+
+    body {
+        font-size: 12px !important;
+    }
+
+    section {
+        margin-top: 30px !important;
+    }
+
+    .mainOffer {
+        height: 70%;
+    }
+
+    .mainOffer h1, .offer {
+        font-size: 36px !important;
+    }
+    
+
+    .mainOffer span {
+        font-size: 20px;
+    }
+
+    .mainOffer p {
+        font-size: 14px;
+    }
+
+    .btnCTA {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+
+    .slideCartOne {
+        background: url(./img/reviewsOneTablet.png) no-repeat;
+    }
+    
+    .slideCartTwo {
+        background: url(./img/reviewsTwoTablet.png) no-repeat; 
+    }
+    
+    .slideCartThree {
+        background: url(./img/reviewsThreeTablet.png) no-repeat;
+    }
+    
+    .slideCartFour {
+        background: url(./img/reviewsFourTablet.png) no-repeat; 
+    }
+}
+
+
+@media (max-width: 400px) {
+    
+    header {
+        background-image: url(./img/backgroundMain500.png);
+    }
+}
+
+@media (max-width: 350px) {
+    
+    header {
+        background-image: url(./img/backgroundMain200.png);
+    }
+}

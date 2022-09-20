@@ -1,0 +1,248 @@
+/*Стили раздела о пользователе*/
+
+.FIO {
+  color: #27AE60;
+  font-weight: 700;
+}
+
+.contact__information span {
+  font-weight: 500;
+}
+
+.contact__information .btn, .documents .btn {
+  background-color: #27AE60;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact__information .btn:hover, .documents .btn:hover {
+  color: #fff;
+  background-color: #1b6535;
+}
+
+.galleri__documents img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bi-chevron-right, .bi-chevron-left {
+  color: #F2C94C;
+  font-size: 26px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  height: 85%;
+  width: 20% !important;
+  opacity: 1 !important;
+}
+
+.documents a {
+  background-color: #F2C94C !important;
+}
+
+.documents a:hover {
+  background-color: #DEB025 !important;
+}
+
+
+/*Модальное окно для документов и карусели*/
+
+.modal, .modal__Doc__class {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal__Doc__class {
+  padding-top: 180px;
+}
+
+.btnModel {
+  background-color: #27AE60;
+  color: #fff;
+}
+
+.btnModel:hover {
+  background-color: #0f5132;
+  color: #fff;
+}
+
+.modal__content, .modal__content__doc {
+    margin: auto;
+    display: block;
+    width: 30%;
+    height: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.modal__content__doc {
+    height: 250px;
+    width: 500px;  
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    color: #27AE60;
+    font-size: 22px;
+}
+
+.modal__content, #caption, .modal__content__doc {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close__modal, .close__modal__doc {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #27AE60;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close__modal:hover,
+.close__modal:focus,
+.close__modal__doc:hover,
+.close__modal__doc:focus {
+    color: #DF1103;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*СТили формы загрузки документов*/
+.modal__content__doc {
+  background-color: #fff;
+}
+
+
+/*Форма пример 2*/
+.example-2 .btn-tertiary  {
+  color:  #000;
+  padding:  5%;
+  line-height:  40px;
+  width: 70%;
+  margin: auto;
+  display:  block;
+  border: 2px solid #555
+}
+
+.example-2 .btn-tertiary:hover,
+.example-2 .btn-tertiary:focus  {
+  color:#DF1103;
+  border-color:#DF1103;
+}
+
+.example-2 .input-file  {
+  width:.1px;
+  height:.1px;
+  opacity:0;
+  overflow:hidden;
+  position:absolute;
+  z-index:-1
+}
+
+.example-2 .input-file + .js-labelFile  {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding:0 10px;
+  cursor:pointer
+}
+
+.example-2 .input-file + .js-labelFile .icon:before{content:"\f093"}
+
+.example-2 .input-file + .js-labelFile.has-file .icon:before{
+  content:"\f00c";
+  color:#5AAC7B
+}
+
+
+
+/*Стили Разделы профиля*/
+.tablink {
+    color: #fff;
+    background-color: #27AE60;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tablink:hover {
+  color: #fff;
+  background-color: #1b6535;
+}
+
+.btn:focus {
+  background-color: #1b6535;
+  color: #fff;
+  box-shadow: none;
+}
+
+.tabcontent {
+    color: #000;
+    display: none;
+    height: 100%;
+    padding: 5% 5% 0 0;
+}
+
+/*Раздел с информацией*/
+
+.carousel-item img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-item img:hover {
+  opacity: 0.9;
+}
+
+.header__section {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.check__section {
+  color: #27AE60;
+}
+
+.check__icons {
+  font-size: 26px;
+  color: #DF1103;
+}
+
+.inform_pole {
+  font-weight: 500;
+}
+
+.discription__profile p {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+}
+

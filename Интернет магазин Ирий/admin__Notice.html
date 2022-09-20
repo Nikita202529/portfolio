@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/admin__Notice__Style.css">
+	<link rel="stylesheet" href="css/header__admin__style.css">
+	<link rel="stylesheet" href="css/nav__admin__style.css">
+	<link rel="stylesheet" href="css/footer__admin__style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<script src="js/admin.js"></script>
+	<title>Уведомления</title>
+</head>
+<body>
+	<!-- Создание шапки -->
+	<header>
+		<div class="container">
+			<div class="row">
+		 		<div class="logo d-flex col-5 col-sm-5 col-md-6 col-lg-5 col-xl-5 col-xxl-5 row my-auto">
+           					<a href="index.html" class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-6"><img  class="logoImg" src="img/Лого.svg" alt="logo"></a>
+           					<a class="btn col-10 col-sm-10 col-md-6 col-lg-6 col-xl-5 col-xxl-4 my-auto mx-auto personal_Area" href="#" role="button">
+              				Уведомления</a>
+         		 	</div>
+          		<div class="rightPartHeader my-auto ms-auto col-7 col-sm-7 col-md-6 col-lg-6 col-xl-7 col-xxl-7 row">
+          	<!-- Иконки шапки -->
+          			<div class="iconsHeader d-flex col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 col-xxl-2 ms-auto my-auto">
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+               			 	<i class="bi bi-bag"></i>
+              			</a>
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+              				<i class="bi bi-envelope-open"></i>
+              			</a>
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+              				<i class="bi bi-bell"></i>
+              			</a>
+          			</div>
+          	<!-- Аватарка и ИФ -->
+          			<div class="profile d-flex col-4 col-md-4 col-lg-7 col-xl-5 col-xxl-5">
+          				<img src="img/Пушкин.png" alt="avatar" class="me-auto ms-auto my-auto">
+          				<p  id = 'FIO_header'class="my-auto avatar__FIO">Александр Петров</p>
+          			</div>
+          	<!-- Выход из профиля -->
+          			<div class="exit col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 my-auto">
+          				<button type="button" class="btn btn-outline">Выйти</button>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+	</header>
+
+<!-- Тело страницы -->
+	<main class="row">
+		
+		<!-- Бокавая панель навигации -->
+		<nav>
+				<!-- Иконки меню -->
+			<sidebar class="icons__Menu" id="icon_1">
+				<ul id="icon_arr_1" class="row">
+					
+					<li  class="col-12"><span><i class="bi bi-list"></i></span></li>
+					<li id="icon_2" class="col-12"><i class="bi bi-person-circle"></i></li>
+					<li id="icon_3" class="col-12"><i class="bi bi-envelope"></i></li>
+					<li id="icon_4" class="col-12"><span><i class="bi bi-chat"></i></span></li>
+					<li id="icon_5" class="col-12"><i class="bi bi-headset"></i></li>
+				</ul>
+				<ul id="icon_arr_2" class="col-12 row">
+					<li id="icon_6" class="col-12"><span><i class="bi bi-house-door"></i></span></li>
+					<li id="icon_7" class="col-12"><i class="bi bi-bag"></i></li>
+					<li id="icon_8" class="col-12"><i class="bi bi-bar-chart"></i></li>
+					<li id="icon_9" class="col-12"><i class="bi bi-patch-check"></i></li>
+					<li id="icon_10" class="col-12"><i class="bi bi-book"></i></li>
+					<li id="icon_11" class="col-12"><i class="bi bi-folder"></i></li>
+				</ul>
+				<ul id="icon_arr_3" class="col-12 row">
+					<li id="icon_12" class="col-12"><span><i class="bi bi-person-plus"></i></span></li>
+					<li id="icon_13" class="col-12"><i class="bi bi-eye"></i></li>
+					<li id="icon_14" class="col-12"><i class="bi bi-cart3"></i></li>
+					<li id="icon_15" class="col-12"><i class="bi bi-file-earmark-text"></i></li>
+					
+				</ul>
+			</sidebar>
+			<!-- Текст меню -->
+			<sidebar id ="menu" class="text__Menu_none">    
+				<div  class='menu_private'></div>
+					<ul class="col-12">
+						<li id="iconClose" class="col-2 ms-auto mb-2"><i class="bi bi-x ms-auto"></i></li>
+						<li><a href="admin.html">ПРОФИЛЬ</a></li>
+						<li><a href="admin__Messages.html">Сообщения</a></li>
+						<li><span><a href="">Уведомления</a></span></li>
+						<li><a href="admin__Help.html">Помощь</a></li>
+					</ul>
+					<ul class="col-12">
+						<li><span><a href="">МОЯ ФЕРМА</a></span></li>
+						<li><a href="admin__Products.html">Мои товары</a></li>
+						<li><a href="admin__Rating.html">Рейтинг и отзывы</a></li>
+						<li><a href="">Эффективность</a></li>
+						<li><a href="">О ферме</a></li>
+						<li class="mb-4"><a href="">Реквизиты</a></li>
+					</ul>
+					<ul class="col-12">
+						<li><span><a href="">КАК ПОКУПАТЕЛЬ</a></span></li>
+						<li><a href="">Посмотреть товары</a></li>
+						<li><a href="">Мои заказы</a></li>
+						<li><a href="">Мои отзывы</a></li>
+					</ul>
+				</div>
+			</sidebar>
+		</nav>
+
+
+		<!-- Раздел с уведомлениями -->
+		<div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9 my-4 mx-auto">
+			<div class="notices row col-11 mx-auto">
+				<!-- Карточка уведомления -->
+				<h2 class="ms-0 mt-5">Уведомления</h2>
+				<div class="col-12 row mt-3 notice">
+					<div class="col-9 col-sm-4 col-md-4 col-lg-2 col-xl-2 col-xxl-2 my-auto pt-4 mx-auto">
+						<img src="img/Пушкин.png" alt="Аватарка" class="h-50">
+					</div>
+					<div class="text__Block col-9 col-sm-7 col-md-7 col-lg-7 col-xl-8 col-xxl-8 container py-3">
+						<p><span class="discription__Header">Благодарю за оформленную подписку!</span></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione ipsum neque, nemo suscipit modi est iure, possimus veniam iusto repellat dolorum eaque culpa blanditiis quae quas aspernatur nesciunt placeat?</p>
+						<p><span class="date__notice">30 января 10:15</span></p>
+					</div>
+					<div class="col-9 col-sm-4 col-md-4 col-lg-1 col-xl-1 col-xxl-1 row ms-auto icons__notice mx-auto pb-4">
+						<i class="bi bi-facebook col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+						<i class="bi bi-twitter col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+						<i class="bi bi-telegram col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+					</div>
+				</div>
+				<!-- Карточка уведомления -->
+				<div class="col-12 row mt-3 notice">
+					<div class="col-9 col-sm-4 col-md-4 col-lg-2 col-xl-2 col-xxl-2 my-auto pt-4 mx-auto">
+						<img src="img/Пушкин.png" alt="Аватарка" class="h-50">
+					</div>
+					<div class="text__Block col-9 col-sm-7 col-md-7 col-lg-7 col-xl-8 col-xxl-8 container py-3">
+						<p><span class="discription__Header">Благодарю за оформленную подписку!</span></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione ipsum neque, nemo suscipit modi est iure, possimus veniam iusto repellat dolorum eaque culpa blanditiis quae quas aspernatur nesciunt placeat?</p>
+						<p><span class="date__notice">30 января 10:15</span></p>
+					</div>
+					<div class="col-9 col-sm-4 col-md-4 col-lg-1 col-xl-1 col-xxl-1 row ms-auto icons__notice mx-auto pb-4">
+						<i class="bi bi-facebook col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+						<i class="bi bi-twitter col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+						<i class="bi bi-telegram col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+					</div>
+				</div>
+				<!-- Карточка уведомления -->
+				<div class="col-12 row mt-3 notice">
+					<div class="col-9 col-sm-4 col-md-4 col-lg-2 col-xl-2 col-xxl-2 my-auto pt-4 mx-auto">
+						<img src="img/Пушкин.png" alt="Аватарка" class="h-50">
+					</div>
+					<div class="text__Block col-9 col-sm-7 col-md-7 col-lg-7 col-xl-8 col-xxl-8 container py-3">
+						<p><span class="discription__Header">Благодарю за оформленную подписку!</span></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione ipsum neque, nemo suscipit modi est iure, possimus veniam iusto repellat dolorum eaque culpa blanditiis quae quas aspernatur nesciunt placeat?</p>
+						<p><span class="date__notice">30 января 10:15</span></p>
+					</div>
+					<div class="col-9 col-sm-4 col-md-4 col-lg-1 col-xl-1 col-xxl-1 row ms-auto icons__notice mx-auto pb-4">
+						<i class="bi bi-facebook col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+						<i class="bi bi-twitter col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+						<i class="bi bi-telegram col-4 col-sm-4 col-md-4 col-lg-1 col-xl-7 col-xxl-7 my-auto mx-auto"></i>
+					</div>
+				</div>
+
+				<div class="pagination w-100 mx-auto mt-5">
+  				<a class="ms-auto" href="#">«</a>
+  				<a class="active" href="#">1</a>
+  				<a href="#">2</a>
+  				<a href="#">3</a>
+  				<a href="#">4</a>
+  				<a href="#">5</a>
+  				<a href="#">6</a>
+  				<a class="me-auto" href="#">»</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<footer class="pt-3">
+	<div class="container row mx-auto">
+      <div class="col-xxl-2 logotype">
+            <a href="#"><img src="img/ВК.svg" alt=""></a>
+            <a href="#"><img src="img/Твиттер.svg" alt=""></a>
+            <a href="#"><img src="img/Инст.svg" alt=""></a>
+      </div>
+      <div class="col-xl-12 col-xxl-10 footer__links my-auto">
+            <a href="#">О нас</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Стать партнером</a>
+            <a href="#">Помощь</a>
+            <a href="#">Контакты</a>
+            <a href="#">FERMERSMARCET</a>
+            <a href="#">Оплата и доставка</a>
+      </div>
+      <div class="col-6 footer__links__1200 my-auto mx-auto row text-center">
+            <a href="#" class="mx-auto">О нас</a>
+            <a href="#" class="ms-auto">Пользовательское соглашение</a>
+            <a href="#" class="mx-auto">Стать партнером</a>
+            <a href="#" class="mx-auto">Помощь</a>
+            <a href="#" class="mx-auto">Контакты</a>
+            <a href="#" class="mx-auto">FERMERSMARCET</a>
+            <a href="#" class="mx-auto">Оплата и доставка</a>
+      </div>
+      <div class="col-xxl-2 logotype_1399 text-center mt-3">
+            <a href="#"><img src="img/ВК.svg" alt="Вконтакте"></a>
+            <a href="#"><img src="img/Твиттер.svg" alt="Твиттер"></a>
+            <a href="#"><img src="img/Инст.svg" alt="Инстаграмм"></a>
+      </div>
+      <div class="col-5 mt-4 mx-auto text-center COPYRiGHT">
+      	<p class="mx-auto">COPYRiGHT © 2012-2021 FERMERSMARCET</p>
+      </div>
+ 	</div>
+	</footer>
+
+
+<script src='js/nav.js'></script>
+<script src='js/indexAdmin.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+</body>
+</html>

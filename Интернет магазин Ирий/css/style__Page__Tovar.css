@@ -1,0 +1,165 @@
+/*Стили хлебных крошек*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 1% 2%;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #F2C94C;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #DEB025;
+    text-decoration: underline;
+}
+
+/*Стили основного блока*/
+.star {
+    color: #27AE60;
+}
+
+.photo:hover {
+    border: 1px solid #27AE60;
+    border-radius: 5%;
+}
+
+.prev, .next {
+    color: #000;
+}
+
+.prev i, .next i {
+    color: #000;
+}
+
+.prev:hover, .next:hover,
+.prev::before, .next::before {
+    color: #000;
+    opacity: 1;
+}
+
+.btn__product {
+    color: #FFF;
+    background-color: #27AE60;
+}
+
+.btn__product:hover {
+    color: #FFF;
+    background-color: #1b6535;
+}
+
+.bi-heart {
+    color: #27AE60;
+    cursor: pointer;
+}
+
+.bi-heart:hover {
+    color: #DF1103;
+}
+
+.discription__tovar span {
+    font-weight: 500;
+}
+
+.farm__link {
+    color: #27AE60;
+}
+
+.farm__link:hover  {
+    color: #1b6535;
+}
+
+/*Кнопки вкладки*/
+#btn_reviews:focus, #btn_question:focus {
+    box-shadow: 0 1px #27AE60 !important;
+}
+
+.tabcontent__question {
+    display: none;
+}
+
+.review, .question {
+    border: 1px solid #27AE60;
+    border-radius: 10px;
+}
+
+/*Стили средней оценки*/
+.progress {
+    background-color: #bbb;
+    height: 5px;
+}
+
+.progress-bar {
+    background-color: #27AE60;
+}
+
+.average span {
+    font-weight: 500;
+}
+
+ /*Стили карточек товаров*/
+
+.cart__tovar {
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.cart__tovar:hover {
+    top: -2%;
+}
+
+.rating p, .basket__cart p {
+    font-weight: 500;
+}
+
+.rating p span i {
+    color: #F2C94C;
+}
+
+.rating i {
+    color: #DF1103;
+}
+
+.rating p span i, .rating i {
+    font-size: 20px;
+}
+
+.basket__cart {
+    display: flex;
+}
+
+.basket__cart i {
+    font-size: 24px;
+    color: #DF1103;
+}
+
+.basket__cart i:hover {
+    font-size: 24px;
+    color: #F01803;
+}
+
+.farmer p {
+    font-weight: 500;
+}
+
+.prev__tovar, .next__tovar {
+    font-size: 26px;
+}

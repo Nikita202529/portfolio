@@ -1,0 +1,231 @@
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(231, 231, 231);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.mainPost {
+    background-color: #fff;
+    width: 40%;
+    margin: 3% auto;
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 0;
+    background-color: #fff;
+}
+
+.logoETNewYear {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+.description {
+    margin-left: 10%;
+}
+
+.nameNewYearLogo {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5%;
+    color: #5d7a9c;
+}
+
+.date {
+    color: #bbbbbb;
+    font-weight: 600;
+}
+
+.news img {
+    width: 100%;
+}
+
+hr {
+    margin-top: 3%;
+}
+
+.icons {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    color: #7e7e7e;
+}
+
+.icons img {
+    height: 40px;
+    width: 40px;
+}
+
+.like, .comment, .link, .views {
+    display: flex;
+    align-items: center;
+}
+
+.like p, .link p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 15%;
+}
+
+.comment, .link {
+    margin-left: 7%;
+}
+
+
+
+.views {
+    margin-left: auto;
+}
+
+/* Стили для второго блока */
+
+.head, .foot {
+    height: 40px;
+    background-color: #b8dbc0;
+}
+
+.header, .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.tabs {
+    width: 40%;
+    font-size: 24px;
+    color: #7e7e7e;
+    cursor: pointer;
+}
+
+.tabActive {
+    color: #000;
+    opacity: 10;
+    font-weight: 600;
+    box-shadow: 0 2px #000;
+}
+
+.tab {
+    opacity: 0.5;
+    margin-right: 5%;
+}
+
+.content {
+    display: none;
+}
+
+.active {
+    text-align: justify;
+    display: block;
+}
+
+.foot {
+    box-shadow: inset 0px 10px 8px -10px #000;  
+}
+
+
+/* Стили линия пагинации */
+
+.line-pagination {
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+}
+
+.line-pagination a {
+    background-color: #373737;
+    color: #fff;
+    padding: 1% 2%;
+    text-decoration: none;
+}
+
+.line-pagination a:hover {
+    background-color: #f27836;
+}
+
+.activeBtn {
+    background-color: #f27836 !important;
+}
+
+/* Стили блок способов оплаты */
+
+.mainPay {
+    border-radius: 0;
+    background-color: #ede3d6;
+    width: 50%;
+}
+
+.containerPay {
+    background-color: #ede3d6;
+}
+
+.containerPay h2 {
+    color: #897e74;
+    font-weight: 300;
+    font-size: 34px;
+    padding-top: 4%;
+    padding-left: 4%;
+    margin-bottom: 0;
+}
+
+.payDiv img {
+    max-width: 130px;
+    max-height: 100px;
+    min-width: 130px;
+    min-height: 100px;
+}
+
+.payDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.blockRight, .blockLeft {
+    width: 50%;
+    align-items: center;
+}
+
+.blockRight p, .blockLeft p {
+    color: #5c554e;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.blockRight span, .blockLeft span {
+    color: #d9a794;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.yandex, .webmoney, .visa,
+.alexsent, .qiwi, .nowoplat {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 12% 0;
+    padding: 5% 10%;
+    box-sizing: border-box;
+}
+
+.yandex:hover, .webmoney:hover, .visa:hover,
+.alexsent:hover, .qiwi:hover, .nowoplat:hover {
+    background-color: #f9f4ea;
+    padding: 5% 5%;
+}

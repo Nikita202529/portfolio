@@ -1,0 +1,535 @@
+/*Стили header*/
+
+/*Верхнее меню*/
+.menuTop {
+  background-color: #333;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.menuTop a {
+  color: #ffffff;
+  font-size: 14px !important; /*Установлен шрифт в 14px*/
+  font-weight: 400;
+}
+
+.menuTop a:hover {
+  color: #27AE60;
+}
+
+.linkTop {
+  display: flex;
+  margin-left: 2%;
+  margin-right: auto;
+  width: 25%;
+}
+
+.linkTopMedia {
+  display: none;
+}
+
+.navTop {
+  display: flex;
+  margin-right: 2%;
+  margin-left: auto;
+}
+
+
+/*Нижняя панель*/
+
+.panel {
+  background-color: #fff;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.panel a {
+  color: #000;
+  font-size: 15px; /*Установлен шрифт в 15px*/
+  font-weight: 500;
+}
+
+.panel a:hover {
+  color: #27AE60;
+}
+
+.panelLogo {
+  margin-left: 2%;
+}
+
+.logo {
+  width: 250%;
+}
+
+.formSearch {
+  display: flex;
+  margin-left: 1%;
+  margin-right: 2%;
+}
+
+.panelList {
+  margin-left: auto;
+}
+
+.mainPanelList {
+  margin-left: auto;
+}
+
+  .mediaPanelList {
+    display: none;
+  }
+
+
+.catalog {
+   background-color: #27AE60; 
+   color: #fff !important;
+   border-radius: 8px;
+   font-size: 15px;
+   height: 40px;
+   align-items: center;
+   display: flex;
+}
+
+.catalog:hover {
+   color: #fff;
+   background-color: #1b6535; 
+}
+
+.catalog img {
+  padding-right: 15%;
+}
+
+.search {
+   padding: 0;
+   padding-left: 5%;
+   margin: 0;
+   height: 40px !important;
+   font-size: 15px;
+   background-color: #F5F5F5;
+}
+
+.icon {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  position: relative;
+  right: 2vw;
+}
+
+.icon i {
+  font-size: 18px;
+  color: #333;
+}
+
+.icon i, .favorites i, .basket i, .entrance i {
+  font-size: 17px;
+}
+
+.panelLinks {
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  margin-right: 2%;
+  margin-left: auto;
+}
+
+.sale {
+  background-color: #DF1103;
+  border-radius: 10px;
+  height: 40px;
+  transform: skewX(160deg);
+  align-items: center;
+  display: flex;
+  width: 20%; 
+}
+
+.sale a {
+  margin: auto;
+  transform: skewX(-160deg);
+  color: #fff !important;
+}
+
+.sale:hover, .btnModel:hover{
+  background-color: #9E0000;
+  color: #fff !important;
+}
+
+.sale, .favorites, .basket, .entrance {
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.favoritesBasket {
+  display: none;
+}
+
+
+.entrance button, .entranceMedia button {
+  color: #27AE60;
+}
+
+ .bi-heart, .bi-cart3{
+   color:#27AE60;
+ }
+
+/*здесь модель входа*/
+.modal-dialog{
+  justify-content: center;
+  max-width: 500px;
+  height: 50%;
+
+}
+.her{
+  width: 100%;
+}
+
+.btnModel {
+  background-color: #EB5757;
+  color: #fff;
+}
+
+.btn-close{
+  margin-left:auto;
+
+}
+.modal-title{
+ color: #27AE60;
+}
+
+.voy{
+  text-align: center;
+}
+/*здесь заканчивается модель входа*/
+/*Конец шапки*/
+
+@media (min-width:  1025px) and (max-width: 1400px) {
+
+  /*Адаптивность панели навигации*/
+
+  .linkTop {
+    width: 35%;
+  }
+
+  .panel {
+    padding-top: 1%;
+    height: 200px;
+  }
+
+    .mainPanelList {
+    display: none;
+  }
+
+    .mediaPanelList {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+  }
+
+  .panelList {
+    margin-left: auto;
+    padding-left: 1%;
+  }
+
+  .formSearch {
+     margin-right: auto;
+  }
+
+  .logo {
+  width: 300%;
+}
+
+  .icon {
+  right: 3vw;
+}
+
+}
+
+@media (min-width:  768px) and (max-width: 1024px) {
+    /*Адаптивность панели навигации*/
+
+  .linkTop {
+    width: 45%;
+  }
+
+  .panel {
+    padding-top: 1%;
+    height: 200px;
+  }
+
+    .mainPanelList {
+    display: none;
+  }
+
+    .mediaPanelList {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+  }
+
+  .panelList {
+    margin-left: auto;
+  }
+
+  .formSearch {
+     margin-right: auto;
+  }
+
+  .panelLogo {
+  margin-left: 0;
+}
+
+  .logo {
+  width: 500%;
+  object-fit: cover;
+}
+
+  .icon {
+  right: 3vw;
+}
+
+}
+
+@media (min-width:  768px) and (max-width: 1200px) {
+/*Меню навигации*/
+  .sale {
+  height: 35px;
+  width: 15%; 
+}
+}
+
+@media (min-width:  580px) and (max-width: 768px) {
+
+  /*Адаптивность панели навигации*/
+
+  .menuTop a {
+    font-size: 10px !important; 
+  }
+
+  .panel a {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+  .linkTop {
+    width: 45%;
+    margin-left: 0;
+  }
+
+  .sale {
+  height: 30px;
+  width: 18%; 
+}
+
+.entrance button {
+  font-size: 13px;
+}
+
+.panelLinks {
+  width: 65%;
+}
+
+.catalog, .search {
+   height: 35px;
+}
+
+.search {
+  font-size: 12px;
+}
+
+.icon {
+  right: 2vw;
+}
+
+.icon i {
+  font-size: 15px;
+  position: relative;
+  right: 20px;
+}
+
+  .panel {
+    padding-top: 1%;
+    height: 200px;
+  }
+
+    .mainPanelList {
+    display: none;
+  }
+
+    .mediaPanelList {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+  }
+
+  .panelList {
+    margin-left: auto;
+  }
+
+  .formSearch {
+     margin-right: auto;
+  }
+
+  .panelLogo {
+  margin-left: 0;
+}
+
+  .logo {
+  width: 700%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+  .icon {
+  right: 2vw;
+}
+}
+
+@media (min-width:  360px) and (max-width: 580px) {
+  /*Адаптивность панели навигации*/
+
+  .linkTop {
+    display: none;
+  }
+
+  .linkTopMedia {
+    display: flex;
+    align-items: center;
+    width: 15%;
+  }
+
+  .linkTopMedia a {
+    margin-left: 5%;
+  }
+
+  .linkTopMedia a i {
+    font-size: 12px;
+  }
+
+  .menuTop a {
+    font-size: 10px !important; 
+  }
+
+  .panel a {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+  .sale {
+  height: 30px;
+  width: 20%;
+  margin-right: 10%;
+}
+
+  .sale a {
+  font-size: 10px;
+}
+
+.favoritesBasket {
+  display: inline-block;
+  width: 15%;
+}
+
+.favoritesBasket a i {
+  color: #27AE60;
+  font-size: 15px;
+  justify-content: center;
+}
+
+.entrance {
+  display: none;
+  width: 30%;
+}
+
+.favorites, .basket {
+  display: none;
+}
+
+.panelLinks {
+  width: 75%;
+}
+
+.mediaPanelList {
+  width: 100% !important;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog, .search {
+   height: 30px !important;
+ }
+
+ .catalog img {
+  padding-right: 7%;
+ }
+
+ .panelList {
+  width: 33%;
+  margin: 0;
+  padding-left: 2%;
+ }
+
+.formSearch {
+  width: 67%;
+  margin: 0;
+  padding-top: 0;
+}
+
+.search {
+  font-size: 12px;
+  width: 100%;
+}
+
+.icon {
+  right: 2vw;
+}
+
+.icon i {
+  font-size: 15px;
+  position: relative;
+  right: 12px;
+}
+
+  .panel {
+    padding-top: 1%;
+    height: 180px;
+  }
+
+    .mainPanelList {
+    display: none;
+  }
+
+    .mediaPanelList {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+  }
+
+  .panelLogo {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+  .logo {
+  width: 700%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+  .icon {
+  right: 2vw;
+}
+}

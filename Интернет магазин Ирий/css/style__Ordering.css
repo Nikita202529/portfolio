@@ -1,0 +1,68 @@
+/*Стили хлебных крошек*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 1% 2%;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #F2C94C;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #DEB025;
+    text-decoration: underline;
+}
+
+/*Стили формы*/
+/*Стили input*/
+.form-control-input {
+    display: flex;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn__pay {
+	background-color: #DF1103;
+  	color: #fff;
+  	font-size: 15px;
+  	font-weight: 500;
+}
+
+.btn__pay:hover {
+  color: #fff;
+  background-color: #9E0000;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 500;
+}

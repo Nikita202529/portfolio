@@ -1,0 +1,493 @@
+/*Главный экран*/
+
+.heroSection {
+  width: 100% !important;
+  align-items: center;
+  display: flex;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.backImage img {
+  width: 100%;
+}
+
+.offer p {
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+width: 85%;
+padding-bottom: 2%;
+}
+
+.offer p span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #27AE60;
+}
+
+.CTA {
+border: none;
+background-color: #DF1103;
+border-radius: 10px;
+height: 55px;
+width: 240px;
+}
+
+.CTA a {
+color:  #fff;
+font-size: 18px;
+font-weight: 700;
+}
+
+.CTA:hover {
+  background-color: #F01803;
+  color: #fff !important;
+}
+
+/*Конец главного экрана*/
+
+/*Каталог товаров*/
+
+.catalogTovarov .row {
+justify-content: center;
+}
+
+.cartCatalog {
+overflow: hidden;
+border-radius: 20px;
+margin-bottom: 15px;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cartCatalog:hover, .cart:hover, .cartPredlog:hover {
+  position: relative;
+  bottom: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titleCard {
+border-radius: 10px 10px 0px 0px;
+text-align: center;
+padding: 2%;
+color: #fff;
+font-weight: 700;
+font-size: 15px;
+}
+
+.titleCard a {
+margin: 8px;
+text-align: center;
+color: #fff;
+}
+
+.imgCart {
+width: 100%;
+height: 230px;
+background-size: cover !important;
+}
+
+.cartFruits {
+background: #27AE60;
+}
+
+.cartBread {
+background: #F2994A;
+}
+
+.cartGrocery {
+background: #9B51E0;
+}
+
+.cartMeat {
+background: #EB5757;
+}
+
+.cartMilk {
+background: #56CCF2;
+}
+
+/*Конец каталог товаров*/
+
+/*Популярные фермеры*/
+
+.pad1 {
+position: relative;
+padding-top: 50px;
+}
+
+.popularFarmer, .ourPredlog, .popularBascet, .popularFarmerMedia, .ourPredlogMedia {
+  font-size: 15px !important;
+  font-weight: 500;
+  height: 520px;
+  width: 100%;
+}
+
+.popularFarmerMedia, .ourPredlogMedia {
+  display: none;
+}
+
+
+.slide {
+  padding-top: 0 !important;
+  padding-bottom: 4% !important;
+}
+
+.cartsFarmers {
+display: flex;
+justify-content: center;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+margin-top: 25px;
+}
+
+.cartsFarmersMargin {
+  margin-bottom: 2%;
+}
+
+ .cart {
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+ }
+
+ .avatarAndReyting {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ }
+
+ .avatar, .reyting {
+  width: 45%;
+  margin-left: auto;
+  margin-top: 5%;
+ }
+
+ .avatar {
+  margin-left: 5%;
+  margin-top: 0 !important;
+ }
+
+ .card-img-top{
+  max-width: 130px;
+  min-width: 130px;
+  width: 100%;
+}
+
+.reyting {
+  font-size: 15px;
+  font-weight: 700 !important;
+}
+
+.numbers {
+  color: #27AE60;
+}
+
+
+.cart-text {
+    font-weight: 400; 
+    line-height: 22px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+}
+
+.cart-body {
+  padding-bottom: 5%;
+
+}
+
+.arrowCTA img {
+  margin-left: auto;
+  display: flex;
+  margin-right: 5%;
+  width: 10%;
+}
+
+.prev, .next {
+  width: 4%;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    background-color: #27AE60;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 15px;
+    cursor: pointer; 
+    border: 0; 
+    transition: opacity 0.6s ease;
+}
+
+.indicators{
+  bottom: 25px;
+ }
+ /*------------------------------Наши предложения-------------------*/
+ /*---------------Некоторые классы повторяются из прошлого раздела, 
+ так как и там и там использовался один слайдер-----------------------*/
+.ourPredlog {
+  margin-left: auto;
+  margin-right: auto;
+  height: 570px;
+}
+
+.cartsPredlog {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.predlog {
+  width: 100%;
+  display: flex;
+}
+
+  .cartPredlog {
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+ }
+
+ .prevPredlog, .nextPredlog {
+  width: 17%;
+ }
+
+ .imgPredlog {
+  height: 100%;
+  width: 50%;
+ }
+
+ .discript, .basketPopular {
+  margin: auto;
+  padding: 4% 4%;
+  width: 100%;
+ }
+
+ .discript p {
+  padding-top: 2%;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+ }
+
+ .imgPredlog {
+  margin-top: 0 !important;
+ }
+
+ .card-img-top-predlog{
+  width: 50%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover; /*Чтобы картинка обрезалась не теряя пропорции*/
+}
+
+.arrowCTAPredlog img {
+  margin-left: auto;
+  margin-right: 5%;
+  display: flex;
+  width: 5%;
+}
+
+.reytingStar {
+  padding: 0 0 5% 0;
+  display: flex;
+  align-items: center;
+}
+
+.numbersStars {
+  font-size: 22px;
+  color: #27AE60;
+  margin:  auto 5%;
+}
+
+.btnRecept, .btnBascet {
+  width: 50%;
+  margin: auto;
+}
+
+.btnColorCTA,  .btnColorCTATovar {
+    border: 1px solid #DF1103;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #DF1103;
+}
+
+.btnColorCTA:hover, .btnColorCTATovar:hover{
+    background-color: #F01803;
+    color: #fff;
+}
+
+/*Карточки раздела Наши предложения взяты из предыдущих*/
+
+.cartsPopular {
+  display: flex;
+  justify-content: center;
+}
+
+  .cartTovarDay {
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+ }
+
+ .btnTovar {
+    width: 100%;
+    display: flex;
+    text-align: center;
+ }
+
+ .btnColorCTATovar {
+    display: flex;
+    margin: auto;
+ }
+
+ .btnFavorites {
+    border: 1px solid #27AE60;
+    color: #27AE60;
+ }
+
+ .btnFavorites:hover {
+    background-color: #27AE60;
+    color: #fff;
+}
+
+.indicatorsPredlog {
+  bottom: 0;
+}
+
+/*Карточка популярная корзина*/
+
+.basketPopular  .row {
+  margin: auto;
+}
+
+  .names {
+    font-size: 15px;
+    font-weight: 400;
+    color: #828282;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 2px 2px -2px #828282;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+  .tovar {
+  display: flex;
+  width: 100%; 
+  align-items: center;
+  box-shadow:0 2px 2px -2px #828282;
+  padding: 1% 0;
+}
+
+  .bascetTovar {
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.plus-btn, .minus-btn {
+  width: 120%;
+  object-fit: fill;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.pole {
+  width: 10%;
+  border: none;
+  text-align: center;
+}
+
+  .price {
+  padding: 0;
+  margin: 0;
+  color: #828282;
+}
+
+.priceGeneral p {
+  margin: auto;
+}
+
+.priceGeneralMedia, .quantityMedia {
+  display: none;
+}
+
+.btnBascet {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 0 !important;
+}
+
+
+/*Раздел свяжись с нами*/
+
+.backContactUs {
+  position: relative;
+  margin-top: 80px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.contactUs {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bord { 
+  border: 2px solid #27AE60;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.bordArea {
+  border: 2px solid #27AE60;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.contactUs .h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnColorCTASend {
+    border: 1px solid #27AE60;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #27AE60;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 140px !important;
+}
+
+.btnColorCTASend:hover {
+    background-color: #27AE60;
+    color: #fff;
+}
+
+
+.modal-header-none {
+  display: none;
+}
+
+.modal-title:hover {
+  color: #1b6535;
+}

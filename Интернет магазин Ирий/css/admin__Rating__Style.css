@@ -1,0 +1,41 @@
+.section__btn button, .btn__sort, .btn_review, .btn__filter {
+	color: #fff;
+	background-color: #27AE60;
+}
+
+.section__btn button:hover, .btn__sort:hover, 
+.btn_review:hover, .btn__filter:hover {
+	color: #fff;
+	background-color: #1b6535;
+}
+
+.dropdown-item, #btn_inf {
+	color: #000;
+	background-color: #fff;
+}
+
+.dropdown-item:hover, #btn_inf:hover {
+	color: #27AE60;
+	background-color: #eee;
+}
+
+.dropdown__filter li a, .dropdown__filter li button {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.tabcontent__rating {
+    display: none;
+}
+
+.review {
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	border: 1px solid #27AE60;
+	padding: 3%;
+}
+
+.stars {
+	color: #F2C94C;
+}

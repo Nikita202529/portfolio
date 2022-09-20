@@ -1,0 +1,258 @@
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
+    font-size: 18px;
+    font-weight: 400;
+    color: #070707;
+}
+
+.container {
+    max-width: 945px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.containerHeroSection {
+    padding: 0;
+    padding-bottom: 100px;
+}
+
+header {
+    background-color: #fff;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/* Style nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+nav a, .menu a {
+    color: #828282;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #5b5b5b;
+}
+
+.menu a:hover {
+    color: #070707;
+}
+
+.gamburger {
+    cursor: pointer;
+}
+
+.menu {
+    background-color: #fff;
+    font-size: 24px;
+}
+
+.menu a {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+nav .active {
+    color: #070707;
+}
+
+.navbar {
+    height: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #828282;
+}
+
+/* Style Hero Section */
+
+.heroSection {
+    padding-top: 70px;
+}
+
+.description h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.switchLang {
+    transform: rotate(-90deg);
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-top: 65px;
+    padding-left: 20px;
+}
+
+.switchLang .lang {
+    color: #828282;
+}
+
+.switchLang .lang:hover {
+    cursor: pointer;
+}
+
+.switchLang .active {
+    color: #070707;
+}
+
+.sliderPersons img {
+    width: 100%;
+}
+
+/* Style Skills Section */
+
+.sectionSkillsColor {
+    background-color: #fff;
+}
+
+.sectionSkillsColor span {
+    color: #828282;
+    font-size: 14px;
+}
+
+.sectionSkillsColor img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+/* Style Portfolio Section */
+
+.sectionPortfolio div img {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.linkPortfolio {
+    color: #070707;
+    font-weight: 400;
+}
+
+.linkPortfolio:hover {
+    color: #5b5b5b;
+}
+
+.work {
+    margin-top: 100px;
+}
+
+/* Style Footer */
+
+footer {
+    background-color: #fff;
+}
+
+.btn {
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50px;
+    background-color: #070707;
+    width: 18%;
+}
+
+.icons {
+    margin: 80px 0 50px 0;
+}
+
+.descriptioIcons {
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+}
+
+/* Стили модальное окно */
+
+.modalWindow, .menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: visible;
+}
+
+.activeModal {
+    display: flex;
+    z-index: 1000;
+}
+
+.modalDialog {
+    margin: auto;
+    width: 100%;
+    border-radius: 20px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #070707;
+
+}
+
+.btnSend,
+.btnCancel {
+    width: 20%;
+}
+
+.btnCancel {
+    background-color: #ac0000;
+}
+
+.btnCancel:hover,
+.btnCancel:focus {
+    color: #ac0000;
+}
+
+
+@media screen and (max-width: 950px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .btn {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .container {
+        max-width: 480px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .btn {
+        width: 50%;
+    }
+}

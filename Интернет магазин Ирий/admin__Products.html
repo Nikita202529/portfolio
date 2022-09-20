@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/admin__Products__Style.css">
+	<link rel="stylesheet" href="css/admin__sorting.css">
+	<link rel="stylesheet" href="css/header__admin__style.css">
+	<link rel="stylesheet" href="css/nav__admin__style.css">
+	<link rel="stylesheet" href="css/footer__admin__style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<script src="js/admin.js"></script>
+	<title>Мои продукты</title>
+</head>
+<body>
+	<!-- Создание шапки -->
+	<header>
+		<div class="container">
+			<div class="row">
+		 		<div class="logo d-flex col-5 col-sm-5 col-md-6 col-lg-5 col-xl-5 col-xxl-5 row my-auto">
+           					<a href="index.html" class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-6"><img  class="logoImg" src="img/Лого.svg" alt="logo"></a>
+           					<a class="btn col-10 col-sm-10 col-md-6 col-lg-6 col-xl-5 col-xxl-4 my-auto mx-auto personal_Area" href="#" role="button">
+              				Мои товары</a>
+         		 	</div>
+          		<div class="rightPartHeader my-auto ms-auto col-7 col-sm-7 col-md-6 col-lg-6 col-xl-7 col-xxl-7 row">
+          	<!-- Иконки шапки -->
+          			<div class="iconsHeader d-flex col-4 col-sm-4 col-md-4 col-lg-3 col-xl-2 col-xxl-2 ms-auto my-auto">
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+               			 	<i class="bi bi-bag"></i>
+              			</a>
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+              				<i class="bi bi-envelope-open"></i>
+              			</a>
+              			<a aria-current="page" href="#" class="ms-auto me-auto">
+              				<i class="bi bi-bell"></i>
+              			</a>
+          			</div>
+          	<!-- Аватарка и ИФ -->
+          			<div class="profile d-flex col-4 col-md-4 col-lg-7 col-xl-5 col-xxl-5">
+          				<img src="img/Пушкин.png" alt="avatar" class="me-auto ms-auto my-auto">
+          				<p  id = 'FIO_header'class="my-auto avatar__FIO">Александр Петров</p>
+          			</div>
+          	<!-- Выход из профиля -->
+          			<div class="exit col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 my-auto">
+          				<button type="button" class="btn btn-outline">Выйти</button>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+	</header>
+
+<!-- Тело страницы -->
+	<main class="row">
+		
+		<!-- Бокавая панель навигации -->
+		<nav>
+				<!-- Иконки меню -->
+			<sidebar class="icons__Menu" id="icon_1">
+				<ul id="icon_arr_1" class="row">
+					
+					<li  class="col-12"><span><i class="bi bi-list"></i></span></li>
+					<li id="icon_2" class="col-12"><i class="bi bi-person-circle"></i></li>
+					<li id="icon_3" class="col-12"><i class="bi bi-envelope"></i></li>
+					<li id="icon_4" class="col-12"><i class="bi bi-chat"></i></li>
+					<li id="icon_5" class="col-12"><i class="bi bi-headset"></i></li>
+				</ul>
+				<ul id="icon_arr_2" class="col-12 row">
+					<li id="icon_6" class="col-12"><span><i class="bi bi-house-door"></i></span></li>
+					<li id="icon_7" class="col-12"><span><i class="bi bi-bag"></i></span></li>
+					<li id="icon_8" class="col-12"><i class="bi bi-bar-chart"></i></li>
+					<li id="icon_9" class="col-12"><i class="bi bi-patch-check"></i></li>
+					<li id="icon_10" class="col-12"><i class="bi bi-book"></i></li>
+					<li id="icon_11" class="col-12"><i class="bi bi-folder"></i></li>
+				</ul>
+				<ul id="icon_arr_3" class="col-12 row">
+					<li id="icon_12" class="col-12"><span><i class="bi bi-person-plus"></i></span></li>
+					<li id="icon_13" class="col-12"><i class="bi bi-eye"></i></li>
+					<li id="icon_14" class="col-12"><i class="bi bi-cart3"></i></li>
+					<li id="icon_15" class="col-12"><i class="bi bi-file-earmark-text"></i></li>
+					
+				</ul>
+			</sidebar>
+			<!-- Текст меню -->
+			<sidebar id ="menu" class="text__Menu_none">    
+				<div  class='menu_private'></div>
+					<ul class="col-12">
+						<li id="iconClose" class="col-2 ms-auto mb-2"><i class="bi bi-x ms-auto"></i></li>
+						<li><a href="admin.html">ПРОФИЛЬ</a></li>
+						<li><a href="admin__Messages.html">Сообщения</a></li>
+						<li><a href="admin__Notice.html">Уведомления</a></li>
+						<li><a href="admin__Help.html">Помощь</a></li>
+					</ul>
+					<ul class="col-12">
+						<li><span><a href="">МОЯ ФЕРМА</a></span></li>
+						<li><span><a href="">Мои товары</a></span></li>
+						<li><a href="admin__Rating.html">Рейтинг и отзывы</a></li>
+						<li><a href="">Эффективность</a></li>
+						<li><a href="">О ферме</a></li>
+						<li class="mb-4"><a href="">Реквизиты</a></li>
+					</ul>
+					<ul class="col-12">
+						<li><span><a href="">КАК ПОКУПАТЕЛЬ</a></span></li>
+						<li><a href="">Посмотреть товары</a></li>
+						<li><a href="">Мои заказы</a></li>
+						<li><a href="">Мои отзывы</a></li>
+					</ul>
+				</div>
+			</sidebar>
+		</nav>
+
+
+		<!-- Основной раздел -->
+	<div class="col-12">
+		<div class="row col-11 ms-auto header__products pb-4">
+			<div class="products col-10 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 row mx-auto mx-sm-0">
+				<!-- Раздел фильтра -->
+				<h3 class="mt-5 col-10">Мои товары</h3>
+				<!-- Сортировка кнопка -->
+				<div class="custom-select col-10 col-sm-10 col-md-12 col-lg-10 col-xl-10 col-xxl-10 mt-3">
+  					<select>
+    					<option value="0">Категории:</option>
+    					<option value="1">Мясо</option>
+    					<option value="2">Рыба</option>
+    					<option value="3">Молоко</option>
+    					<option value="4">Орехи</option>
+    					<option value="5">Бакалея</option>
+  					</select>
+				</div>
+				<!-- Ползунки цен -->
+				<div class="slidecontainer mt-3 col-10">
+					<h4 class="mt-4 price">
+						<span class="header__section">Цена:</span>
+						от
+						<span id="demo"></span>
+						р.
+					</h4>
+  					<input labels="test,labels" type="range" min="0" max="1000" value="50" class="slider mt-2 col-10 col-sm-10 col-md-12 col-lg-10 col-xl-10 col-xxl-12" id="myRange">
+				</div>
+
+				<a class="btn mt-5 col-10 col-sm-10 col-md-12 col-lg-10 col-xl-8 col-xxl-7 btn__product" role="button" href="admin__Add__Product.html">
+					Добавить товар
+				</a>
+			</div>
+			<!-- Слайдер категорий товаров -->
+			<div id="carouselExampleIndicators" class="carousel slide col-8 col-sm-6 col-md-7 col-lg-8 col-xl-8 col-xxl-8 mt-4 mx-auto mx-sm-0" data-bs-ride="carousel">
+				<div class="carousel-inner">
+        				<div class="carousel-item active">
+          					<div class="row mt-4">
+          						    <!-- Каталог товаров -->
+  							<div class="catalogTovarov">
+   								<div class="row px-4">
+      								<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartFruits">
+          											<a href="#">Овощи</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Овощи и фрукты.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+      								<div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartBread">
+          											<a href="tovar.html">Выпечка</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Хлеб и выпечка.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+      								<div class="col-8 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartGrocery">
+          											<a href="#">Бакалея</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Бакалея.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+      								<div class="col-8 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-none d-lg-block d-xl-block d-xxl-block">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartMeat">
+          											<a href="#">Мясо</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Мясо и рыба.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+    								</div>
+ 	 						</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+          					<div class="row mt-4">
+          						<!-- Каталог товаров -->
+ 	 						<div class="catalogTovarov">
+   								<div class="row px-4">
+      								<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartMilk">
+          											<a href="#">Молоко</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Молоко и яйца.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+      								<div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartBread">
+          											<a href="tovar.html">Выпечка</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Хлеб и выпечка.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+      								<div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartGrocery">
+          											<a href="#">Бакалея</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Бакалея.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+      								<div class="col-8 col-sm-10 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-none d-lg-block d-xl-block d-xxl-block">
+        									<div class="cartCatalog">
+          										<div class="titleCard cartMeat">
+          											<a href="#">Мясо</a>
+          										</div>
+          										<a href="#">
+          											<div class="imgCart" style="background: url('img/Мясо и рыба.png')"></div>
+          										</a>
+        									</div>
+      								</div>
+    								</div>
+ 	 						</div>	
+						</div>
+					</div>
+					
+				</div>
+				<button class="carousel-control-prev prev my-auto" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      				<i class="bi bi-chevron-left iv my-auto" aria-hidden="true"></i>
+      				<span class="visually-hidden">Назад</span>
+    				</button>
+   				<button class="carousel-control-next next my-auto" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        				<i class="bi bi-chevron-right in my-auto" aria-hidden="true"></i>
+      				<span class="visually-hidden">Вперед</span>
+    				</button>
+			</div>
+		</div>
+		<!-- Раздел с продуктами-->
+		<div class="row col-11 ms-auto mt-5">
+			<!-- Описание выбранного продукта -->
+				<!-- Фотография продукта и кнопки -->
+				<div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 row photo__tovars mb-4 mx-auto mx-md-0">
+					<img src="img/Творог.jpg" alt="Творог" class="col-9 col-sm-10 col-md-12 mx-auto img__products">
+					<div class="imges row col-12 mx-auto mt-3">
+						<img src="img/Творог.jpg" alt="Творог" class="col-4 col-sm-5 col-xxl-6 img__product ms-auto">
+						<img src="img/Творог.jpg" alt="Творог" class="col-4 col-sm-5 col-xxl-6 img__product me-auto">
+					</div>
+					<button class="btn mt-4 mx-auto col-7 btn__edit">
+						Редактировать
+					</button>
+					<button class="btn mt-3 mx-auto col-7 btn__take__off">
+						Снять с продажи
+					</button>
+				</div>
+				<div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xxl-3 row mb-4 mx-auto mx-xxl-0 mt-5 mt-md-0">
+					<h3 class="col-12 mt-4 mt-md-0">Творог 5%</h3>
+					<h4 class="col-12">Вкусный и свежий домашний творог</h4>
+					<form action="" class="mt-3 col-12">
+						<label for="exampleCheck1" class="col-12 mb-2">Остаток на:</label>
+						<input type="date" name="date" class="form-control-input col-12 mb-3">
+						<input type="checkbox" class="form-check-input col-1" id="exampleCheck1">
+	                    <label class="form-check-label col-10" for="exampleCheck1">Сохранить</label>
+	                    <div class="col-12 mt-3">
+	                    	<div class="col-12 mb-2">
+	                    		<label for="number" class="mb-2">
+	                    			Количество
+	                    		</label>
+            					<input type="number" name="number" class=" form-control-input">
+	                    	</div>
+	                    	<div class="col-12">
+	                    		<label for="number" class="mb-2">
+	                    			Остаток
+	                    		</label>
+            					<input type="number" name="number" class=" form-control-input">
+	                    	</div>
+	                    </div>
+	                    <!-- Тумблер -->
+	                    <!-- При нажатии активный элемент должен быть выделен -->
+	                    	<button class="btn col-8 mt-3 mb-2 tumbler">
+		                    	Поступление
+		                    </button>
+	                    	<button class="btn col-8 ms-auto mb-3 tumbler">
+		                    	Списание
+		                    </button>
+		                    <h3>250 р</h3>
+	                    <!-- Кнопка сохранить -->
+	                    <button class="btn mt-4 mb-4 mx-auto col-8 btn__save" type="submit">
+							Сохранить
+						</button>
+						
+					</form>
+				</div>
+			<div class="col-11 col-xxl-6 row ms-auto mt-0 mt-md-5">
+				<!-- Карточки -->
+				<div class="col-12 row mb-4 ms-auto">
+					<!-- Карточка -->
+					<div class="col-8 col-md-5 col-xl-3 pt-2 px-xl-3 cart me-3 text-center">
+						<h5 class="col-12">
+							<span>Молочные продукты</span>
+						</h5>
+						<div class="d-flex stars col-6 mx-auto mx-xxl-0">
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+						</div>
+						<img src="img/Творог.jpg" alt="Творог" class="mt-2 col-12 img__product">
+						<h4 class="col-12 mt-3"><span>Творог</span></h4>
+						<h5 class="col-12 mt-2">Цена: 150 р.</h5>
+					</div>
+					<!-- Карточка -->
+					<div class="col-8 col-md-5 col-xl-3 pt-2 px-xl-3 mt-4 mt-md-0 cart me-3 text-center">
+						<h5 class="col-12">
+							<span>Молочные продукты</span>
+						</h5>
+						<div class="d-flex stars col-10 col-md-6 mx-auto mx-xxl-0">
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+						</div>
+						<img src="img/Творог.jpg" alt="Творог" class="mt-2 col-12 img__product">
+						<h4 class="col-12 mt-3"><span>Творог</span></h4>
+						<h5 class="col-12 mt-2">Цена: 150 р.</h5>
+					</div>
+					<!-- Карточка -->
+					<div class="col-4 col-md-3 pt-2 px-3 cart me-3 text-center d-none d-xl-block">
+						<h5 class="col-12">
+							<span>Молочные продукты</span>
+						</h5>
+						<div class="d-flex stars col-6 mx-auto mx-xxl-0">
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+						</div>
+						<img src="img/Творог.jpg" alt="Творог" class="mt-2 col-12 img__product">
+						<h4 class="col-12 mt-3"><span>Творог</span></h4>
+						<h5 class="col-12 mt-2">Цена: 150 р.</h5>
+					</div>
+				</div>
+				<!-- Карточки -->
+				<div class="col-12 row mb-4 ms-auto">
+					<!-- Карточка -->
+					<div class="col-8 col-md-5 col-xl-3 pt-2 px-xl-3 cart me-3 text-center">
+						<h5 class="col-12">
+							<span>Молочные продукты</span>
+						</h5>
+						<div class="d-flex stars col-6 mx-auto mx-xxl-0">
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+						</div>
+						<img src="img/Творог.jpg" alt="Творог" class="mt-2 col-12 img__product">
+						<h4 class="col-12 mt-3"><span>Творог</span></h4>
+						<h5 class="col-12 mt-2">Цена: 150 р.</h5>
+					</div>
+					<!-- Карточка -->
+					<div class="col-8 col-md-5 col-xl-3 pt-2 px-xl-3 mt-4 mt-md-0 cart me-3 text-center">
+						<h5 class="col-12">
+							<span>Молочные продукты</span>
+						</h5>
+						<div class="d-flex stars col-10 col-md-6 mx-auto mx-xxl-0">
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+						</div>
+						<img src="img/Творог.jpg" alt="Творог" class="mt-2 col-12 img__product">
+						<h4 class="col-12 mt-3"><span>Творог</span></h4>
+						<h5 class="col-12 mt-2">Цена: 150 р.</h5>
+					</div>
+					<!-- Карточка -->
+					<div class="col-4 col-md-3 pt-2 px-3 cart me-3 text-center d-none d-xl-block">
+						<h5 class="col-12">
+							<span>Молочные продукты</span>
+						</h5>
+						<div class="d-flex stars col-6 mx-auto mx-xxl-0">
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+							<i class="bi bi-star-fill p-1"></i>
+						</div>
+						<img src="img/Творог.jpg" alt="Творог" class="mt-2 col-12 img__product">
+						<h4 class="col-12 mt-3"><span>Творог</span></h4>
+						<h5 class="col-12 mt-2">Цена: 150 р.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	</main>
+
+
+	<footer class="pt-3">
+	<div class="container row mx-auto">
+      <div class="col-xxl-2 logotype">
+            <a href="#"><img src="img/ВК.svg" alt=""></a>
+            <a href="#"><img src="img/Твиттер.svg" alt=""></a>
+            <a href="#"><img src="img/Инст.svg" alt=""></a>
+      </div>
+      <div class="col-xl-12 col-xxl-10 footer__links my-auto">
+            <a href="#">О нас</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Стать партнером</a>
+            <a href="#">Помощь</a>
+            <a href="#">Контакты</a>
+            <a href="#">FERMERSMARCET</a>
+            <a href="#">Оплата и доставка</a>
+      </div>
+      <div class="col-6 footer__links__1200 my-auto mx-auto row text-center">
+            <a href="#" class="mx-auto">О нас</a>
+            <a href="#" class="ms-auto">Пользовательское соглашение</a>
+            <a href="#" class="mx-auto">Стать партнером</a>
+            <a href="#" class="mx-auto">Помощь</a>
+            <a href="#" class="mx-auto">Контакты</a>
+            <a href="#" class="mx-auto">FERMERSMARCET</a>
+            <a href="#" class="mx-auto">Оплата и доставка</a>
+      </div>
+      <div class="col-xxl-2 logotype_1399 text-center mt-3">
+            <a href="#"><img src="img/ВК.svg" alt="Вконтакте"></a>
+            <a href="#"><img src="img/Твиттер.svg" alt="Твиттер"></a>
+            <a href="#"><img src="img/Инст.svg" alt="Инстаграмм"></a>
+      </div>
+      <div class="col-5 mt-4 mx-auto text-center COPYRiGHT">
+      	<p class="mx-auto">COPYRiGHT © 2012-2021 FERMERSMARCET</p>
+      </div>
+ 	</div>
+	</footer>
+
+
+
+<script src='js/nav.js'></script>
+<script src='js/indexAdmin.js'></script>
+<script src='js/sorting.js'></script>
+<script src='js/admin__products.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+/*Стили панель навигации*/
+/*Стили иконок*/
+
+#iconClose {
+  padding-left: 0;
+}
+
+#iconClose i {
+  font-size: 26px !important;
+  color: #27AE60;
+}
+
+.icons__Menu, .text__Menu {
+    background-color: #fff;
+}
+
+
+.icons__Menu {
+  font-size: 20px;  
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 70px;
+  z-index: 7;
+  height: 620px;
+}
+
+.icons__Menu ul  {
+  margin-top: 30%;
+}
+
+.icons__Menu li, .text__Menu li {
+  margin-bottom: 5%;
+  padding: 0;
+  height: 34px;
+}
+
+.icons__Menu i {
+  color: #000;
+}
+
+.icons__Menu i:hover, #iconClose i:hover {
+  color: #DF1103;
+}
+
+.icons__Menu span i{
+  color: #27AE60;
+  font-weight: 700;
+}
+
+.icons__Menu span:hover{
+  color: #DF1103;
+}
+
+/*Стили текстовое меню*/
+#menu {
+  position: absolute;
+  width: 200px;
+  left: 65px;
+  z-index: 9;
+  height: 620px;
+}
+
+.text__Menu {
+  font-size: 15px;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text__Menu_none {
+  display: none;
+}
+
+.text__Menu ul {
+    margin-top: 10%;
+    padding-left: 0;
+
+}
+
+.text__Menu li {
+  margin-bottom: 1%;
+  padding-left: 10%;
+}
+
+.text__Menu a {
+  color: #000;
+  display: block;
+}
+
+.text__Menu span a {
+  color: #27AE60;
+  font-weight: 700;
+}
+
+.text__Menu a:hover {
+  color: #DF1103;
+}

@@ -1,0 +1,32 @@
+@media (min-width:  0px) and (max-width: 520px) {
+
+/*Адаптивность модального окна для карусели*/
+
+    .modal__content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal__content__doc {
+        width: 300px;
+        height: 250px;
+    }
+
+    .close__modal {
+    right: 10px;
+}
+
+}
+
+@media only screen and (max-width: 700px){
+
+  /*Адаптивность модального окна для карусели*/
+    .modal__content {
+        width: 85%;
+        height: 100%;
+    }
+
+    .close__modal, .close__modal__doc {
+    right: 20px;
+}
+}

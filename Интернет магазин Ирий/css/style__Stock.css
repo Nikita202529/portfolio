@@ -1,0 +1,123 @@
+/*Стили главного баннера*/
+
+.main__banner {
+	position: relative;
+	min-height: 180px;
+	max-height: 180px;
+}
+
+.main__banner img {
+	border-radius: 15px;
+	min-height: 180px;
+	max-height: 180px;
+	min-width: 330px;
+	object-fit: cover;
+	background-color: #000;
+}
+
+.header__banner {
+	position: absolute;
+}
+
+.header__banner {
+	z-index: 10;
+	align-items: center;
+	top: 20%;
+	font-weight: 400;
+}
+
+.header__banner h1 {
+	color: #fff;
+	font-weight: 400;
+	margin-left: 0;
+}
+
+.header__banner h2 {
+	margin-left: 0;
+	color: #F2C94C;
+
+}
+
+/*Стили баннеров категорий*/
+
+.banner {
+	position: relative;
+	min-height: 180px;
+	max-height: 180px;
+	cursor: pointer;
+}
+
+.banner:hover {
+	top: -3%;
+}
+
+.banner img {
+	border-radius: 15px;
+	min-height: 180px;
+	max-height: 180px;
+	background-color: #000;
+	object-fit: cover;
+}
+
+.header__banner__categories {
+	position: absolute;
+}
+
+.header__banner__categories {
+	z-index: 10;
+	align-items: ce0nter;
+	top: 40%;
+	font-weight: 400;
+}
+
+.header__banner__categories h2 {
+	color: #fff;
+	margin-left: 0;
+	font-size: 26px;
+}
+
+/*Стили карточек товаров*/
+
+.cart__tovar {
+	position: relative;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+}
+
+.cart__tovar:hover {
+	top: -2%;
+}
+
+.rating p, .basket__cart p {
+	font-weight: 500;
+}
+
+.rating p span i {
+	color: #F2C94C;
+}
+
+.rating i {
+	color: #DF1103;
+}
+
+.rating p span i, .rating i {
+	font-size: 20px;
+}
+
+.basket__cart {
+	display: flex;
+}
+
+.basket__cart i {
+	font-size: 24px;
+	color: #DF1103;
+}
+
+.basket__cart i:hover {
+	font-size: 24px;
+	color: #F01803;
+}
+
+.farmer p {
+	font-weight: 500;
+}

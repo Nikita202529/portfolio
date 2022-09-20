@@ -1,0 +1,228 @@
+/*Стили ползунки цен*/
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #27AE60;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #27AE60;
+    cursor: pointer;
+}
+
+.header__section {
+	color: #27AE60;
+}
+
+.price {
+	color: #000;
+}
+
+/*Стили кнопка Добавить товар*/
+
+.btn__product, .btn__save {
+	background-color: #27AE60;
+	color: #fff;
+}
+
+.btn__product:hover, .btn__save:hover {
+	background-color: #1b6535;
+	color: #fff;
+}
+
+/*Каталог товаров*/
+
+.catalogTovarov .row {
+justify-content: center;
+}
+
+.cartCatalog {
+overflow: hidden;
+border-radius: 20px;
+margin-bottom: 15px;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cartCatalog:hover, .cart:hover, .cartPredlog:hover {
+  position: relative;
+  bottom: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titleCard {
+border-radius: 10px 10px 0px 0px;
+text-align: center;
+padding: 2%;
+color: #fff;
+font-weight: 700;
+font-size: 15px;
+}
+
+.titleCard a {
+margin: 8px;
+text-align: center;
+color: #fff;
+}
+
+.imgCart {
+width: 100%;
+height: 230px;
+background-size: cover !important;
+}
+
+.cartFruits {
+background: #27AE60;
+}
+
+.cartBread {
+background: #F2994A;
+}
+
+.cartGrocery {
+background: #9B51E0;
+}
+
+.cartMeat {
+background: #EB5757;
+}
+
+.cartMilk {
+background: #56CCF2;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  	width: 2% !important;
+  	opacity: 1 !important;
+}
+
+
+.carousel-control-prev i, .carousel-control-next i {
+	color: #F2C94C;
+	font-weight: 500;
+	font-size: 26px;
+}
+
+.header__products {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+/*Конец каталог товаров*/
+
+/*Стили раздела Мои продукты*/
+.photo__tovars {
+    max-height: 500px;
+}
+
+.img__products {
+    border-radius: 10%;
+}
+
+.img__product {
+    border-radius: 20%;
+}
+
+/*Стили кнопок Редактировать и Снять с продажи*/
+
+.btn__edit {
+    background-color: #F2C94C;
+    color: #fff;
+}
+
+.btn__edit:hover {
+    background-color: #DEB025;
+    color: #fff;
+}
+
+.btn__take__off {
+    background-color: #b5b5b5;
+    color: #fff;
+}
+
+.btn__take__off:hover {
+    background-color: #9a9a9a;
+    color: #fff;
+}
+
+/*Конец стилей кнопок*/
+
+.stars {
+    color: #FFE50A;
+}
+
+.section__product {
+    max-height: 500px;
+}
+
+/*Стили input*/
+.form-control-input {
+    display: flex;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-check-input:checked {
+    background-color: #DF1103;
+    border-color: #DF1103;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+/*Стили тумблера*/
+.tumbler {
+    color: #fff;
+    background-color: #27AE60;
+    border-radius: 5px;
+}
+
+.tumbler:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #27AE60;
+}
+
+.tumbler:focus {
+    box-shadow: none;
+}
+
+/*Стили карточек*/
+.cart {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-bottom: 1%;
+}
+
+h4 span {
+    font-weight: 700;
+}
+
+

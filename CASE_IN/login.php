@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style2.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/x-icon" href="Logo.ico">
+	<title>Войти в учетную запись</title>
+</head>
+<body>
+	<main class="parent">
+		<div class="text-center col-lm-12 border border-primary autorith">
+					<h3 class="my-3">Войдите в аккаунт</h3>
+					<!-- Форма окно -->
+					<div class="col-md-8 ms-auto mt-3 me-auto col-lm-12">
+						<form method="POST" action="/login_action.php">
+							<div class="row mt-4 col-md-10 ms-auto me-auto mb-3">
+								<label for="inputLogin" class="col-md-3 col-sm-4 col-form-label"><b>Логин</b></label>
+							<div class="col-md-8 col-sm-10">
+								<input type="text" class="form-control" id="inputLogin">
+							</div>
+							</div>
+							<div class="row mb-3 col-md-10 ms-auto me-auto">
+								<label for="inputPass" class="col-sm-3 col-form-label"><b>Пароль</b></label>
+							<div class="col-md-8 col-sm-10">
+								<input type="password" class="form-control" id="inputPass">
+							</div>
+							</div>
+							<div class="row mb-3 w-50 ms-auto mt-3 me-auto">
+								<button class="btn btn-success" name="login_button" type="submit" class="signupbtn" value="Login">Войти</button>
+							</div>
+						</form>
+						<form method="POST" action="/login_guest.php">
+							<div class="clearfix row w-50 ms-auto mb-2 mt-3 me-auto">
+								<button name="guest_button" type="submit" class="signupbtn btn btn-primary" value="Guest">Зайти гостем</button>
+							</div>
+							</div>
+						</form>
+					</div>
+				</div>
+	</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>

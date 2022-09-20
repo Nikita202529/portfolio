@@ -1,0 +1,170 @@
+/*Стили input*/
+.form-control-input {
+    display: flex;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+/*СТили формы загрузки документов*/
+.photo__section {
+    border: 1px solid #27AE60;
+  border-radius: 10px;
+}
+
+.modal__content__doc {
+  background-color: #fff;
+  
+}
+
+
+/*Форма пример 2*/
+.example-2 .btn-tertiary  {
+  color:  #000;
+  padding:  5%;
+  line-height:  40px;
+  width: 70%;
+  margin: auto;
+  display:  block;
+  border: 2px solid #555
+}
+
+.example-2 .btn-tertiary:hover,
+.example-2 .btn-tertiary:focus  {
+  color:#DF1103;
+  border-color:#DF1103;
+}
+
+.example-2 .input-file  {
+  width:.1px;
+  height:.1px;
+  opacity:0;
+  overflow:hidden;
+  position:absolute;
+  z-index:-1
+}
+
+.example-2 .input-file + .js-labelFile  {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding:0 10px;
+  cursor:pointer
+}
+
+.example-2 .input-file + .js-labelFile .icon:before{content:"\f093"}
+
+.example-2 .input-file + .js-labelFile.has-file .icon:before{
+  content:"\f00c";
+  color:#5AAC7B
+}
+
+/*Стили стрелочек слайдера*/
+.prev, .next {
+    color: #000;
+}
+
+.prev i, .next i {
+    color: #000;
+}
+
+.prev:hover, .next:hover,
+.prev::before, .next::before {
+    color: #000;
+    opacity: 1;
+}
+
+.btnModel {
+    color: #FFF;
+    background-color: #27AE60;
+}
+
+.btnModel:hover {
+    color: #FFF;
+    background-color: #1b6535;
+}
+
+h4 span {
+    color: #000;
+}
+
+/*Стили ползунка загрузки*/
+.progress {
+    background-color: #bbb;
+    height: 5px;
+}
+
+.progress-bar {
+    background-color: #DF1103;
+}
+
+/*Стили кнопки крестика*/
+.bi-x-circle {
+    font-size: 20px;
+}
+
+.bi-x-circle:hover {
+    color: #DF1103;
+}
+
+
+.btn:focus {
+    box-shadow: none;
+}
+
+/*Стили вкладки*/
+
+
+.tablink {
+    color: #fff;
+    background-color: #27AE60;
+    border: 1px solid #27AE60;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tablink:hover {
+  color: #27AE60;
+  background-color: #fff;
+  border: 1px solid #27AE60;
+}
+
+.tabcontent {
+    color: #000;
+    height: 100%;
+}
+
+.tabcontent__none {
+    display: none;
+}
+
+.btn__save {
+    color: #DF1103;
+    background-color: #fff;
+     border: 1px solid #DF1103;
+}
+
+.btn__save:hover {
+    color: #FFF;
+    background-color: #DF1103;
+}
+
+.btnModel {
+    max-height: 40px;
+}
+
+.img__slide {
+    border-radius: 10px;
+}

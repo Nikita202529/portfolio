@@ -1,0 +1,300 @@
+/*Стили хлебных крошек*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 1% 2%;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #F2C94C;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #DEB025;
+    text-decoration: underline;
+}
+
+/*Стили фильтра категорий*/
+.bi-x {
+    font-size: 30px;
+    color: #27AE60;
+}
+
+.bi-x:hover {
+    color: #DF1103;
+}
+
+.collapse {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    z-index: 15;
+    width: 250px !important;
+}
+
+.scrollmenu {
+    overflow-y: auto;
+    white-space: nowrap;
+    height: 150px;
+}
+
+/*Стилизация полосы прокрутки*/
+.scrollmenu::-webkit-scrollbar {
+    height: 1px;
+    width: 8px; /* ширина для вертикального скролла */
+    background-color: #eee;
+}
+
+/* ползунок скроллбара */
+.scrollmenu::-webkit-scrollbar-thumb {
+    background-color: #27AE60;
+    border-radius: 9em;
+    height: 10px;
+}
+
+.scrollmenu::-webkit-scrollbar-thumb:hover {
+    background-color: #1b6535;
+}
+
+/* Стрелки */
+
+.scrollmenu::-webkit-scrollbar-button:vertical:start:decrement,
+.scrollmenu::-webkit-scrollbar-button:vertical:end:increment {
+    height: 1px;
+    border-radius: 9em; 
+}
+
+.form-control-input {
+    display: flex;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* The container */
+.container__categories {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container__categories input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #27AE60;
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.container__categories:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container__categories input:checked ~ .checkmark {
+    background-color: #27AE60;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container__categories input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container__categories .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*Стили баннеров*/
+/*Стили кнопки филтров*/
+.btn__filter {
+    height: 40px;
+    width: 130px;
+    background-color: #F2C94C;
+    color: #fff;
+}
+
+.btn__filter:hover {
+    background-color: #DEB025;
+    color: #fff;
+}
+
+.btn__filter p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn__filter i {
+    font-weight: 500;
+    font-size: 20px;
+}
+/*Стили главного баннера*/
+
+.main__banner {
+    position: relative;
+    min-height: 180px;
+    max-height: 180px;
+}
+
+.banner__slide {
+    position: relative;
+    min-height: 180px;
+    max-height: 180px;
+}
+
+.main__banner img {
+    border-radius: 15px;
+    min-height: 180px;
+    max-height: 180px;
+    min-width: 330px;
+    object-fit: cover;
+}
+
+.header__banner {
+    position: absolute;
+}
+
+.header__banner {
+    z-index: 10;
+    align-items: center;
+    top: 20%;
+    font-weight: 400;
+}
+
+.header__banner h2 {
+    margin-left: 0;
+    color: #F2C94C;
+    font-weight: 500;
+}
+
+/*Стили индикаторов карусели*/
+.carousel-indicators [data-bs-target] {
+    background-color: #27AE60;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 15px;
+    cursor: pointer; 
+    border: 0; 
+    transition: opacity 0.6s ease;
+}
+
+.indicators{
+  bottom: -50px;
+ }
+
+ /*Стили карточек товаров*/
+
+.cart__tovar {
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.cart__tovar:hover {
+    top: -2%;
+}
+
+.rating p, .basket__cart p {
+    font-weight: 500;
+}
+
+.rating p span i {
+    color: #F2C94C;
+}
+
+.rating i {
+    color: #DF1103;
+}
+
+.rating p span i, .rating i {
+    font-size: 20px;
+}
+
+.basket__cart {
+    display: flex;
+}
+
+.basket__cart i {
+    font-size: 24px;
+    color: #DF1103;
+}
+
+.basket__cart i:hover {
+    font-size: 24px;
+    color: #F01803;
+}
+
+.farmer p {
+    font-weight: 500;
+}
+
+@media (min-width:  1200px) {
+
+  .collapse {
+    position: relative;
+}
+}

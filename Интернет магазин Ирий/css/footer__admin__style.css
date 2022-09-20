@@ -1,0 +1,69 @@
+/*Стили для footer*/
+
+footer {
+  position: relative;
+  top: 30px;
+  background-color: #27AE60;
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.logotype_1399 {
+  display: none;
+}
+
+.footer__links__1200 {
+  display: none;
+}
+
+.footer__links {
+  display: flex;
+}
+
+.footer__links a, .footer__links__1200 a {
+  height: 100%;
+  color: #fff; 
+  align-items: center;
+  padding: 1%;
+}
+
+.footer__links a:hover, .footer__links__1200 a:hover {
+  box-shadow: 0 1px #fff;
+}
+
+.COPYRiGHT {
+  color: #fff;
+}
+
+@media (min-width:  0px) and (max-width: 1400px) {
+
+/*Адаптивность раздел footer*/
+.logotype {
+  display: none;
+}
+
+.logotype_1399 {
+  display: block;
+}
+}
+
+@media (min-width:  0px) and (max-width: 1200px) {
+
+/*Адаптивность раздел footer*/
+.footer__links {
+  display: none;
+}
+
+.footer__links__1200 {
+  display: flex;
+}
+
+.footer__links__1200 a {
+  display: block;
+  margin-top: 2%;
+}
+
+}

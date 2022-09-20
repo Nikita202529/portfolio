@@ -1,0 +1,197 @@
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Merriweather, serif;
+    font-size: 72px;
+    color: #0045be;
+    text-align: center;
+}
+
+.imgMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgMain img {
+    height: 854px;
+    width: 854px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0045be;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+}
+
+svg {
+    fill: #ffffff;
+    padding: 16px;
+    height: 44px;
+    width: 44px;
+}
+
+.bulits {
+    position: relative;
+    top: -260px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bulit {
+    background-color: #fff;
+    width: 22%;
+    margin: 2%;
+    box-sizing: border-box;
+    padding: 20px   ;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%)
+}
+
+.bulit h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+
+.bulit p {
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1700px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .bulit {
+        width: 28%;
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 987px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .imgMain img {
+        width: 650px;
+        height: 650px;
+    }
+
+    .bulits {
+        top: -130px;
+    }
+
+    .bulit {
+        width: 40%;
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .imgMain img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .bulits {
+        top: -70px;
+    }
+
+    .bulit {
+        width: 40%;
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .imgMain img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .bulit {
+        width: 60%;
+        margin: 2%;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    .imgMain img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .bulit {
+        width: 70%;
+        margin: 2%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .imgMain img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bulit {
+        width: 80%;
+        margin: 2%;
+    }
+
+}

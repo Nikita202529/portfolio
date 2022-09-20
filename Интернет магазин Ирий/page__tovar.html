@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Батон нарезной</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="css/header__style.css">
+<link rel="stylesheet" href="css/footer__style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style__Page__Tovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+<script src="js/admin.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Верхняя панель меню -->
+    <div class="menuTop">
+      <!-- Местоположение и телефон -->
+      <div class="row linkTop">
+        <div class="col">
+          <a href="#" class="main-geo"><i class="bi bi-geo-alt me-2" style="color: #27AE60;"></i>Новочеркасск</a>
+        </div>
+        <div class="col telephone">
+          <a href="tel:+79283353535" class="main-tel"><i class="bi bi-telephone me-2" style="color: #27AE60;"></i>+7 (928) 335-35-35</a>
+        </div>
+      </div>
+      <!-- Меню навигации -->
+      <div class="row navTop">
+        <div class="linkTopMedia col">
+          <a href="#" class="main-geo"><i class="bi bi-geo-alt me-2" style="color: #27AE60;"></i></a>
+          <a href="tel:+79283353535" class="main-tel telephone"><i class="bi bi-telephone me-2" style="color: #27AE60;"></i></a>
+        </div>
+        <div class="col"><a href="#">Фермерам</a></div>
+        <div class="col"><a href="#">О нас</a></div>
+        <div class="col"><a href="#">Поставщики</a></div>
+        <div class="col"><a href="#">Отзывы</a></div>
+      </div>
+    </div>
+
+    <!-- Нижняя панель меню -->
+
+      <div class="panel row">
+          <!-- Логотип -->
+        
+          <div class="panelLogo col-1">
+            <a href="index.html"><img  class="logo" src="img/Лого.svg" alt="logo"></a>
+          </div>
+
+          <!-- Выпадающий список -->
+        <div class="mainPanelList col-6 row">
+          <div class="panelList col-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link catalog" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/Бургер.svg">Каталог</a>
+                  <ul class="dropdown-menu  " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Овощи и фрукты</a></li>
+                    <li><a class="dropdown-item" href="#">Хлеб и выпечка</a></li>
+                    <li><a class="dropdown-item" href="#">Бакалея</a></li>
+                    <li><a class="dropdown-item" href="#">Мясо и рыба</a></li>
+                    <li><a class="dropdown-item" href="#">Молоко и яйца</a></li>
+                 </ul>
+            </li>
+          </div>
+          <!-- Форма поиска -->
+          <form class="formSearch col-6">
+            <input class="form-control search" type="search" placeholder="Поиск товаров из каталога" aria-label="search">
+            <span class="icon"><i class="bi bi-search"></i></span>
+          </form>
+        </div>
+            
+            <!-- Оставшиеся пункты шапки -->
+       <div class="panelLinks col-xxl-4 col-md-9">
+            <div class="sale">
+              <a aria-current="page" href="stock.html">Скидки</a>
+            </div>
+            <div class="favorites">
+              <a aria-current="page" href="#">
+                  <i class="bi bi-heart"></i> Избранное
+              </a>
+            </div>
+            <div class="basket">
+              <a aria-current="page" href="#">
+                <i class="bi bi-cart3"></i> Корзина
+              </a>
+            </div>
+            <!-- Медиа иконки -->
+            <div class="favoritesBasket">
+              <a aria-current="page" href="#">
+                  <i class="bi bi-heart"></i>
+              </a>
+            </div>
+            <div class="favoritesBasket">
+              <a aria-current="page" href="#">
+                <i class="bi bi-cart3"></i>
+              </a>
+            </div>
+            <div class="favoritesBasket entranceMedia">
+              <button type="button" class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-person"></i></button>
+            </div>
+            <!-- Медиа иконки -->
+            <div class="entrance">
+              <button type="button" class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-person"></i> Войти</button>
+            </div>
+
+                <!-- Модальное окно регистрации -->
+             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Кнопка крестик -->
+                      <button type="button" class="btn btn-close p-3" data-bs-dismiss="modal" aria-label="Close">
+                      </button>
+                      <!-- Заголовок войти -->
+                      <div class="voy">
+                        <h2 class="modal-title" id="staticBackdropLabel">Вход</h2>
+                      </div>
+                      <div class="modal-header">
+                        <form class="her p-2">
+                          <!-- Email -->
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control nam" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                          </div>
+                          <!-- Пароль -->
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control nam" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Пароль</label>
+                          </div>
+                          <!-- Запомнить меня -->
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">запомнить меня</label>
+                          </div>
+                          <button type="submit" class="btn btnModel">Войти</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Конец модального окна -->
+          </div>
+
+          <!-- Медиа запрос для планшетов -->
+          <div class="mediaPanelList row">
+          <div class="panelList col-2 col-md-3 col-sm-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link catalog" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/Бургер.svg">Каталог</a>
+                  <ul class="dropdown-menu  " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Овощи и фрукты</a></li>
+                    <li><a class="dropdown-item" href="#">Хлеб и выпечка</a></li>
+                    <li><a class="dropdown-item" href="#">Бакалея</a></li>
+                    <li><a class="dropdown-item" href="#">Мясо и рыба</a></li>
+                    <li><a class="dropdown-item" href="#">Молоко и яйца</a></li>
+                 </ul>
+            </li>
+          </div>
+          <!-- Форма поиска -->
+          <form class="formSearch col-5 col-md-6 col-sm-6">
+            <input class="form-control search" type="search" placeholder="Поиск товаров из каталога" aria-label="search">
+            <span class="icon"><i class="bi bi-search"></i></span>
+          </form>
+          </div>
+        </div>
+</header>
+
+<!-- Основной раздел -->
+<main class="container">
+  <div class="row">
+    <!-- Создаем хлебные крошки -->
+    <ul class="breadcrumb col-12 mt-4">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="bread.html">Хлеб и выпечка</a></li>
+      <li>Батон нарезной</li>
+    </ul>
+    <!-- Конец хлебных крошек -->
+    <div class="col-12 col-md-10 row mt-4 mx-0 mx-sm-auto">
+      <h2 class="col-12 ms-0">Батон нарезной дрожжевой</h2>
+      <p class="col-4 col-lg-2">15 отзывов <i class="bi bi-star star"></i></p>
+      <p class="col-8 col-sm-6 col-lg-4">Купили батон более 35 раз</p>
+    </div>
+    <div class="col-12 row">
+      <div class="col-sm-10 col-lg-5 row ms-sm-5 ms-0 ms-lg-auto">
+        <img src="img/Батон нарезной.png" alt="Батон нарезной" class="col-12 col-lg-8">
+        <hr class="col-12 col-lg-8">
+        <!-- Добавляем карусель -->
+              <!-- Добавляем карусель -->
+        <div id="carouselExampleIndicators2" class="carousel slide col-12 col-lg-8" data-bs-ride="carousel">
+          <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row mx-auto mt-3">
+                        <div class="col-4 photo">
+                          <img src="img/Батон обычный.png" class="col-12" alt="Мои товары 1">
+                        </div>
+                        <div class="col-4 photo">
+                          <img src="img/Батон нарезной 2.png" class="col-12" alt="Мои товары 1">
+                        </div>
+                        <div class="col-4 photo">
+                          <img src="img/Батон на доске.png" class="col-12" alt="Мои товары 1">
+                        </div>
+                      </div>
+                  </div>
+            <div class="carousel-item">
+                      <div class="row galleri__documents mx-auto mt-3">
+                        <div class="col-4 photo">
+                          <img src="img/Батон обычный.png" class="col-12 mt-auto" alt="Мои товары 1">
+                        </div>
+                        <div class="col-4 photo">
+                          <img src="img/Батон на доске.png" class="col-12" alt="Мои товары 1">
+                        </div>
+                        <div class="col-4 photo">
+                          <img src="img/Батон нарезной 2.png" class="col-12" alt="Мои товары 1">
+                        </div>
+                      </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev prev mt-auto" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+              <i class="bi bi-chevron-left iv me-auto" aria-hidden="true"></i>
+              <span class="visually-hidden">Назад</span>
+            </button>
+          <button class="carousel-control-next next mt-auto" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                <i class="bi bi-chevron-right in ms-auto" aria-hidden="true"></i>
+              <span class="visually-hidden">Вперед</span>
+            </button>
+        </div>
+        <!-- Конец карусели -->
+      </div>
+      <!-- Конец раздела с фотографиями -->
+      <!-- Раздел с ценой и характеристиками -->
+      <div class="col-12 col-sm-10 col-lg-6 row ms-sm-5 ms-0 ms-lg-auto mt-4 mt-lg-0">
+        <div class="col-12">
+          <h2 class="col-12 ms-0">40 ₽</h2>
+          <p class="col-12">Продавец: Твердохлебов В. С.</p>
+          <button class="btn col-md-6 col-xl-5 btn__product">
+            Добавить в корзину
+          </button>
+          <i class="bi bi-heart col-1 ms-3"></i>
+        </div>
+        <div class="col-12 row mt-3 discription__tovar">
+          <p class="col-6">Вид хлеба:</p>
+          <p class="col-6"><span>Батон</span></p>
+          <p class="col-6">Тип муки:</p>
+          <p class="col-6"><span>Хлебопекарная</span></p>
+          <p class="col-6">Калорийность на 100г:</p>
+          <p class="col-6"><span>300 Ккал</span></p>
+          <p class="col-6">БЖУ на 100 г:</p>
+          <p class="col-6"><span>8 / 3 / 50</span></p>
+          <p class="col-6">Масса:</p>
+          <p class="col-6"><span>500 г</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Конец раздела -->
+    <!-- Раздел О товаре -->
+    <div class="col-12 col-lg-10 row mt-5 mx-auto">
+      <h2 class="col-12 ms-0">О товаре</h2>
+      <p class="col-12 col-lg-10 mt-2">Нарезной батон — чуть ли не самый известный хлеб в России. Рецептура его была разработана 80 лет назад, и с тех пор нарезной нисколько не потерял в популярности, а то и приобрёл: нарезные в Москве начали выпекать даже модные французские булочные, так велик спрос на этот пшеничный хлеб с косыми насечками.</p>
+       <p class="col-12 col-lg-10 mt-2"><a href="#" class="farm__link">Фермер Твердохлебов В. С.</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque non et sit labore suscipit maiores excepturi? Libero, illo. Doloremque quis cupiditate, eligendi exercitationem nostrum sit deleniti harum suscipit excepturi aspernatur.</p>
+    </div>
+    <!-- Конец раздела -->
+    <!-- Раздел Отзывы вопросы -->
+    <div class="col-12 col-lg-10 row mt-5 mx-auto">
+      <h2 class="col-12 ms-0">Отзывы и вопросы</h2>
+      <!-- Кнопки вкладки -->
+      <button class="col-5 col-sm-3 col-lg-2 btn me-4 tablink" id='btn_reviews' onclick="openPage('reviews', this, 'red')" id="defaultOpen">Отзывы: 2</button>
+      <button class="col-5 col-sm-3 col-lg-2 btn tablink" id='btn_question' onclick="openPage('question', this, 'black')">Вопросы: 0</button>
+      <!-- Конец кнопок вкладок -->
+      <!-- Вкладка отзывы -->
+      <div id="reviews" class="tabcontent col-12 col-lg-8">
+        <div class="col-12 col-xxl-9 mt-3">
+          <button class="btn col-7 col-sm-4 btn__product">
+            Добавить отзыв
+          </button>
+        </div>
+        <!-- Отзыв 1 -->
+            <div class="review row mt-4 col-12 mx-auto">
+              <div class="img__Stars text-center col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                <img src="img/Пушкин.png" alt="Фото" class="my-3">
+              </div>
+              <div class="discription__review text-center text-sm-start col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-9 my-auto py-3">
+                <h4>Иванов И. И. <i class="bi bi-star star ms-3"></i> 5.0</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores necessitatibus animi harum nemo minus
+                </p>
+                <p>
+                30 марта 10:24
+                </p>
+              </div>
+            </div>
+            <!-- Отзыв 2 -->
+            <div class="review row mt-4 col-12 mx-auto">
+              <div class="img__Stars text-center col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                <img src="img/Пушкин.png" alt="Фото" class="my-3">
+              </div>
+              <div class="discription__review text-center text-sm-start col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-9 my-auto py-3">
+                <h4>Иванов И. И. <i class="bi bi-star star ms-3"></i> 5.0</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores necessitatibus animi harum nemo minus
+                </p>
+                <p>
+                30 марта 10:24
+                </p>
+              </div>
+            </div>
+            <!-- Конец отзывов -->
+      </div>
+      <!-- Конец вкладки -->
+      <!-- Вкладка вопросы -->
+      <div id="question" class="tabcontent tabcontent__question col-12 col-lg-8">
+        <div class="col-12 col-xxl-9 mt-3">
+          <button class="btn col-7 col-sm-4 btn__product">
+            Добавить вопрос
+          </button>
+        </div>
+                <!-- Вопрос 1 -->
+            <div class="question row mt-4 col-12 mx-auto">
+              <div class="img__Stars text-center col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                <img src="img/Толстой.png" alt="Фото" class="my-3">
+              </div>
+              <div class="discription__review text-center text-sm-start col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-9 my-auto py-3">
+                <h4>Иванов И. И. <i class="bi bi-star star ms-3"></i> 5.0</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores necessitatibus animi harum nemo minus
+                </p>
+                <p>
+                30 марта 10:24
+                </p>
+              </div>
+            </div>
+            <!-- Вопрос 2 -->
+            <div class="question row mt-4 col-12 mx-auto">
+              <div class="img__Stars text-center col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                <img src="img/Толстой.png" alt="Фото" class="my-3">
+              </div>
+              <div class="discription__review text-center text-sm-start col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-9 my-auto py-3">
+                <h4>Иванов И. И. <i class="bi bi-star star ms-3"></i> 5.0</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores necessitatibus animi harum nemo minus
+                </p>
+                <p>
+                30 марта 10:24
+                </p>
+              </div>
+            </div>
+            <!-- Конец вопросов -->
+      </div>
+      <!-- Конец вкладки -->
+          <!-- Средняя оценка -->
+    <div class="col-10 col-lg-4 mt-4 mt-lg-3 mx-auto mx-lg-0">
+      <h3 class="col-12 col-xl-10 col-xxl-9 ms-lg-0 ms-xl-auto">Средняя оценка 5.0</h3>
+      <div class="col-xl-11 col-xxl-10 row my-3 ms-auto average">
+        <p class="col-1 pe-4 my-auto">5</p>
+        <div class="col-8 progress my-auto p-0">
+          <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="col-1 ps-4 my-auto"><span>2</span></p>
+      </div>
+      <div class="col-xl-11 col-xxl-10 row my-3 ms-auto average">
+        <p class="col-1 pe-4 my-auto">4</p>
+        <div class="col-8 progress my-auto p-0"></div>
+        <p class="col-1 ps-4 my-auto"><span>0</span></p>
+      </div>
+      <div class="col-xl-11 col-xxl-10 row my-3 ms-auto average">
+        <p class="col-1 pe-4 my-auto">3</p>
+        <div class="col-8 progress my-auto"></div>
+        <p class="col-1 ps-4 my-auto"><span>0</span></p>
+      </div>
+      <div class="col-xl-11 col-xxl-10 row my-3 ms-auto average">
+        <p class="col-1 pe-4 my-auto">2</p>
+        <div class="col-8 progress my-auto"></div>
+        <p class="col-1 ps-4 my-auto"><span>0</span></p>
+      </div>
+      <div class="col-xl-11 col-xxl-10 row my-3 ms-auto average">
+        <p class="col-1 pe-4 my-auto">1</p>
+        <div class="col-8 progress my-auto"></div>
+        <p class="col-1 ps-4 my-auto"><span>0</span></p>
+      </div>
+    </div>
+    <!-- Конец средней оценки -->
+    </div>
+    <!-- Конец раздела -->
+    <!-- Раздел С этим товаром покупают -->
+    <div class="col-12 col-lg-10 row mt-5 mb-3 mx-auto">
+      <h2 class="col-12 ms-0">С этим товаром покупают</h2>
+                  <!-- Добавляем карусель -->
+        <div id="carouselExampleIndicators3" class="carousel slide col-12" data-bs-ride="carousel">
+          <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row mx-auto my-3">
+                           <!-- Карточка товара 1 -->
+      <div class="col-10 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                                                   <!-- Карточка товара 2 -->
+      <div class="col-8 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3 d-none d-sm-block">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                   <!-- Карточка товара 3 -->
+      <div class="col-8 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3 d-none d-lg-block">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                                                   <!-- Карточка товара 4 -->
+      <div class="col-8 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3 d-none d-lg-block">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                      </div>
+                  </div>
+            <div class="carousel-item">
+                      <div class="row mx-auto my-3">
+                                                   <!-- Карточка товара 1 -->
+      <div class="col-10 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                                                   <!-- Карточка товара 2 -->
+      <div class="col-8 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3 d-none d-sm-block">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                                                   <!-- Карточка товара 3 -->
+      <div class="col-8 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3 d-none d-lg-block">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                                                   <!-- Карточка товара 4 -->
+      <div class="col-8 col-sm-6 col-lg-3 row mx-auto mb-4 mb-lg-0 mt-3 d-none d-lg-block">
+        <div class="cart__tovar">
+        <!-- Верхняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 rating row pt-2">
+          <p class="col-4">
+            <span>
+              <i class="bi bi-star-fill"></i>
+            </span>
+             4.7
+          </p>
+          <i class="bi bi-heart col-1 ms-auto"></i>
+        </div>
+        <!-- Фотография -->
+        <div class="col-12 img__tovar">
+          <img src="img/bread.png" alt="Хлеб" class="col-12">
+        </div>
+        <!-- От кого товар -->
+        <div class="col-12 farmer">
+          <p>
+            От: Семенов А. Н.
+          </p>
+        </div>
+        <!-- Раздел названия и описания товара -->
+        <div class="col-12">
+          <h3 class="text-center">Хлеб</h3>
+          <hr>
+          <p>
+            Вкусный домашний хлеб из ржаной пшеницы  
+          </p>
+        </div>
+        <!-- Нижняя часть карточки с рейтингом и сердцем -->
+        <div class="col-12 basket__cart row pt-2 mb-2">
+          <p class="col-6 my-auto me-auto">
+          30 р.
+          </p>
+          <a href="" type="btn" class="col-1 ms-auto me-3">
+            <i class="bi bi-cart-plus-fill col-12"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+      <!-- Конец карточки -->
+                      </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev prev prev__tovar mt-auto" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+              <i class="bi bi-chevron-left iv me-auto" aria-hidden="true"></i>
+              <span class="visually-hidden">Назад</span>
+            </button>
+          <button class="carousel-control-next next next__tovar mt-auto" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                <i class="bi bi-chevron-right in ms-auto" aria-hidden="true"></i>
+              <span class="visually-hidden">Вперед</span>
+            </button>
+        </div>
+        <!-- Конец карусели -->
+    </div>
+    <!-- Конец раздела -->
+    </div>
+</main>
+
+
+<!-- Подвал сайта -->
+<footer class="pad1">
+  <div class="container-fluid podval conteiner row">
+      <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 podvalCol">
+        <ul>
+          <h3>О компании</h3>
+          <li><a href="#">Поставщики</a></li>
+          <li><a href="#">Фермерам</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 podvalCol">
+        <ul>
+          <h3>Покупателям</h3>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Вопросы и ответы</a></li>
+          <li><a href="#">Как заказать</a></li>
+          <li><a href="#">Горячая линия</a></li>
+        </ul>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 podvalCol">
+        <ul>
+          <h3>Заказ товаров и поддержка:</h3>
+          <li><a href="#" class="nomer">+7 (928) 335-35-35</a></li>
+          <li><a href="#" class="nomer">+7 (958) 227-25-25</a></li>
+          </ul>
+      </div>
+      <div class="col-xxl-2 col-xl-12 col-lg-12 col-md-12 col-sm-6 podvalCol podvalColSoc">
+        <ul>
+          <li class="logotype">
+            <a href="#"><img src="img/ВК.svg" alt=""></a>
+            <a href="#"><img src="img/Твиттер.svg" alt=""></a>
+            <a href="#"><img src="img/Инст.svg" alt=""></a></li>
+          </ul>
+      </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+</body>
+</html>   

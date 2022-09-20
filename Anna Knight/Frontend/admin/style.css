@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    font-family: 'Lora', serif !important;
+    font-weight: 400;
+    font-size: 15px !important;
+    color: #453E31 !important;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Philosopher', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1 {
+    font-size: 40px !important;
+    line-height: 113%;
+    letter-spacing: 0.105em;
+    margin-bottom: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header {
+    box-sizing: border-box;
+    height: 100px;
+    background-color: #af9158;
+}
+
+.btn {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #453E31 !important;
+}
+
+.form-control:focus {
+    color: #453E31; 
+    background-color: #fff;
+    border-color: none;
+    box-shadow: none;
+}
+
+.listUsers {
+    font-size: 18px;
+    color: #453E31;
+}
+
+.number, .namefield, .telfield, .iconssettings {
+    border: 1px solid #453E31;
+    padding: 1%;
+}
+
+.number {
+    border-radius: 10px 0 0 10px;
+}
+
+.iconssettings {
+    border-radius: 0 10px 10px 0;
+}
+
+.iconssettings img {
+    margin: 0;
+    padding: 0;
+    width: 35%;
+}

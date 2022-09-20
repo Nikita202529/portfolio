@@ -1,0 +1,73 @@
+
+
+/*Стили основного блока*/
+.notice {
+  border: 1px solid #27AE60;
+  border-radius: 25px;
+}
+
+.header__section {
+  font-weight: 700;
+  font-size: 22px;
+  color: #27AE60;
+}
+
+.discription__Header {
+  font-weight: 700;
+}
+
+.date__notice {
+  color: #27AE60;
+  border: 1px solid #27AE60;
+  padding: 1%;
+  border-radius: 25px;
+}
+
+.date__notice:hover {
+  border: 1px solid #DF1103;
+  color: #DF1103;
+}
+
+.icons__notice i {
+  font-size: 26px;
+  color: #27AE60;
+}
+
+.icons__notice i:hover {
+  color: #1b6535;
+  transition: background-color .3s;
+}
+
+.pagination a {
+    border-radius: 25px;
+    color: black;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1% 2%;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    border: 1px solid #DF1103;
+    color: #000;
+}
+
+a.active:hover {
+    background-color: #DF1103;
+    color: #fff;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f1f1f1;
+}
+
+
+@media (min-width:  0px) and (max-width: 800px) {
+
+.pagination a {
+    padding: 2% 4%;
+}
+
+
+}
