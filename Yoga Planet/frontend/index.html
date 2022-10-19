@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Yoga Planet</title>
+</head>
+
+<body>
+    <header class="d-flex flex-column">
+        <nav class="navbar navbar-expand-xxl">
+            <div class="container container-fluid">
+
+                <div class="d-flex align-items-center navbar-brand">
+                    <img src="./img/desctop/heroSection/logo.svg" alt="logo">
+                    <div class="ms-3 description-logo">
+                        <span class="name-logo">Yoga Planet</span>
+                        <br>
+                        <span class="description-name">Студия йоги и медитации</span>
+                    </div>
+                </div>
+
+                <img src="./img/tablet/Гамбугер меню.svg" alt="" class="d-xxl-none gamburger ms-auto" id="gamburger">
+
+                <div id="navigation" class="d-none d-xxl-flex">
+                    <div class="navbar-nav">
+                        <div class="nav">
+                            <a class="nav-link nav-link-header" href="#about">О студии</a>
+                            <a class="nav-link nav-link-header" href="#actual">Актуальное</a>
+                            <a class="nav-link nav-link-header" href="#teachers">Инструкторы</a>
+                            <a class="nav-link nav-link-header" href="#benefits">Преимущества</a>
+                            <a class="nav-link nav-link-header" href="#gallery">Галерея</a>
+                            <a class="nav-link nav-link-header" href="#reviews">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-offer container d-flex flex-xxl-row flex-column">
+            <div class="offer-text d-flex flex-column ">
+                <p class="description-offer-name">Студия йоги и медиатции</p>
+                <div class="wrapper-text-offer">
+                    <div class="offer-h1">
+                        <h1>YOGA</h1>
+                        <h1 class="planet-h1">PLANET</h1>
+                    </div>
+                    <p class="main-text-offer">Высококачественные занятия<br class="d-block d-sm-none"> для здоровья,<br
+                            class="d-none d-sm-block"> освоения<br class="d-block d-sm-none"> тонкостей и
+                        познания себя</p>
+                    <div class="wrapper-cta d-flex align-items-center justify-content-center">
+                        <a href="" class="CTA-offer">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-offer">
+                <div class="social-icons d-flex justify-content-center align-items-end">
+                    <a href="" class="mb-3"><img src="./img/desctop/heroSection/Инстаграмм.svg" alt="Инстаграмм"></a>
+                    <a href="" class="ms-3 mb-3"><img src="./img/desctop/heroSection/Ютуб.svg" alt="Ютуб"></a>
+                    <a href="" class="ms-3 mb-3"><img src="./img/desctop/heroSection/Фейсбук.svg" alt="Фейсбук"></a>
+                    <a href="" class="ms-3 mb-3"><img src="./img/desctop/heroSection/Твиттер.svg" alt="Твиттер"></a>
+                    <a href="" class="ms-3 mb-3"><img src="./img/desctop/heroSection/Вк.svg" alt="Вконтакте"></a>
+                    <a href="" class="ms-3 mb-3"><img src="./img/desctop/heroSection/Пинтерест.svg" alt="Пинтерест"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section figure -->
+    <section class="container figure d-flex flex-column flex-md-row align-items-center justify-content-center mt-0">
+        <div class="figure-item d-flex align-items-center flex-column ms-md-0 text-center">
+            <img src="./img/desctop/about/Фигура 1.svg" alt="фигура 1">
+            <p class="mt-2">Обрети молодость <br> разума и тела</p>
+        </div>
+        <div class="figure-item d-flex align-items-center flex-column text-center">
+            <img src="./img/desctop/about/Фигура 2.svg" alt="фигура 2">
+            <p class="mt-2">Попрощайся со стрессом <br> и негативными эмоциями</p>
+        </div>
+        <div class="figure-item d-flex align-items-center flex-column text-center">
+            <img src="./img/desctop/about/Фигура 3.svg" alt="фигура 3">
+            <p class="mt-2">Усовершенствуй свое <br> тело и избавься от боли</p>
+        </div>
+    </section>
+
+    <!-- Section About us-->
+    <section class="aboutUs container mt-0" id="about">
+        <h2>Что такое Yoga Planet?</h2>
+        <div class="d-flex flex-column mt-3 mt-sm-5 justify-content-between">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between justify-content-lg-between justify-content-md-evenly">
+                <div class="aboutUs-item d-flex flex-column justify-content-between">
+                    <div class="aboutUs-offer">
+                        <h3 class="mb-2">Баланс разума и тела</h3>
+                        <p>С нашей помощью ты обретешь<br class="d-none d-md-block"> важные навыки<br
+                                class="d-block d-md-none"> самоконтроля<br class="d-none d-md-block"> и баланса</p>
+                    </div>
+                    <div class="aboutUs-offer">
+                        <h3 class="mb-2">Дружелюбная атмосфера</h3>
+                        <p>У нас царит теплая и уютная,<br class="d-none d-md-block"> по-настоящему<br
+                                class="d-block d-md-none"> домашняя<br class="d-none d-md-block"> атмосфера</p>
+                    </div>
+                    <div class="aboutUs-offer">
+                        <h3 class="mb-2">Онлайн студия</h3>
+                        <p>Ты не будешь знать ограничений, <br class="d-block d-md-none">если<br
+                                class="d-none d-md-block"> будешь заниматься в удобное время в<br
+                                class="d-none d-md-block"> удобном
+                            месте
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutUs-item aboutUs-item-img d-none d-lg-block">
+                    <img src="./img/desctop/about/About us.png" alt="О нас">
+                </div>
+                <div class="aboutUs-item d-flex flex-column  justify-content-between">
+                    <div class="aboutUs-offer">
+                        <h3 class="mb-2">Праткика медитации</h3>
+                        <p>Практикуясь в медитации,<br class="d-none d-md-block d-xl-none"> ты узнаешь<br
+                                class="d-none d-xl-block"> себя изнутри,<br class="d-lg-block d-xl-none"> достигнешь
+                            баланса<br class="d-none d-xl-block"> и свободы</p>
+                    </div>
+                    <div class="aboutUs-offer">
+                        <h3 class="mb-2">Групповые занятия</h3>
+                        <p>Если ты хочешь заниматься с<br class="d-none d-md-block d-xl-none"> друзьями<br
+                                class="d-none d-xl-block"> или семьей,<br class="d-block d-md-none"> у нас есть<br
+                                class="d-none d-md-block d-xl-none">
+                            прекрасная<br class="d-none d-xl-block"> студия!</p>
+                    </div>
+                    <div class="aboutUs-offer">
+                        <h3 class="mb-2">Йога для всех</h3>
+                        <p>Заниматься йогой никогда<br class="d-none d-md-block d-xl-none"> не поздно! Наши<br
+                                class="d-none d-md-block d-lg-none d-xl-block"> классы <br
+                                class="d-none d-lg-block d-xl-none"> для
+                            любых<br class="d-block d-md-none"> возрастов<br class="d-none d-md-block d-xl-none"> и
+                            жизненных<br class="d-none d-xl-block">
+                            периодов
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboutUs-item d-block d-lg-none text-center mt-4">
+                <img src="./img/desctop/about/About us.png" alt="О нас">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section actual for you -->
+    <section class="actual container" id="actual">
+        <h2>Выбери актуальное для тебя!</h2>
+        <div class="actual-wrapper mt-5 d-flex justify-content-center justify-content-xxl-between row">
+            <div class="actual-item actual-item-leftRadius col-8 col-sm-5 col-xl-3">
+                <img src="./img/desctop/actual/cart1.png" alt="cart1">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <h3 class="my-3">Здоровье</h3>
+                    <p class="mb-4">Практика спроектирована на <br> улучшение твоего здоровья. <br> Самые востребованные
+                        темы</p>
+                    <div class="wrapper-cta wrapper-cta-cart mx-auto d-flex align-items-center justify-content-center">
+                        <a href="" class="CTA-offer">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="actual-item actual-item-rightRadius col-8 col-sm-5 col-xl-3">
+                <img src="./img/desctop/actual/cart2.png" alt="cart2">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <h3 class="my-3">Познание себя</h3>
+                    <p class="mb-4">Медитация, глубокие<br> ралаксационные практики и<br> техники внутренней работы</p>
+                    <div class="wrapper-cta wrapper-cta-cart mx-auto d-flex align-items-center justify-content-center">
+                        <a href="" class="CTA-offer">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="actual-item actual-item-leftRadius col-8 col-sm-5 col-xl-3">
+                <img src="./img/desctop/actual/cart3.png" alt="cart3">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <h3 class="my-3">Фигура</h3>
+                    <p class="mb-4">Упражнения и практики для <br>создания красивого и<br> рельефного тела</p>
+                    <div class="wrapper-cta wrapper-cta-cart mx-auto d-flex align-items-center justify-content-center">
+                        <a href="" class="CTA-offer">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="actual-item actual-item-rightRadius col-8 col-sm-5 col-xl-3">
+                <img src="./img/desctop/actual/cart4.png" alt="cart4">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <h3 class="my-3">Тонкости практики</h3>
+                    <p class="mb-4">Секреты шпагатов и растяжки,<br> стоек на руках и<br> глубоких прогибов</p>
+                    <div class="wrapper-cta wrapper-cta-cart mx-auto d-flex align-items-center justify-content-center">
+                        <a href="" class="CTA-offer">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section teachers -->
+    <section class="teachers container" id="teachers">
+        <h2>Наши преподаватели</h2>
+        <!-- Desctop -->
+        <div id="carouselTeachersControls" class="carousel slide carousel-fade mt-5 d-none d-lg-flex"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-between d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото1.png" alt="teacher1" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Андрей Ключев</h3>
+                            <p>Старший тренер</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото2.png" alt="teacher2" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Цветаева</h3>
+                            <p>Тренер по йоге, цигун</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото3.png" alt="teacher3" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Юлия Шелест</h3>
+                            <p>Тренер, Хатха-йога</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото4.png" alt="teacher4" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Роман Сидоров</h3>
+                            <p>Соматика, парная йога</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-between d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото1.png" alt="teacher3" class="mx-auto">
+                            <h3 class="mt-3 mb-2"> Елизавета Цой</h3>
+                            <p>Тренер, Хатха-йога</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото2.png" alt="teacher1" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Ирина Суворова</h3>
+                            <p>Старший тренер</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото3.png" alt="teacher4" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Сидорова</h3>
+                            <p>Соматика, парная йога</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото4.png" alt="teacher2" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Воздух</h3>
+                            <p>Тренер по йоге, цигун</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev carousel-control-prev-teachers" type="button"
+                data-bs-target="#carouselTeachersControls" data-bs-slide="prev">
+                <span class="prev-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next carousel-control-next-teachers" type="button"
+                data-bs-target="#carouselTeachersControls" data-bs-slide="next">
+                <span class="next-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+        <!-- Tablet -->
+        <div id="carouselTeachersControlsTablet" class="carousel slide carousel-fade mt-5 d-none d-sm-flex d-lg-none"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center me-3">
+                            <img src="./img/desctop/teachers/слайд 1/фото1.png" alt="teacher1" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Андрей Ключев</h3>
+                            <p>Старший тренер</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото2.png" alt="teacher2" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Цветаева</h3>
+                            <p>Тренер по йоге, цигун</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center me-3">
+                            <img src="./img/desctop/teachers/слайд 1/фото3.png" alt="teacher3" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Юлия Шелест</h3>
+                            <p>Тренер, Хатха-йога</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото4.png" alt="teacher4" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Роман Сидоров</h3>
+                            <p>Соматика, парная йога</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third slide -->
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center me-3">
+                            <img src="./img/desctop/teachers/слайд 2/фото1.png" alt="teacher3" class="mx-auto">
+                            <h3 class="mt-3 mb-2"> Елизавета Цой</h3>
+                            <p>Тренер, Хатха-йога</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото2.png" alt="teacher1" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Ирина Суворова</h3>
+                            <p>Старший тренер</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth slide -->
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center me-3">
+                            <img src="./img/desctop/teachers/слайд 2/фото3.png" alt="teacher4" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Сидорова</h3>
+                            <p>Соматика, парная йога</p>
+                        </div>
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото4.png" alt="teacher2" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Воздух</h3>
+                            <p>Тренер по йоге, цигун</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev carousel-control-prev-teachers" type="button"
+                data-bs-target="#carouselTeachersControlsTablet" data-bs-slide="prev">
+                <span class="prev-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next carousel-control-next-teachers" type="button"
+                data-bs-target="#carouselTeachersControlsTablet" data-bs-slide="next">
+                <span class="next-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+        <!-- Mobile -->
+        <div id="carouselTeachersControlsMobile" class="carousel slide carousel-fade mt-5 d-flex d-sm-none"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide teachers-->
+                <div class="carousel-item active">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото1.png" alt="teacher1" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Андрей Ключев</h3>
+                            <p>Старший тренер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото2.png" alt="teacher2" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Цветаева</h3>
+                            <p>Тренер по йоге, цигун</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото3.png" alt="teacher3" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Юлия Шелест</h3>
+                            <p>Тренер, Хатха-йога</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 1/фото4.png" alt="teacher4" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Роман Сидоров</h3>
+                            <p>Соматика, парная йога</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second slide teachers-->
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото1.png" alt="teacher3" class="mx-auto">
+                            <h3 class="mt-3 mb-2"> Елизавета Цой</h3>
+                            <p>Тренер, Хатха-йога</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото2.png" alt="teacher1" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Ирина Суворова</h3>
+                            <p>Старший тренер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото3.png" alt="teacher4" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Сидорова</h3>
+                            <p>Соматика, парная йога</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="teacher-wrapper d-flex align-items-center justify-content-center d-block">
+                        <div class="teacher-item text-center d-flex flex-column align-items-center">
+                            <img src="./img/desctop/teachers/слайд 2/фото4.png" alt="teacher2" class="mx-auto">
+                            <h3 class="mt-3 mb-2">Анна Воздух</h3>
+                            <p>Тренер по йоге, цигун</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev carousel-control-prev-teachers" type="button"
+                data-bs-target="#carouselTeachersControlsMobile" data-bs-slide="prev">
+                <span class="prev-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next carousel-control-next-teachers" type="button"
+                data-bs-target="#carouselTeachersControlsMobile" data-bs-slide="next">
+                <span class="next-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- Section benefits -->
+    <section class="benefits container" id="benefits">
+        <h2>Наши преимущества!</h2>
+        <div class="d-flex mt-5 justify-content-evenly row">
+            <img src="./img/desctop/benefits/cart.png" alt="girl" class="col-12 col-sm-8 col-md-5 col-lg-4">
+            <div
+                class="offers-benefits d-flex flex-column justify-content-evenly col-12 col-sm-8 col-md-6 col-lg-5 mt-4 mt-md-0">
+                <div class="offer-benefit d-flex me-auto my-4 my-md-0">
+                    <img src="./img/desctop/benefits/фигура1.svg" alt="figure">
+                    <p class="my-auto ms-3">Уроки разных<br>уровней сложности</p>
+                </div>
+                <div class="offer-benefit d-flex ms-auto my-4 my-md-0">
+                    <img src="./img/desctop/benefits/фигура2.svg" alt="figure">
+                    <p class="my-auto ms-3">Самостоятельно<br> выбираешь инструктора</p>
+                </div>
+                <div class="offer-benefit d-flex me-auto my-4 my-md-0">
+                    <img src="./img/desctop/benefits/фигура3.svg" alt="figure">
+                    <p class="my-auto ms-3">Индивидуальные практики <br>по видеочату</p>
+                </div>
+                <div class="offer-benefit d-flex ms-auto my-4 my-md-0">
+                    <img src="./img/desctop/benefits/фигура4.svg" alt="figure">
+                    <p class="my-auto ms-3">Обновление тренировок<br> каждую неделю</p>
+                </div>
+                <div class="offer-benefit d-flex me-auto my-4 my-md-0">
+                    <img src="./img/desctop/benefits/фигура5.svg" alt="figure">
+                    <p class="my-auto ms-3">Заниматься можно с любой <br>точки мира</p>
+                </div>
+                <div
+                    class="wrapper-cta wrapper-cta-benefits mx-auto d-flex align-items-center justify-content-center mt-4">
+                    <a href="" class="CTA-offer">Попробуй бесплатно</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+        <h2>Галерея</h2>
+        <!-- Desctop -->
+        <div id="carouselGalleryControls" class="carousel slide carousel-fade gallerySlider d-none d-xl-block"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <div class="d-flex justify-content-between">
+                            <img src="./img/desctop/gallery/слайд 1/фото1.png" alt="">
+                            <img src="./img/desctop/gallery/слайд 1/фото6.png" alt="" class="ms-4 gallerySlider">
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <img src="./img/desctop/gallery/слайд 1/фото2.png" alt="" class="gallerySliderLeft">
+                            <div class="d-flex mx-4 align-items-center flex-column justify-content-between">
+                                <img src="./img/desctop/gallery/слайд 1/фото3.png" alt="">
+                                <img src="./img/desctop/gallery/слайд 1/фото4.png" alt="">
+                            </div>
+                            <img src="./img/desctop/gallery/слайд 1/фото5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <div class="d-flex justify-content-between">
+                            <img src="./img/desctop/gallery/слайд 2/фото1.png" alt="">
+                            <img src="./img/desctop/gallery/слайд 2/фото2.png" alt="" class="ms-4">
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <img src="./img/desctop/gallery/слайд 2/фото3.png" alt="">
+                            <div class="d-flex mx-4 align-items-center flex-column justify-content-between">
+                                <img src="./img/desctop/gallery/слайд 2/фото4.png" alt="">
+                                <img src="./img/desctop/gallery/слайд 2/фото5.png" alt="">
+                            </div>
+                            <img src="./img/desctop/gallery/слайд 2/фото6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Third slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <div class="d-flex justify-content-between">
+                            <img src="./img/desctop/gallery/слайд 3/фото1.png" alt="">
+                            <img src="./img/desctop/gallery/слайд 3/фото2.png" alt="" class="ms-4">
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <img src="./img/desctop/gallery/слайд 3/фото3.png" alt="">
+                            <div class="d-flex mx-4 align-items-center flex-column justify-content-between">
+                                <img src="./img/desctop/gallery/слайд 3/фото4.png" alt="">
+                                <img src="./img/desctop/gallery/слайд 3/фото5.png" alt="">
+                            </div>
+                            <img src="./img/desctop/gallery/слайд 3/фото6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <div class="d-flex justify-content-between">
+                            <img src="./img/desctop/gallery/слайд 4/фото1.png" alt="">
+                            <img src="./img/desctop/gallery/слайд 4/фото2.png" alt="" class="ms-4">
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <img src="./img/desctop/gallery/слайд 4/фото3.png" alt="">
+                            <div class="d-flex mx-4 align-items-center flex-column justify-content-between">
+                                <img src="./img/desctop/gallery/слайд 4/фото4.png" alt="">
+                                <img src="./img/desctop/gallery/слайд 4/фото5.png" alt="">
+                            </div>
+                            <img src="./img/desctop/gallery/слайд 4/фото6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="carousel-control-prev carousel-control-prev-gallery" type="button"
+                data-bs-target="#carouselGalleryControls" data-bs-slide="prev">
+                <span class="prev-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next carousel-control-next-gallery" type="button"
+                data-bs-target="#carouselGalleryControls" data-bs-slide="next">
+                <span class="next-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+
+            <div class="carousel-indicators d-flex align-items-center justify-content-center">
+                <button type="button" data-bs-target="#carouselGalleryControls" data-bs-slide-to="0"
+                    class="active btn-indicator" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselGalleryControls" data-bs-slide-to="1"
+                    class="btn-indicator ms-3" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselGalleryControls" data-bs-slide-to="2"
+                    class="btn-indicator ms-3" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselGalleryControls" data-bs-slide-to="3"
+                    class="btn-indicator ms-3" aria-label="Slide 4"></button>
+            </div>
+
+        </div>
+
+        <!-- Tablet -->
+        <div id="carouselGalleryControlsTablet" class="carousel slide carousel-fade gallerySlider d-none d-md-block d-xl-none"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <img src="./img/tablet/Gallery/Слайд 1/фото1.png" alt="">
+                        <div class="d-flex align-items-stretch slideBottom">
+                            <img src="./img/tablet/Gallery/Слайд 1/фото2.png" alt="" class="gallerySliderLeft">
+                            <div class="d-flex align-items-center flex-column justify-content-between">
+                                <img src="./img/tablet/Gallery/Слайд 1/фото3.png" alt="">
+                                <img src="./img/tablet/Gallery/Слайд 1/фото4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <img src="./img/tablet/Gallery/Слайд 2/фото1.png" alt="">
+                        <div class="d-flex align-items-stretch slideBottom">
+                            <img src="./img/tablet/Gallery/Слайд 2/фото2.png" alt="" class="gallerySliderLeft">
+                            <div class="d-flex align-items-center flex-column justify-content-between">
+                                <img src="./img/tablet/Gallery/Слайд 2/фото3.png" alt="">
+                                <img src="./img/tablet/Gallery/Слайд 2/фото4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <img src="./img/tablet/Gallery/Слайд 3/фото1.png" alt="">
+                        <div class="d-flex align-items-stretch slideBottom">
+                            <img src="./img/tablet/Gallery/Слайд 3/фото2.png" alt="" class="gallerySliderLeft">
+                            <div class="d-flex align-items-center flex-column justify-content-between">
+                                <img src="./img/tablet/Gallery/Слайд 3/фото3.png" alt="">
+                                <img src="./img/tablet/Gallery/Слайд 3/фото4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <img src="./img/tablet/Gallery/Слайд 4/фото1.png" alt="">
+                        <div class="d-flex align-items-stretch slideBottom">
+                            <img src="./img/tablet/Gallery/Слайд 4/фото2.png" alt="" class="gallerySliderLeft">
+                            <div class="d-flex align-items-center flex-column justify-content-between">
+                                <img src="./img/tablet/Gallery/Слайд 4/фото3.png" alt="">
+                                <img src="./img/tablet/Gallery/Слайд 4/фото4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fives slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <img src="./img/tablet/Gallery/Слайд 5/фото1.png" alt="">
+                        <div class="d-flex align-items-stretch slideBottom">
+                            <img src="./img/tablet/Gallery/Слайд 5/фото2.png" alt="" class="gallerySliderLeft">
+                            <div class="d-flex align-items-center flex-column justify-content-between">
+                                <img src="./img/tablet/Gallery/Слайд 5/фото3.png" alt="">
+                                <img src="./img/tablet/Gallery/Слайд 5/фото4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Six slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 d-flex flex-column align-items-center">
+                        <img src="./img/tablet/Gallery/Слайд 6/фото1.png" alt="">
+                        <div class="d-flex align-items-stretch slideBottom">
+                            <img src="./img/tablet/Gallery/Слайд 6/фото2.png" alt="" class="gallerySliderLeft">
+                            <div class="d-flex align-items-center flex-column justify-content-between">
+                                <img src="./img/tablet/Gallery/Слайд 6/фото3.png" alt="">
+                                <img src="./img/tablet/Gallery/Слайд 6/фото4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators d-flex align-items-center justify-content-center">
+                <button type="button" data-bs-target="#carouselGalleryControlsTablet" data-bs-slide-to="0"
+                    class="active btn-indicator" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsTablet" data-bs-slide-to="1"
+                    class="btn-indicator ms-3" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsTablet" data-bs-slide-to="2"
+                    class="btn-indicator ms-3" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsTablet" data-bs-slide-to="3"
+                    class="btn-indicator ms-3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsTablet" data-bs-slide-to="4"
+                    class="btn-indicator ms-3" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsTablet" data-bs-slide-to="5"
+                    class="btn-indicator ms-3" aria-label="Slide 6"></button>
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div id="carouselGalleryControlsMobile" class="carousel slide carousel-fade gallerySlider d-block d-md-none"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <div class="mt-3 mt-sm-4 d-flex flex-column align-items-center">
+                        <img src="./img/mobile/Gallery/Слайд 1/фото1.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 1/фото2.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 1/фото3.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 1/фото4.png" alt="" class="slideBottom">
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <div class="mt-3 mt-sm-4 d-flex flex-column align-items-center">
+                        <img src="./img/mobile/Gallery/Слайд 2/фото1.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 2/фото2.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 2/фото3.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 2/фото4.png" alt="" class="slideBottom">
+                    </div>
+                </div>
+                <!-- Third slide -->
+                <div class="carousel-item">
+                    <div class="mt-3 mt-sm-4 d-flex flex-column align-items-center">
+                        <img src="./img/mobile/Gallery/Слайд 3/фото1.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 3/фото2.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 3/фото3.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 3/фото4.png" alt="" class="slideBottom">
+                    </div>
+                </div>
+                <!-- Fourth slide -->
+                <div class="carousel-item">
+                    <div class="mt-3 mt-sm-4 d-flex flex-column align-items-center">
+                        <img src="./img/mobile/Gallery/Слайд 4/фото1.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 4/фото2.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 4/фото3.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 4/фото4.png" alt="" class="slideBottom">
+                    </div>
+                </div>
+                <!-- Fives slide -->
+                <div class="carousel-item">
+                    <div class="mt-3 mt-sm-4 d-flex flex-column align-items-center">
+                        <img src="./img/mobile/Gallery/Слайд 5/фото1.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 5/фото2.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 5/фото3.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 5/фото4.png" alt="" class="slideBottom">
+                    </div>
+                </div>
+                <!-- Six slide -->
+                <div class="carousel-item">
+                    <div class="mt-3 mt-sm-4 d-flex flex-column align-items-center">
+                        <img src="./img/mobile/Gallery/Слайд 6/фото1.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 6/фото2.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 6/фото3.png" alt="" class="slideBottom">
+                        <img src="./img/mobile/Gallery/Слайд 6/фото4.png" alt="" class="slideBottom">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators d-flex align-items-center justify-content-center">
+                <button type="button" data-bs-target="#carouselGalleryControlsMobile" data-bs-slide-to="0"
+                    class="active btn-indicator" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsMobile" data-bs-slide-to="1"
+                    class="btn-indicator ms-3" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsMobile" data-bs-slide-to="2"
+                    class="btn-indicator ms-3" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsMobile" data-bs-slide-to="3"
+                    class="btn-indicator ms-3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsMobile" data-bs-slide-to="4"
+                    class="btn-indicator ms-3" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselGalleryControlsMobile" data-bs-slide-to="5"
+                    class="btn-indicator ms-3" aria-label="Slide 6"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section  reviews -->
+    <section id="reviews" class="reviews container">
+        <h2>О нас говорят</h2>
+        <div id="carouselReviewsControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First slide -->
+                <div class="carousel-item active">
+                    <div class="mt-5 reviews-wrapper">
+                        <div class="d-flex row justify-content-center py-3">
+                            <div class="d-flex flex-column align-items-center my-3 my-md-5 col-10 col-md-4">
+                                <img src="./img/desctop/reviews/фото1.png" alt="">
+                                <h3 class="mt-3 text-center">Екатерина Романова</h3>
+                            </div>
+                            <div class="d-flex flex-column col-10 col-md-7 align-items-start mt-3 mt-xl-5">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="">
+                                    </div>
+                                    <h3 class="ms-2 ms--sm-3 my-auto">5.0</h3>
+                                </div>
+                                <div class="text-reviews mt-4">
+                                    <p>
+                                        Сначала мне было страшно заниматься йогой, не хотелось каких-то
+                                        экстремальных<br>
+                                        растяжек или опасных положений, в которых я не буду чувствовать себя уверенно.
+                                        Но,
+                                        <br>
+                                        во-первых, тут делают акцент на осознанном пребывании в собственном теле, с <br>
+                                        вниманием и заботой. А, во-вторых, в процессе регулярных занятий оказалось, что
+                                        мое
+                                        <br>
+                                        тело способно на большее, чем я привыкла от него ожидать! Еще здесь можно <br>
+                                        обучиться медитации и изучать йогу как систему практик для саморазвития. <br>
+                                        Недавно начала заниматься классической йогой, это очень интересно!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second slide -->
+                <div class="carousel-item">
+                    <div class="mt-5 reviews-wrapper">
+                        <div class="d-flex row justify-content-center py-3">
+                            <div class="d-flex flex-column align-items-center my-3 my-md-5 col-10 col-md-4">
+                                <img src="./img/desctop/reviews/фото2.png" alt="">
+                                <h3 class="mt-3 text-center">Анастасия Цвет</h3>
+                            </div>
+                            <div class="d-flex flex-column col-10 col-md-7 align-items-start mt-3 mt-xl-5">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="" class="me-2">
+                                        <img src="./img/desctop/reviews/Star 1.svg" alt="">
+                                    </div>
+                                    <h3 class="ms-2 ms--sm-3 my-auto">5.0</h3>
+                                </div>
+                                <div class="text-reviews mt-4">
+                                    <p>
+                                        Я всегда любила спорт и гимнастику, мне нравилось чувство победы над собой,<br>
+                                        но в какой-то момент я поняла, что мне нужно научиться понимать себя,<br>
+                                        а не бежать вперед с закрытыми глазами. Тогда я решила заняться йогой.<br>
+                                        Сначала было тяжело удерживать себя, контролировать свои мысли,<br>
+                                        слушать тренеров. Но каждый раз я начинала понимать себя все лучше и лучше.<br>
+                                        Я стала внимательние к окружающим и к самой себе!<br>
+                                        <br>
+                                        Отдельное спасибо всему коллективу Yoga Planet, ребята, вы - лучшие!<br>
+                                        Благодаря вам и я становлюсь лучше!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev carousel-control-prev-reviews d-none d-xl-block" type="button"
+                data-bs-target="#carouselReviewsControls" data-bs-slide="prev">
+                <span class="prev-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next carousel-control-next-reviews d-none d-xl-block" type="button"
+                data-bs-target="#carouselReviewsControls" data-bs-slide="next">
+                <span class="next-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+
+            <div class="carousel-indicators d-flex align-items-center justify-content-center d-xl-none">
+                <button type="button" data-bs-target="#carouselReviewsControls" data-bs-slide-to="0"
+                    class="active btn-indicator" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselReviewsControls" data-bs-slide-to="1"
+                    class="btn-indicator ms-3" aria-label="Slide 2"></button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Section contacts -->
+    <section class="container contacts">
+        <form action="" class="formContacts d-flex flex-column justify-content-evenly align-items-center ms-auto">
+            <div class="d-flex flex-column ms-4 ms-sm-0">
+                <h2 class="text-center">
+                    Мы на связи!
+                </h2>
+                <div class="d-flex telEmael justify-content-between my-3">
+                    <span class="me-5"><a href="tel:+7 (918) 173 64 25" class="telLink">+7 918 173 64 25</a></span>
+                    <span><a href="mailto:yogaplanet@mail.ru" class="mailLink">yogaplanet@mail.ru</a></span>
+                </div>
+                <p>
+                    пн. - пт.: с 8:00 до 21:00
+                    <br>
+                    сб. - вс.: с 9:00 до 20:00
+                </p>
+                <p class="adress">
+                    г. Москва, ул. Семенова, 20
+                </p>
+            </div>
+            <div class="d-flex flex-column">
+                <h3>
+                    Запишись на<br>бесплатное занятие:
+                </h3>
+                <div class="my-3">
+                    <input type="text" class="form-control" id="" placeholder="Имя">
+                </div>
+                <div class="mb-4">
+                    <input type="tel" class="form-control" id="" placeholder="Номер телефона">
+                </div>
+                <div class="wrapper-cta wrapper-cta-cart CTA-offer-contacts mx-auto d-flex align-items-center justify-content-center">
+                    <a href="" class="CTA-offer">Оставить заявку</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="pb-4">
+        <div class="py-4 d-flex flex-column container">
+            <div class="d-flex justify-content-between align-items-center header-head flex-wrap">
+                <div class="d-flex align-items-center">
+                    <img src="./img/desctop/heroSection/logo.svg" alt="logo">
+                    <div class="ms-3 description-logo">
+                        <span class="name-logo">Yoga Planet</span>
+                        <br>
+                        <span class="description-name">Студия йоги и медитации</span>
+                    </div>
+                </div>
+                <div class="nav-footer d-none d-lg-block">
+                    <a href="#about">О студии</a>
+                    <a href="#actual">Актуальное</a>
+                    <a href="#teachers">Инструкторы</a>
+                    <a href="#benefits">Преимущества</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#reviews">Контакты</a>
+                </div>
+                <div class="image-offer-footer mt-4 d-block d-lg-none">
+                    <div class="social-icons-footer d-flex">
+                        <a href="" class=""><img src="./img/desctop/heroSection/Инстаграмм.svg" alt="Инстаграмм"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Ютуб.svg" alt="Ютуб"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Фейсбук.svg" alt="Фейсбук"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Твиттер.svg" alt="Твиттер"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Вк.svg" alt="Вконтакте"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Пинтерест.svg" alt="Пинтерест"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tablet -->
+            <div class="nav-footer d-none d-md-flex d-lg-none justify-content-between mt-3">
+                <a href="#about">О студии</a>
+                <a href="#actual">Актуальное</a>
+                <a href="#teachers">Инструкторы</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#reviews">Контакты</a>
+            </div>
+            <!-- Mobile -->
+            <div class="nav-footer nav-footer-top d-flex d-md-none justify-content-between mt-3">
+                <a href="#about">О студии</a>
+                <a href="#actual">Актуальное</a>
+                <a href="#teachers">Инструкторы</a>
+            </div>
+            <div class="nav-footer d-flex d-md-none justify-content-between mt-3">
+                <a href="#benefits">Преимущества</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#reviews">Контакты</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-3">
+                <div class="image-offer-footer mt-4 d-none d-lg-flex">
+                    <div class="social-icons-footer d-flex">
+                        <a href="" class=""><img src="./img/desctop/heroSection/Инстаграмм.svg" alt="Инстаграмм"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Ютуб.svg" alt="Ютуб"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Фейсбук.svg" alt="Фейсбук"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Твиттер.svg" alt="Твиттер"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Вк.svg" alt="Вконтакте"></a>
+                        <a href="" class="ms-3 ms-xl-4"><img src="./img/desctop/heroSection/Пинтерест.svg" alt="Пинтерест"></a>
+                    </div>
+                </div>
+                <a href="#">
+                    <img src="./img/desctop/arrow.svg" alt="стрелка">
+                </a>
+                <div class="d-flex telEmael telEmael-footer">
+                    <span class="me-5"><a href="tel:+7 (918) 173 64 25" class="telLink">+7 918 173 64 25</a></span>
+                    <span><a href="mailto:yogaplanet@mail.ru" class="mailLink">yogaplanet@mail.ru</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/mediaNavigation.js"></script>
+</body>
+
+</html>

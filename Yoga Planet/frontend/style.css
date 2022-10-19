@@ -1,0 +1,1061 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    color: #143500;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #00A607;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 64px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #143500;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+section,
+footer {
+    margin-top: 100px;
+}
+
+header {
+    background-image: url(./img/desctop/heroSection/background.png);
+    background-color: rgba(0, 0, 0, 1);
+    background-repeat: no-repeat;
+    height: 660px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.header-head {
+    height: 80px;
+}
+
+.description-logo {
+    font-size: 12px;
+}
+
+.navbar-brand,
+.gamburger {
+    z-index: 100;
+}
+
+.name-logo {
+    font-family: 'Ubuntu', sans-serif;
+    color: #00A607;
+    font-weight: 500;
+}
+
+.description-name {
+    font-size: 12px;
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+/* Жестко */
+.nav a,
+.nav-footer a {
+    color: #fff;
+    margin-left: 44px;
+    box-sizing: border-box;
+    height: 30px;
+}
+
+.nav a:hover,
+.nav-footer a:hover {
+    color: #00A607;
+    box-sizing: border-box;
+    border-bottom-width: 2px;
+    border-bottom-color: #00A607;
+    border-bottom-style: solid;
+}
+
+.gamburger {
+    cursor: pointer;
+}
+
+.offer-text {
+    margin-top: 120px;
+}
+
+.description-offer-name {
+    color: #fff;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.wrapper-text-offer {
+    margin-left: 100px;
+}
+
+.planet-h1 {
+    margin-left: 90px;
+}
+
+.main-text-offer {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+.CTA-offer {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.CTA-offer:hover {
+    color: #fff;
+}
+
+.wrapper-cta {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #7D0303;
+    border-radius: 14px;
+    width: 245px;
+    height: 55px;
+}
+
+.wrapper-cta:hover {
+    background-color: rgba(0, 0, 0, 1);
+    border: 2px solid #00A607;
+}
+
+.image-offer {
+    margin-top: 30px;
+    height: 490px;
+    width: 730px;
+    margin-left: 600px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./img/desctop/heroSection/heroSection.png);
+}
+
+.social-icons {
+    height: inherit;
+}
+
+/* ----Style section figure---- */
+
+.figure {
+    height: 330px;
+}
+
+.figure-item {
+    margin-left: 100px;
+}
+
+/* ----Style section actual---- */
+
+.actual-item {
+    background-color: #F2FFEA;
+    height: 470px;
+    padding: 0;
+    border: 7px solid #fff;
+}
+
+.actual-item img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.actual-item-leftRadius {
+    border-radius: 120px 0 0 0;
+}
+
+.actual-item-rightRadius {
+    border-radius: 0 120px 0 0;
+}
+
+.wrapper-cta-cart {
+    width: 190px;
+    height: 50px;
+}
+
+.wrapper-cta-cart a,
+.wrapper-cta-benefits a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wrapper-cta-cart:hover,
+.wrapper-cta-benefits:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ----Style teachers---- */
+
+.prev-icon,
+.next-icon {
+    color: #143500;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+}
+
+.carousel-control-prev {
+    left: -130px;
+}
+
+.carousel-control-next {
+    left: 1100px;
+}
+
+/* ----Style benefits---- */
+.wrapper-cta-benefits {
+    width: 200px;
+    height: 60px;
+}
+
+/* ----Style gallery---- */
+
+.carousel-indicators {
+    position: relative;
+    top: 10px;
+}
+
+.btn-indicator {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #C4C4C4 !important;
+}
+
+.carousel-indicators .active {
+    background-color: #00A607 !important;
+}
+
+/* ----Style rewiews---- */
+.reviews-wrapper {
+    background-color: #F2FFEA;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+    height: 380px;
+}
+
+.text-reviews {
+    word-wrap: break-word;
+}
+
+/* ----Style contacts---- */
+.contacts {
+    background-image: url(./img/desctop/contacts/map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.formContacts {
+    background-image: url(./img/desctop/contacts/backgroundForm.png);
+    background-repeat: no-repeat;
+    max-width: 370px;
+    height: 520px;
+    margin-right: 8%;
+}
+
+.telEmael,
+.adress {
+    font-weight: 500;
+    font-size: 14;
+}
+
+.form-control {
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #143500;
+    border-bottom-style: solid;
+    border-radius: 0;
+    background-color: #F2FFEA;
+    padding-left: 0;
+}
+
+/* ----Style footer---- */
+
+footer {
+    background-color: #163900;
+}
+
+.telEmael-footer {
+    color: #fff;
+}
+
+.telLink,
+.mailLink {
+    color: inherit;
+}
+
+.telLink:hover,
+.mailLink:hover {
+    color: inherit;
+}
+
+/* ----Style media---- */
+
+@media (max-width: 1410px) {
+    .carousel-control-prev {
+        left: -110px;
+    }
+
+    .carousel-control-next {
+        left: 1085px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .container {
+        max-width: 1100px;
+    }
+
+
+    header {
+        background-image: url(./img/tablet/heroSection/background.png);
+        height: 1020px;
+    }
+
+    .nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding-top: 7%;
+        width: 100%;
+        height: 1020px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+
+    }
+
+    .nav a {
+        box-sizing: border-box;
+        padding: 2% 0;
+        margin: 0;
+    }
+
+    .offer-text {
+        margin-top: 60px;
+    }
+
+
+    .image-offer {
+        height: 490px;
+        width: 730px;
+        margin-left: 0;
+        margin: 40px auto;
+        position: inherit;
+        background-repeat: no-repeat;
+        background-image: url(./img/desctop/heroSection/heroSection.png);
+    }
+
+    .carousel-control-prev {
+        left: -115px;
+    }
+    
+    .carousel-control-next {
+        left: 1025px;
+    }
+
+    .gallerySliderRight {
+        border-top-right-radius: 200px;
+    }
+
+    .gallerySliderLeft {
+        border-bottom-left-radius: 200px;
+    }
+
+    .contacts {
+        background-image: url(./img/tablet/Contacts/Map1200.png);
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        max-width: 1000px;
+    }
+
+    .aboutUs-item-img {
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
+    .nav {
+        padding-top: 7.5%;
+    }
+
+    .nav a {
+        padding: 2.5% 0;
+    }
+
+    .actual-item {
+        height: 600px;
+    }
+
+    .actual-item-leftRadius {
+        border-radius: 180px 0 0 0;
+    }
+
+    .actual-item-rightRadius {
+        border-radius: 0 180px 0 0;
+    }
+
+    .carousel-control-prev {
+        left: -105px;
+    }
+    
+    .carousel-control-next {
+        left: 935px;
+    }
+
+    .gallerySliderLeft {
+        margin-right: 30px;
+    }
+
+    .slideBottom {
+        margin-top: 30px;
+    }
+
+    .reviews-wrapper {
+        height: 420px;
+        border-top-left-radius: 160px;
+        border-bottom-right-radius: 160px;
+    }
+
+    .contacts {
+        background-image: url(./img/tablet/Contacts/Map1100.png);
+    }
+
+    .nav-footer a {
+        margin-left: 30px;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+
+    .container {
+        max-width: 950px;
+    }
+
+    .carousel-control-prev {
+        left: -100px;
+    }
+    
+    .carousel-control-next {
+        left: 885px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .carousel-control-prev {
+        left: -90px;
+    }
+    
+    .carousel-control-next {
+        left: 875px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        max-width: 900px;
+    }
+
+    .nav {
+        padding-top: 8%;
+    }
+
+    .nav a {
+        padding: 3% 0;
+    }
+
+    .actual-item {
+        height: 550px;
+    }
+
+    .carousel-control-prev {
+        left: -90px;
+    }
+    
+    .carousel-control-next {
+        left: 835px;
+    }
+
+    .reviews-wrapper {
+        height: 420px;
+    }
+
+    .nav-footer a {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .carousel-control-prev {
+        left: 105px;
+    }
+    
+    .carousel-control-next {
+        left: 640px;
+    }
+
+    .nav-footer a {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .container {
+        max-width: 800px;
+    }
+
+    .actual-item {
+        height: 520px;
+    }
+
+    .carousel-control-prev {
+        left: 75px;
+    }
+    
+    .carousel-control-next {
+        left: 580px;
+    }
+
+    .reviews-wrapper {
+        height: 420px;
+    }
+
+    .contacts {
+        background-image: url(./img/tablet/Contacts/Map.png);
+    }
+    
+}
+
+
+
+@media (max-width: 850px) {
+
+    .container {
+        max-width: 750px;
+    }
+
+    .nav {
+        padding-top: 9%;
+    }
+
+    .nav a {
+        padding: 4% 0;
+    }
+
+    .actual-item {
+        height: 500px;
+    }
+
+    .carousel-control-prev {
+        left: 65px;
+    }
+    
+    .carousel-control-next {
+        left: 555px;
+    }
+
+    .reviews-wrapper {
+        border-bottom-right-radius: 180px;
+        border-top-left-radius: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        max-width: 700px;
+    }
+
+    header {
+        height: 920px;
+        background-image: url(./img/tablet/heroSection/background2.png);
+    }
+
+    .nav {
+        padding-top: 10%;
+    }
+
+    .nav a {
+        padding: 4.5% 0;
+    }
+
+    .image-offer {
+        height: 390px;
+        width: 600px;
+        background-repeat: no-repeat;
+        background-image: url(./img/tablet/heroSection/фото1.png);
+    }
+
+    .figure {
+        height: 600px;
+    }
+
+    .figure-item {
+        margin: 0;
+    }
+
+    .actual-item {
+        height: 480px;
+    }
+
+    .carousel-control-prev {
+        left: 45px;
+    }
+    
+    .carousel-control-next {
+        left: 530px;
+    }
+
+    .reviews-wrapper {
+        height: 670px;
+    }
+
+    .contacts {
+        background-image: none;
+    }
+
+    .formContacts {
+        background-color: #F2FFEA;
+        border-bottom-right-radius: 200px;
+        border-top-left-radius: 200px;
+        max-width: 100%;
+        height: 520px;
+        margin-right: 8%;
+    }
+
+    .CTA-offer-contacts {
+        width: 200px !important;
+        height: 60px !important;
+    }
+}
+
+@media (max-width: 740px) {
+
+    .container {
+        max-width: 650px;
+    }
+
+    .actual-item {
+        height: 460px;
+    }
+
+    .carousel-control-prev {
+        left: 25px;
+    }
+    
+    .carousel-control-next {
+        left: 510px;
+    }
+
+    .reviews-wrapper {
+        height: 680px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        max-width: 600px;
+    }
+
+    .actual-item {
+        height: 450px;
+    }
+
+    .carousel-control-prev {
+        left: 5px;
+    }
+    
+    .carousel-control-next {
+        left: 490px;
+    }
+
+    .reviews-wrapper {
+        height: 720px;
+    }
+
+    .formContacts {
+        border-bottom-right-radius: 160px;
+        border-top-left-radius: 160px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .container {
+        max-width: 550px;
+    }
+
+    .nav {
+        padding-top: 20%;
+    }
+
+    .nav a {
+        padding: 5% 0;
+    }
+
+    .image-offer {
+        width: 500px;
+        background-repeat: no-repeat;
+        background-image: url(./img/tablet/heroSection/фото2.png);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        max-width: 500px;
+    }
+
+    .wrapper-cta-cart {
+        width: 130px;
+        height: 40px;
+    }
+
+    .carousel-control-prev {
+        left: -35px;
+    }
+    
+    .carousel-control-next {
+        left: 440px;
+    }
+
+    .reviews-wrapper {
+        height: 740px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .actual-item {
+        height: 500px;
+    }
+
+    .carousel-control-prev {
+        left: 55px;
+    }
+    
+    .carousel-control-next {
+        left: 350px;
+    }
+
+    .formContacts {
+        height: 600px;
+        border-bottom-right-radius: 140px;
+        border-top-left-radius: 140px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .container {
+        max-width: 450px;
+    }
+
+    .actual-item {
+        height: 480px;
+    }
+
+    .carousel-control-prev {
+        left: 40px;
+    }
+    
+    .carousel-control-next {
+        left: 320px;
+    }
+
+    .reviews-wrapper {
+        height: 750px;
+    }
+
+    .nav-footer-top {
+        margin-top: 50px !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .image-offer {
+        width: 400px;
+        margin: 20px auto;
+        background-repeat: no-repeat;
+        background-image: url(./img/tablet/heroSection/фото3.png);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        max-width: 400px;
+    }
+
+    .actual-item {
+        height: 450px;
+    }
+
+    .carousel-control-prev {
+        left: 20px;
+    }
+    
+    .carousel-control-next {
+        left: 300px;
+    }
+
+    .reviews-wrapper {
+        height: 820px;
+    }
+
+    .formContacts {
+        height: 650px;
+    }
+}
+
+@media (max-width: 470px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    header {
+        height: 840px;
+    }
+
+    .nav {
+        padding-top: 25%;
+    }
+
+    .nav a {
+        padding: 6% 0;
+    }
+
+    .description-offer-name {
+        font-size: 18px;
+    }
+
+    .main-text-offer {
+        font-size: 14px;
+    }
+
+    .wrapper-text-offer {
+        margin-left: 70px;
+    }
+
+    .CTA-offer {
+        font-size: 18px;
+    }
+
+    .description-logo span {
+        font-size: 12px;
+    }
+
+    .actual-item {
+        height: 430px;
+    }
+
+    .reviews-wrapper {
+        height: 690px;
+    }
+
+    .formContacts {
+        height: 520px;
+    }
+
+    .CTA-offer-contacts {
+        width: 180px !important;
+        height: 50px !important;
+    }
+
+    .telEmael {
+        display: block !important;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        max-width: 360px;
+    }
+
+    .aboutUs-item img {
+        width: 90%;
+    }
+
+    .actual-item {
+        height: 410px;
+    }
+    
+    .carousel-control-prev {
+        left: 0px;
+    }
+    
+    .carousel-control-next {
+        left: 280px;
+    }
+
+    .reviews-wrapper {
+        height: 710px;
+        border-bottom-right-radius: 140px;
+        border-top-left-radius: 140px;
+    }
+
+    .telEmael-footer {
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    header {
+        height: 790px;
+    }
+
+    .nav {
+        padding-top: 30%;
+    }
+
+    .nav a {
+        padding: 9% 0;
+    }
+
+    .image-offer {
+        width: 290px;
+        background-repeat: no-repeat;
+        background-image: url(./img/tablet/heroSection/фото4.png);
+    }
+
+    .social-icons {
+        justify-content: start !important;
+    }
+
+    .social-icons a {
+        margin-bottom: 55px !important;
+        margin-left: 6px !important;
+    }
+
+    .formContacts {
+        height: 600px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container {
+        max-width: 320px;
+    }
+
+    header {
+        height: 800px;
+    }
+
+    .actual-item {
+        height: 380px;
+    }
+
+    .carousel-control-prev {
+        left: 0px;
+    }
+    
+    .carousel-control-next {
+        left: 250px;
+    }
+
+    .reviews-wrapper {
+        height: 780px;
+    }
+}
+
+@media (max-width: 370px) {
+    .wrapper-text-offer {
+        margin-left: 40px;
+    }
+
+    .planet-h1 {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .container {
+        max-width: 310px;
+    }
+
+    .carousel-control-prev {
+        left: -10px;
+    }
+
+    .carousel-control-next {
+        left: 245px;
+    }
+}
