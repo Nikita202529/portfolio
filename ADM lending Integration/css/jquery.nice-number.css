@@ -1,0 +1,54 @@
+form .nice-number {
+  display: inline-flex;
+  justify-content: stretch;
+  margin-bottom: 15px;
+  overflow: auto;
+  width: 100%;
+}
+
+form .nice-number input {
+  vertical-align: middle;
+  -moz-appearance: textfield;
+  box-sizing: content-box;
+  margin: 0;
+  padding-left: 15px;
+  flex: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #6f6d6e;
+  border: 1px solid #b7b7b7;
+  border-bottom: 2px solid #ef7f1a;
+  min-width: 110px;
+}
+
+form .nice-number input::-webkit-inner-spin-button,
+form .nice-number input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+form .nice-number button{
+  background: #ef7f1a;
+  border: none;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  box-shadow: inset 1px 1px 1px #ffffff, inset -1px -1px 1px #848484;
+  box-shadow: inset 1px 1px 1px #ffffff80, inset -1px -1px 1px #8484847a;
+  border: 1px solid #ef7f1a;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  min-width: 40px;
+}
+
+form .nice-number button:hover{
+  background: #f2984a;
+}
+form .nice-number button:active{
+  background: #fdecde;
+  box-shadow: inset -1px -1px 1px #ffffff, inset 1px 1px 1px #848484;
+  box-shadow: inset -1px -1px 1px #ffffff80, inset 1px 1px 1px #8484847a;
+  color: #ef7f1a;
+}

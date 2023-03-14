@@ -1,0 +1,215 @@
+@charset "UTF-8";
+.calculator .S3_MainDisplay {
+  width: 100%;
+  min-height: 45px;
+  cursor: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  outline: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid black;
+}
+
+.calculator .S3_MainDisplay.hide {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.calculator .S3_MainDisplay_n_ArrowWrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calculator .S3_Option {
+  width: auto;
+  border-bottom: 1px solid white;
+  border-top: 2px solid white;
+  color: #676767;
+  /* outline: 1px solid black; */
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 14px;
+}
+
+.calculator .S3_Option:hover,
+.calculator .S3_Option:focus {
+  background: white;
+  color: black;
+}
+
+.calculator .S3_Option:hover:not(:focus) {
+  background: #fffdf6;
+  font-weight: normal;
+}
+
+.calculator .S3_Option[checked] {
+  background: #ff9639;
+  color: black;
+  font-weight: bold;
+}
+
+.calculator .S3_Option[checked]:hover,
+.calculator .S3_Option[checked]:focus {
+  background: #ef7f1a;
+  font-weight: bold;
+}
+
+.calculator .S3_Option.hide {
+  display: none;
+}
+
+.calculator .S3_OptionsWrap {
+  width: 100%;
+  max-height: 150px;
+  height: 150px;
+  overflow-x: visible;
+  overflow-y: auto;
+  -webkit-transition: height ease-in-out 0.1s;
+  transition: height ease-in-out 0.1s;
+  background: #f2f9ff;
+  position: absolute;
+  z-index: 20000;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  scrollbar-width: thin;
+  /* firefox */
+  scrollbar-color: #ef7f1a #C2D2E4;
+  /* firefox */
+}
+
+.calculator .S3_OptionsWrap::-webkit-scrollbar {
+  /* webkit */
+  width: 6px;
+  background: black;
+  border-radius: 2px;
+  border-left: 2px solid #f2f9ff;
+  border-right: 2px solid white;
+}
+
+.calculator .S3_OptionsWrap::-webkit-scrollbar-thumb {
+  /* webkit */
+  background: #ef7f1a;
+  -webkit-box-shadow: inset 1px 1px 1px 0px #ffffffa3, inset -1px -1px 1px 0px #00000082;
+          box-shadow: inset 1px 1px 1px 0px #ffffffa3, inset -1px -1px 1px 0px #00000082;
+  border-radius: 3px;
+}
+
+.calculator .S3_OptionsWrap.hide {
+  height: 0px;
+  border: none;
+}
+
+.calculator .S3_Arrow {
+  width: 40px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  opacity: 0.3;
+  position: absolute;
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.calculator .S3_Arrow:hover {
+  opacity: 1;
+}
+
+.calculator .S3_Arrow::before {
+  content: '';
+  position: relative;
+  width: 0;
+  height: 0;
+  margin-bottom: -25%;
+  border: 6px solid transparent;
+  border-top: 9px solid black;
+}
+
+.calculator .S3_Arrow.hide {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.calculator .S3_Placeholder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #676767;
+  padding-left: 40px;
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calculator .S3_Placeholder.hide {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+}
+
+.calculator .S3_EachValueWrapper {
+  float: left;
+  padding: 0px 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 2px 3px;
+  position: relative;
+}
+
+.calculator .S3_EachValueWrapper:hover {
+  background: white;
+  cursor: text;
+}
+
+.calculator .S3_EachValueWrapper::after {
+  content: ',';
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Times New Roman';
+  font-style: italic;
+  margin-left: 1px;
+  right: -5px;
+  top: 0;
+}
+
+.calculator .S3_EachValueWrapper:last-child::after {
+  /* не показывать запятую на последнем */
+  display: none;
+}
+/*# sourceMappingURL=calculator.select3.css.map */

@@ -1,0 +1,49 @@
+.calc-form-container {
+    min-height: calc(100vh - 310px);
+    padding: 30px;
+}
+/* на мобильном  */
+/* 845px - #{ $w_575 }  */
+@media (max-width: 845px) {
+    .calc-form-container {
+        padding       : 30px 25px 30px 25px;
+        font-size     : 12px;
+    }
+}
+
+.form-header__title {
+    margin-bottom : 20px;
+    font-family   : 'Open Sans', sans-serif;
+    font-weight   : 400;
+    font-size     : 16px;
+    line-height   : 16px;
+    color         : #000000;
+    text-transform: uppercase;
+}
+/* на мобильном  */
+/* 845px - #{ $w_575 }  */
+@media (max-width: 845px) {
+    .form-header__title {
+        font-size    : 14px;
+        line-height  : 16px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.form-header__descr {
+    margin-bottom: 20px;
+    font-family  : 'Open Sans', sans-serif;
+    font-weight  : 300;
+    font-size    : 14px;
+    line-height  : 20px;
+    color        : rgb(111, 109, 110);
+}
+/* на мобильном  */
+/* 845px - #{ $w_575 }  */
+@media (max-width: 845px) {
+    .form-header__descr {
+        font-size  : 12px;
+        line-height: 14px;
+    }
+}

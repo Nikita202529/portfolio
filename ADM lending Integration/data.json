@@ -1,0 +1,356 @@
+{
+	// список типов сайтов
+	"site_types" : {
+		// "landing" : "Лендинг/Сайт-визитка",
+		"corporate_catalog" : "Корпоративный сайт/<br>Сайт-каталог",
+		"store"	: "Интернет-магазин",
+		"bitrix24": "Битрикс24 \"Коробка\""
+	},
+
+	"table_services":[
+		"Контроль и мониторинг работоспособности сайта",
+		"Резервное копирование и восстановление",
+		"Взаимодействие с хостинг-провайдером",
+		"Администрирование сервера",
+		"Консультирование по работе с Битрикс",
+		//"Размещение информации (новости/акции/статьи)",
+		//"Разработка баннера",
+		"Консультации/работы по SEO",
+		"Разработка плана по улучшению сайта",
+		"Ведение 1 рекламной компании в Яндекс либо Google",
+		"Услуги любого специалиста <br> (программиста, дизайнера, контент-менеджера)"
+	],
+
+	// список тарифов
+	"tariffs" : [
+		{
+			"name" : "Эконом",
+			"hours" : 1, // Кол-во нормо-часов, включенных в тариф
+			"price" : { // цена за каждый тип сайта
+				"landing": 1800,
+				"corporate_catalog": 2800,
+				"store": 3200,
+				"bitrix24": 6400
+				
+			},
+			"service" : ["+", "+", "+", "+", "0.5ч", "-", "-", "-", "-"] // услуга
+		},
+		{
+			"name" : "Стандарт",
+			"hours" : 4,
+			"price" : {
+				"landing": 7200,
+				"corporate_catalog": 8800,
+				"store": 10000,
+				"bitrix24": 14000
+			},
+			"service" : ["+", "+", "+", "+", "1ч", "-", "-", "-", "3ч"]
+		},
+		{
+			"name" : "Эксперт",
+			"hours" : 16,
+			"price" : {
+				"landing": "-",
+				"corporate_catalog": 32000,
+				"store": 33800,
+				"bitrix24": "-"
+			},
+			"service" : ["+", "+", "+", "+", "2ч", "2ч", "2ч", "-", "10ч"]
+		},
+		{
+			"name" : "Бизнес",
+			"hours" : 36,
+			"price" : {
+				"landing": "-",
+				"corporate_catalog": "-",
+				"store": 60000,
+				"bitrix24": "-"
+			},
+			"service" : ["+", "+", "+", "+", "2ч", "8ч", "2ч", "6ч", "14ч"]
+		}
+	],
+
+	// список пакетов
+	"packages" : [
+		{
+			"name" : "Бизнес",
+			"hours" : 80, // Количество нормо-часов в пакете
+			"hour_price" : 1800, // Стоимость часа специалиста
+			"validity_period" : 6, // Срок действия пакета, месяцев
+			"is_free" : false, // для пакета Свободный будет свое поведение
+			"free_audit" : true // акция "Бесплатный аудит сайта"
+		},
+		{
+			"name" : "Стандарт",
+			"hours" : 40,
+			"hour_price" : 2000,
+			"validity_period" : 3,
+			"is_free" : false,
+			"free_audit" : false
+		},
+		{
+			"name" : "Базовый",
+			"hours" : 20,
+			"hour_price" : 2200,
+			"validity_period" : 1,
+			"is_free" : false,
+			"free_audit" : false
+		},
+		{
+			"name" : "Свободный",
+			"hours" : "до 20",
+			"hour_price" : 2400,
+			"validity_period" : "-",
+			"is_free" : true,
+			"free_audit" : false
+		}
+	],
+
+	// Список услуг для калькулятора
+    "services" : {
+        "Размещение новостей/акций/статей" : 0.5,
+        "Размещение товаров в каталоге" : 0.25,
+        "Ведение 1 рекламной кампании в Яндекс либо Google" : 6,
+        "Консультации по SEO" : 2,
+        "Разработка баннера" : 1.5,
+        "Разработка инфографики" : 1.5,
+        "Разработка формы" : 2,
+        "Подключение службы доставки" : 1.5,
+        "Перенос сайта на другой домен" : 2,
+        "Подключение внешних виджетов, чатов и систем аналитики" : 1.5,
+        "Дизайн объявления для рекламной компании" : 2
+	},
+
+	// Для блока услуг техподдержки
+	"all_support_services" : [
+		{
+		"title": "Главный модуль",
+		"description": "Готовая интеграция из коробки.",
+		"image": "img/benefits/1C.svg"
+		},
+		{
+		"title": "Многоскладовость",
+		"description": "Возможность показывать остатки товаров в каждом магазине отдельно.",
+		"image": "img/benefits/multiWarehouse.svg"
+		},
+		{
+		"title": "Поддержка работы с SKU (Stock Keeping Unit)",
+		"description": "Добавление на товар разных ценовых предложений в зависимости от свойств или характеристик.",
+		"image": "img/benefits/SKU.svg"
+		},
+		{
+		"title": "Выгрузка каталогов товаров в 1С",
+		"description": "Импортирование каталогов с сайта для ведения учёта в «1С: Управление торговлей».",
+		"image": "img/benefits/uploadingDirectoriesGoodsIn1C.svg"
+		},
+		{
+		"title": "Построение дерева каталогов",
+		"description": "Формирование новой структуры сайта без переделки справочника номенклатуры.",
+		"image": "img/benefits/treeCatalogs.svg"
+		},
+		{
+		"title": "Мультиканальность взаимодейтсвия с клиентом",
+		"description": "Офлайн и онлайн заказы можно отслеживать на сайте.",
+		"image": "img/benefits/multichannel.svg"
+		},
+		{
+		"title": "Оптимизация загрузки/выгрузки",
+		"description": "Обмен данными для снижения нагрузки на интернет-канал, сайт и «1С».",
+		"image": "img/benefits/optimization.svg"
+		},
+		{
+		"title": "Синхронизация справочников",
+		"description": "Справочники из «1С» можно загрузить на сайт.",
+		"image": "img/benefits/synchronizationDirectories.svg"
+		}
+	],
+
+	// id яндекс метрики
+	"YM_ID" : 54779350,
+
+	// цели яндекс метрики
+
+	"YM_GOALS": {
+		// index page
+		"main_page": {
+			// цели на клики
+			// селектор элемента : id цели
+			"CLICK" : {
+
+				// гамбургер
+				".hamburger" : "click.open_menu", // открыть меню
+
+				// виджет bitrix24
+				"[data-b24-crm-button-cont]": "click.open_widget", // показать виджет bitrix24
+				"button.bx-im-textarea-send-button": "submit.widget", // нажать кнопку "Отправить" на виджете bitrix24
+
+				// меню
+				".menu [href='#aboutServices']": "click.menu.to_aboutServices", // Меню: щелчок на варианты техподдержки
+				".menu [href='#subscription']": "click.menu.to_subscription", // Меню: щелчок на постоянную техподдержку
+				".menu [href='#support']": "click.menu.to_support", // Меню: щелчок на депозиты
+				".menu [href='#support-services']": "click.menu.to_support-services", // Меню: щелчок на перечень всех услуг
+				".menu [href='#recommend']": "click.menu.to_recommend", // Меню: щелчок на как мы обрабатываем заявки
+				".menu [href='#footer']": "click.menu.to_footer", // Меню: щелчок на футер с контактами
+				".menu .menu-list": "click.menu_item", // Меню: щелчок по любому из пунктов
+
+				// хедер
+				"header.header [data-target='#calculateTheCostModal']": "click.header.call_calculateTheCostModal", // Хедер сайта: щелчок по "Поставить задачу"
+				".header-phone": "click.header_phone",
+
+				// highlights
+				".highlights [href='#aboutServices']": "click.highlights.to_aboutServices", // Блок "highlights": щелчок на варианты техподдержки
+
+				// перечень всех услуг
+				"section.support-services [data-target='#ModalRequest']": "click.support-services.call_ModalRequest", // Блок "перечень всех услуг": щелчок на "Отправить заявку"
+
+				// варианты техподдержки
+				"section.about-services [data-target='#calculateTheCostModal']": "click.about-services.call_calculateTheCostModal", // Блок "Варианты техподдержки": щелчок по разовой задаче
+				"section.about-services [href='#subscription']": "click.about-services.href_subscription", // Блок "Варианты техподдержки": щелчок по постоянной техподдержке
+				"section.about-services [href='#support']": "click.about-services.href_support", // Блок "Варианты техподдержки": щелчок по депозитам
+				"section.about-services [data-target='#firstMonthModal']": "click.about-services.call_firstMonthModal", // Блок "Варианты техподдержки": щелчок по "Первый месяц бесплатно"
+				"section.about-services [data-target='#auditModal']": "click.about-services.call_auditModal", // Блок "Варианты техподдержки": щелчок по "Аудит сайта бесплатно"
+
+				// предложение для агенств
+				"section.agency [data-target='#ModalCollaboration']": "click.agency.call_ModalCollaboration", // Блок "Предложение для агенств": щелчок по кнопке "Отправить заявку на сотрудничество"
+
+				// постоянная техподдержка
+				"section.subscription [data-target='#ModalLong'][tariffid='0']": "click.subscription.call_ModalLong.0", // Блок "Постоянная техподдержка": щелчок по кнопке "Отправить заявку", 1й тариф
+				"section.subscription [data-target='#ModalLong'][tariffid='1']": "click.subscription.call_ModalLong.1", // Блок "Постоянная техподдержка": щелчок по кнопке "Отправить заявку", 2й тариф
+				"section.subscription [data-target='#ModalLong'][tariffid='2']": "click.subscription.call_ModalLong.2", // Блок "Постоянная техподдержка": щелчок по кнопке "Отправить заявку", 3й тариф
+				"section.subscription [data-target='#ModalLong'][tariffid='3']": "click.subscription.call_ModalLong.3", // Блок "Постоянная техподдержка": щелчок по кнопке "Отправить заявку", 4й тариф
+				"section.subscription [data-target='#ModalCalculator']": "click.subscription.call_ModalCalculator", // Блок "Постоянная техподдержка": щелчок по кнопке "Оценить потребность"
+
+				// депозиты
+				"section.support [data-target='#ModalPackage'][packageid='0']": "click.support.call_ModalPackage.0", // Блок "Депозиты": щелчок по кнопке "Отправить заявку", 1й тариф
+				"section.support [data-target='#ModalPackage'][packageid='1']": "click.support.call_ModalPackage.1", // Блок "Депозиты": щелчок по кнопке "Отправить заявку", 2й тариф
+				"section.support [data-target='#ModalPackage'][packageid='2']": "click.support.call_ModalPackage.2", // Блок "Депозиты": щелчок по кнопке "Отправить заявку", 3й тариф
+				"section.support [data-target='#ModalPackage'][packageid='3']": "click.support.call_ModalPackage.3", // Блок "Депозиты": щелчок по кнопке "Отправить заявку", 4й тариф
+				"section.support [data-target='#auditModal']": "click.support.call_auditModal", // Блок "Депозиты": щелчок по кнопке "Бесплатный аудит сайта"
+
+				// как мы обрабатываем заявки ("section.recommend ...")
+
+				// о нас
+				"section.about-us [alt='1C-Bitrix Gold Partner']": "href.about-us.we_are_gold_partner", // Блок "О нас": щелчок по картинке "Золотой партнер"
+				"section.about-us [alt='Monitoring Participant']": "href.about-us.we_are_monitoring_participant", // Блок "О нас": щелчок по картинке "Участник программы качества внедрений"
+				"section.about-us [alt='Kompozit']": "href.about-us.we_do_kompozit", // Блок "О нас": щелчок по картинке "Композитный сайт"
+				"section.about-us [alt='1c-integration']": "href.about-us.we_do_1c-integration", // Блок "О нас": щелчок по картинке "Интеграция с 1С"
+
+				// футер сайта
+				"footer.footer .footer-bottom-privacy": "href.footer.href_privacy", // Футер сайта: щелчок по "Соглашение об использовании персональных данных"
+				"footer.footer [href='/policy.php']": "href.footer.href_policy", // Футер сайта: щелчок по "Политика конфиденциальности"
+				".footer-phone1": "click.footer_phone1",
+				".footer-phone2": "click.footer_phone2",
+				".footer-email": "click.footer_email",
+
+				// всплывающие окна
+				"#ModalCalculator .requestBtn": "submit.calculator" // нажал "Оставить заявку" на калькуляторе тарифа
+			},
+
+			// цели на показ модальных окон bootstrap (работает только для модальных окон bootstrap)
+			// селектор модального окна : id цели
+			"MODAL_SHOW" : {
+				// формы
+				"#calculateTheCostModal": "show.form.calculation_form", // показать форму расчета стоимости задачи
+				"#ModalLong": "show.form.form.popup_form", // показать форму заявки на постоянное обслуживание
+				"#auditModal": "show.popup_form-audit", // показать форму заявки на аудит
+				"#ModalPackage": "show.form.package_form.0", // показать форму заявки на депозит
+				"#ModalCollaboration": "show.form.collaboration_form", // показать форму заявки на сотрудничество
+				"#firstMonthModal": "show.form.popup_form-freeMonth", // показать форму заявки на бесплатный первый месяц
+				"#ModalRequest": "show.form.request_form-form", // показать форму заявки на поддержку сайта
+
+				// калькулятор
+				"#ModalCalculator": "show.calculator" // показать калькулятор тарифа на постоянное обслуживание
+			},
+
+			// цели на заполнение форм
+			// id формы (не селектор) : id цели
+			"FORM_INPUT": {
+				"calculation_form": "input.form.calculation_form", // заполнение формы расчета стоимости задачи
+				"popup_form": "input.form.popup_form", // заполнение формы заявки на постоянное обслуживание
+				"popup_form-audit": "input.form.popup_form-audit", // заполнение формы заявки на аудит
+				"package_form": "input.form.package_form", // заполнение формы заявки на депозит
+				"collaboration_form": "input.form.collaboration_form", // заполнение формы заявки на сотрудничество
+				"popup_form-freeMonth": "input.form.popup_form-freeMonth", // заполнение формы заявки на бесплатный первый месяц
+				// "popup_form-guarantee"
+				"request_form-form": "input.form.request_form-form" // заполнение формы заявки на поддержку сайта
+			},
+
+			// цели на любую отправку формы
+			// id формы (не селектор) : id цели
+			"FORM_SUBMIT": {
+				"calculation_form": "submit.form.calculation_form", // отправка формы расчета стоимости задачи
+				"popup_form": "submit.form.popup_form", // отправка формы заявки на постоянное обслуживание
+				"popup_form-audit": "submit.form.popup_form-audit", // отправка формы заявки на аудит
+				"package_form": "submit.form.package_form", // отправка формы заявки на депозит
+				"collaboration_form": "submit.form.collaboration_form", // отправка формы заявки на сотрудничество
+				"popup_form-freeMonth": "submit.form.popup_form-freeMonth", // отправка формы заявки на бесплатный первый месяц
+				// "popup_form-guarantee"
+				"request_form-form": "submit.form.request_form-form" // отправка формы заявки на поддержку сайта
+			},
+
+			// цели на успешную отправку формы (получил положительный ответ от сервера)
+			// id формы (не селектор) : id цели
+			"FORM_SUCCESS": {
+				"calculation_form": "success.form.calculation_form", // успешная отправка формы расчета стоимости задачи
+				"popup_form": "success.form.popup_form", // успешная отправка формы заявки на постоянное обслуживание
+				"popup_form-audit": "success.form.popup_form-audit", // успешная отправка формы заявки на аудит
+				"package_form": "success.form.package_form", // успешная отправка формы заявки на депозит
+				"collaboration_form": "success.form.collaboration_form", // успешная отправка формы заявки на сотрудничество
+				"popup_form-freeMonth": "success.form.popup_form-freeMonth", // успешная отправка формы заявки на бесплатный первый месяц
+				// "popup_form-guarantee"
+				"request_form-form": "success.form.request_form-form" // успешная отправка формы заявки на поддержку сайта
+			},
+
+			// цели на ошибку отправки формы
+			// id цели : id формы (не селектор)
+			"FORM_ERROR": {
+				"calculation_form": "error.form.calculation_form", // ошибка отправки формы расчета стоимости задачи
+				"popup_form": "error.form.popup_form", // ошибка отправки формы заявки на постоянное обслуживание
+				"popup_form-audit": "error.form.popup_form-audit", // ошибка отправки формы заявки на аудит
+				"package_form": "error.form.package_form", // ошибка отправки формы заявки на депозит
+				"collaboration_form": "error.form.collaboration_form", // ошибка отправки формы заявки на сотрудничество
+				"popup_form-freeMonth": "error.form.popup_form-freeMonth", // ошибка отправки формы заявки на бесплатный первый месяц
+				// "popup_form-guarantee"
+				"request_form-form": "error.form.request_form-form" // ошибка отправки формы заявки на поддержку сайта
+			}
+		},
+
+		// index.php page
+		"send_page": {
+			// цели на клики
+			// селектор элемента : id цели
+			"CLICK" : {
+				// футер сайта
+				"footer.footer .footer-bottom-privacy": "href.footer.href_privacy", // Футер сайта: щелчок по "Соглашение об использовании персональных данных"
+				"footer.footer [href='/policy.php']": "href.footer.href_policy" // Футер сайта: щелчок по "Политика конфиденциальности"
+			},
+
+			// цели на заполнение форм
+			// id формы (не селектор) : id цели
+			"FORM_INPUT": {
+				"send_page_calc_form": "input.form.send_page_calc_form" // заполнение формы
+			},
+
+			// цели на любую отправку формы
+			// id формы (не селектор) : id цели
+			"FORM_SUBMIT": {
+				"send_page_calc_form": "submit.form.send_page_calc_form" // отправка формы
+			},
+
+			// цели на успешную отправку формы (получил положительный ответ от сервера)
+			// id формы (не селектор) : id цели
+			"FORM_SUCCESS": {
+				"send_page_calc_form": "success.form.send_page_calc_form" // успешная отправка формы
+			},
+
+			// цели на ошибку отправки формы
+			// id формы (не селектор) : id цели
+			"FORM_ERROR": {
+				"send_page_calc_form": "error.form.send_page_calc_form" // ошибка отправки формы
+			}
+		}
+	}
+}
+
+// Правила оформления JSON на php:
+// https://secure.php.net/manual/ru/function.json-decode.php

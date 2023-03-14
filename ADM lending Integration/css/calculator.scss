@@ -1,0 +1,472 @@
+/* fix for IE */
+template {
+    display: none;
+}
+
+.button.calc {
+    margin-top: 5px;
+}
+
+#ModalCalculator .modal-dialog {
+    max-width: 630px;
+    padding: 15px;
+}
+
+.modalContent{
+    padding-top: 25px;
+}
+
+//стили калькулятора
+.calculator{
+    width: 100%;
+    __background: limegreen;
+    font-family : 'Open Sans', sans-serif;
+    .d-none {
+        display: none !important;
+    }
+    .CalcTitle{
+        text-transform: uppercase;
+        font-weight: 500;
+        //padding-bottom: 50px;
+        padding-bottom: 15px;
+    }
+    .subtitle{
+
+    }
+    .CalcTable {
+        __background: red;
+        .CalcRow{
+            __background: mediumseagreen;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            border-bottom: 1px solid black;
+        }
+
+        .CalcBody .CalcRow, .CalcFooter .CalcRow{
+            height: 0; //IE fix
+            min-height: 60px;
+        }
+
+        .CalcHeader .CalcRow{
+            height: 0; //IE fix
+            min-height: 30px;
+        }
+
+        .CalcFooter .CalcRow {
+            border-bottom: 2px solid #ef7f1a;
+        }
+
+        .CalcHeader, .CalcFooter {
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        //столбцы таблицы
+        .colService, .colAmount, .colClose{
+            flex: 1;
+        }
+
+        //столбцы таблицы по отдельности
+        .colService{
+            __background: mediumturquoise;
+            flex-grow: 12;
+
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        .CalcHeader .colService{
+            padding-left: 13px;
+        }
+        .CalcBody .colService{
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .colAmount{
+            __background: navajowhite;
+            flex-grow: 5;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .CalcHeader .colAmount {
+            white-space: nowrap;
+        }
+        .CalcHeader .colAmount:after {
+            content: ', шт.';
+        }
+        .colClose{
+            __background: pink;
+            flex-grow: 1;
+            flex-basis: 16px;
+
+            display: flex;
+
+            .close {
+                __background: red;
+                margin: auto;
+                position: relative;
+                width: 30px;
+                height: 30px;
+                border: none;
+                outline: none;
+                opacity: 0.3;
+                transition: opacity 0.3s;
+                cursor: pointer;
+            }
+            .close[close-disabled="true"]{
+                opacity: 0 !important;
+            }
+            .close:hover {
+                opacity: 1;
+            }
+            .close:before, .close:after {
+                position: absolute;
+                top: 4px;
+                left: 50%;
+                content: '';
+                height: 23px;
+                width: 2px;
+                background-color: #333;
+            }
+            .close:before {
+                transform: rotate(45deg);
+            }
+            .close:after {
+                transform: rotate(-45deg);
+            }
+            .close[close-disabled="true"]{
+                opacity: 0;
+                cursor: default;
+            }
+        }
+
+        .action, .service {
+            flex: 1;
+
+            display: flex;
+            align-items: center;
+
+            height: auto;
+            cursor: pointer;
+        }
+
+        .service{
+            //height: 100%;
+            height: 30px;
+            __background: red;
+        }
+
+        .serviceList {
+            //z-index:20000;
+            outline: none;
+            width: 100%;
+            position: relative;
+        }
+        /*
+        select.serviceList{
+            position: relative;
+            outline: none;
+            background: white;
+            __background: red;
+            border: none;
+            width: 100%;
+            margin-right: 5px;
+            appearance:none;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+            white-space: normal;
+            max-height: 150px;
+        }
+        @media all and (-ms-high-contrast:none) /* IE10,11 *//*
+        {
+            select.serviceList{
+                max-height: none;
+            }
+        }
+        /* IE fix *//*
+        select.serviceList::-ms-expand {
+            display: none;
+        }
+        select.serviceList:focus{
+            z-index: 10000;
+            overflow: auto;
+            width: auto;
+            border: 1px solid gray;
+        }
+        option {
+            border-bottom: 0.5px solid gray;
+            //border-top: none;
+            outline: none;
+        }
+        option:disabled{
+            border-top: 0.5px solid gray;
+            border-bottom: none;
+            display: none;
+        }
+        option:hover {
+            background: rgb(230, 230, 230);
+            color: black;
+        }
+        option:checked {
+            background: #ef7f1a;
+        }
+        */
+        .action{
+            __background: powderblue;
+            flex-basis: 40px;
+            flex-grow: 0;
+            //height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .CalcBody .action {
+            opacity: 0.3;
+            display: none;
+        }
+
+        .CalcBody .action:hover{
+            opacity: 1;
+        }
+
+        .CalcBody .action:before {
+            content: '';
+            position: relative;
+            width: 0;
+            height: 0;
+            margin-bottom: -25%;
+            border: 6px solid transparent;
+            border-top: 9px solid black;
+        }
+
+        .CalcFooter{
+            cursor: pointer;
+            min-height: unset;
+        }
+
+        .CalcFooter:hover{
+            text-shadow: 0.5px 0px  #00000063,
+            //background: rgb(255, 237, 209);
+            //box-shadow: inset 0px 2px 0 0px #ef7f1a;
+        }
+
+        .CalcFooter:active{
+            //background:  #ef7f1a;
+            //color: white;
+        }
+
+        .CalcFooter .action {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .CalcFooter:hover .action {
+            color:  #ef7f1a;
+            text-shadow: 0.5px 0.5px  #ef7f1a88, -0.5px -0.5px #ef7f1a88;
+        }
+
+        .CalcFooter .action:before {
+            content: '+';
+            font-size: 180%;
+            line-height: 1px;
+            display: block;
+            position: relative;
+
+        }
+        /*
+        .CalcFooter .action:before, .CalcFooter .action:after {
+            content: '';
+            background: black;
+            opacity: 0.3;
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 1px;
+            transition: opacity 0.3s;
+        }
+        .CalcFooter .action:before {
+            transform: rotate(90deg);
+        }
+        .CalcFooter .action:after {
+            
+        }
+
+        .CalcFooter .action:hover:before, .CalcFooter .action:hover:after{
+            opacity: 1;
+        }
+        */
+    }
+    .CalcFooter{
+        min-height: 100px;
+        .result{
+            width: 100%;
+            height: auto;
+            min-height: 50px;
+            //display: flex;
+            //align-items: center;
+            padding-top: 15px;
+            font-weight: 600;
+        }
+        .result.error{
+            color: red;
+            font-weight: normal;
+            border: none !important;
+        }
+        .result.error .errorDescription {
+            color: gray;
+            font-style: italic;
+            font-size: 0.8em;
+        }
+        .footnote{
+            font-weight: 300;
+        }
+        .tariff {
+            padding-top: 5px;
+        }
+        .request {
+            width: 100%;
+            height: auto;
+            .requestBtn {
+                position: relative;
+                float: right;
+                height: 45px;
+                width: 50%;
+                border : 2px solid #ef7f1a;
+                border-radius: 5px;
+                font-size: 18px;
+                background: white;
+                color : #ef7f1a;
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .requestBtn:hover, .requestBtn:active {
+                background: #ef7f1a;
+                color : white;
+            }
+
+            .requestBtn:active{
+                background: #ff9a42;
+                color : white;
+            }
+        }
+    }
+    @media screen and (max-width: 460px) {
+        .CalcTitle {
+            padding-bottom: 15px;
+        }
+        .CalcBody .CalcRow {
+            min-height: 100px !important;
+        }
+        .colService{
+            order: 0;
+        }
+        .service {
+            height: auto;
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        .colAmount{
+            order: 3;
+            flex: none !important;
+            width: 100%;
+            //padding-bottom: 10px;
+        }
+        .CalcBody .colAmount:after{
+            content: 'шт.';
+            padding-left: 10px;
+        }
+        .CalcHeader .colAmount {
+            display: none;
+        }
+        .CalcFooter {
+            min-height: unset;
+        }
+
+        .colClose{
+            order: 2;
+        }
+        .requestBtn{
+            width: 100% !important;
+        }
+    }
+}
+
+//стили для плагина nicenumber
+.calculator{
+
+/* ---------------- ИСХОДНЫЕ ------------------------*/
+
+    .nice-number {
+        display: inline-flex;
+        justify-content: stretch;
+      }
+
+      .nice-number input {
+        vertical-align: middle;
+        -moz-appearance: textfield;
+        box-sizing: content-box;
+        margin: 0;
+        text-align: center;
+      }
+
+      .nice-number input::-webkit-inner-spin-button,
+      .nice-number input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+/* ------------------- конец ИСХОДНЫЕ ------------------*/
+
+    .nice-number{
+        display: inline-flex;
+        height: 30px;
+        border: 1px solid #e3e3e3;
+        border-radius: 15px;
+        background: #fbfbfb;
+        input, button {
+            width:40px;
+            background: #fbfbfb;
+            box-shadow: inset 0px 0px 0 3px #fbfbfb;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+            text-align: center;
+            color : #6f6d6e;
+        }
+        input{
+
+        }
+        button{
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1px;
+            font-size: 180%;
+            cursor: pointer;
+        }
+        button:hover{
+            color : black;
+        }
+        button:active{
+            background: #e7f2fc;
+            color : black;
+        }
+    }
+    .nice-number.focused {
+        border-color: blue;
+        background: #f6fbff;
+        input, button {
+            color : black;
+        }
+    }
+}

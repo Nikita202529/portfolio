@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="57mm" height="53mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5700 5300"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#FEFEFE}
+    .fil0 {fill:#EF7F1A}
+    .fil1 {fill:#2B2A29;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="918.46" y="143.74" width="4683.13" height="876.43"/>
+  <path class="fil1" d="M868.47 4121.01l0 -1735.37 100 0 0 1735.37 -100 0zm0 -2171.93l0 -1855.34 4783.13 0 0 5160.14 -4783.13 0 0 -696.31 100 0 0 596.31 4583.13 0 0 -4960.14 -4583.13 0 0 1755.34 -100 0z"/>
+  <path class="fil1" d="M91.25 1899.08l1042.19 0 0 536.56 -1092.19 0 0 -536.56 50 0zm942.19 100l-892.19 0 0 336.56 892.19 0 0 -336.56z"/>
+  <path class="fil1" d="M1295.1 1899.08l440.27 0 0 536.56 -490.27 0 0 -536.56 50 0zm340.27 100l-290.27 0 0 336.56 290.27 0 0 -336.56z"/>
+  <path class="fil1" d="M1880.49 1899.08l1071.18 0 0 -382 1086.33 650.69 -1086.33 649.81 0 -381.94 -1121.18 0 0 -536.56 50 0zm1121.18 100l-1071.18 0 0 336.56 1121.18 0 0 305.97 792.24 -473.89 -792.24 -474.55 0 305.91 -50 0z"/>
+  <rect class="fil0" x="1662.28" y="3034.23" width="390.27" height="436.56"/>
+  <polygon class="fil0" points="2357.67,3034.23 4028.85,3034.23 4028.85,2690.27 4968.13,3252.9 4028.85,3814.75 4028.85,3470.79 2357.67,3470.79 "/>
+  <path class="fil1" d="M660.32 4071.01l1861.18 0 0 -382.01 1086.33 650.7 -1086.33 649.81 0 -381.94 -1911.18 0 0 -536.56 50 0zm1911.18 100l-1861.18 0 0 336.56 1911.18 0 0 305.97 792.24 -473.89 -792.24 -474.55 0 305.91 -50 0z"/>
+  <circle class="fil2" cx="4282" cy="540.61" r="122.37"/>
+  <circle class="fil2" cx="4736.75" cy="540.61" r="122.37"/>
+  <circle class="fil2" cx="5191.51" cy="540.61" r="122.37"/>
+ </g>
+</svg>

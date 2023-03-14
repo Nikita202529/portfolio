@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="58mm" height="53mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5800 5300"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#EF7F1A}
+    .fil0 {fill:#2B2A29;fill-rule:nonzero}
+    .fil1 {fill:#EF7F1A;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="4843.25,2916.53 4843.25,5219.41 60.12,5219.41 60.12,59.27 4843.25,59.27 4843.25,1570.58 4743.25,1570.58 4743.25,159.27 160.12,159.27 160.12,5119.41 4743.25,5119.41 4743.25,2916.53 "/>
+  <polygon class="fil0" points="672.79,1439.7 2342.97,1429.21 2343.37,1528.81 673.19,1539.3 "/>
+  <polygon class="fil0" points="672.6,746.46 1893,736.54 1893.78,836.14 673.38,846.06 "/>
+  <polygon class="fil1" points="672.01,2057.65 1892.41,2047.73 1894.37,2296.75 673.97,2306.67 "/>
+  <polygon class="fil1" points="2510.56,673.78 3730.96,663.86 3732.92,912.88 2512.52,922.8 "/>
+  <polygon class="fil0" points="2511.15,2161.62 3731.55,2151.7 3732.33,2251.3 2511.93,2261.22 "/>
+  <polygon class="fil0" points="2896.26,1455.34 3731.35,1444.85 3732.53,1544.45 2897.44,1554.94 "/>
+  <polygon class="fil0" points="3744.97,3576.59 2074.79,3566.1 2075.19,3466.5 3745.37,3476.99 "/>
+  <polygon class="fil0" points="3744.78,2883.35 2524.38,2873.43 2525.16,2773.83 3745.56,2783.75 "/>
+  <polygon class="fil1" points="3744.19,4343.96 2523.79,4334.04 2525.75,4085.02 3746.15,4094.94 "/>
+  <polygon class="fil0" points="1906.23,2885.38 685.83,2875.46 686.61,2775.86 1907.01,2785.78 "/>
+  <polygon class="fil0" points="1906.23,4298.51 685.83,4288.59 686.61,4188.99 1907.01,4198.91 "/>
+  <polygon class="fil1" points="1519.85,3666.94 684.76,3656.45 687.68,3407.43 1522.77,3417.92 "/>
+  <path class="fil2" d="M4787.76 1283.31c530.34,0 960.24,429.9 960.24,960.24 0,530.35 -429.9,960.25 -960.24,960.25 -530.35,0 -960.25,-429.9 -960.25,-960.25 0,-530.34 429.9,-960.24 960.25,-960.24zm0 287.25c371.69,0 672.99,301.3 672.99,672.99 0,371.71 -301.3,673 -672.99,673 -371.71,0 -673,-301.29 -673,-673 0,-371.69 301.29,-672.99 673,-672.99z"/>
+  <path class="fil2" d="M4694.28 3062.65l264.27 0c11,0 20,9 20,20l0 1013.99c0,82.5 -67.5,150 -150,150l-4.27 0c-82.5,0 -150,-67.5 -150,-150l0 -1013.99c0,-11 9,-20 20,-20z"/>
+  <polygon class="fil1" points="4308.84,1665.87 3723.66,793.92 3740.22,782.82 4325.4,1654.77 "/>
+  <polygon class="fil1" points="1892.41,2162.32 4150.64,1934.85 4152.6,1954.69 1894.37,2182.16 "/>
+  <polygon class="fil1" points="1517.72,3533.13 4184.09,2505.01 4191.27,2523.61 1524.9,3551.73 "/>
+  <polygon class="fil1" points="4391.05,2809.64 3754.27,4223.55 3736.07,4215.35 4372.85,2801.44 "/>
+  <ellipse class="fil2" cx="4787.76" cy="2243.55" rx="475.88" ry="475.89"/>
+ </g>
+</svg>

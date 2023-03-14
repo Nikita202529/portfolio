@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100mm" height="81mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10000 8100"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="632" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Open Sans">
+		<font-face-src>
+			<font-face-name name="Open Sans"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="/" horiz-adv-x="367" d="M356.834 713.999l-266 -713.999 -81.0006 0 265.832 713.999 81.1681 0z"/>
+   <glyph unicode="&lt;" horiz-adv-x="571" d="M520.167 118l-469.333 206.166 0 47.8344 469.333 233.998 0 -72.831 -382.001 -181.169 382.001 -160.166 0 -73.8322z"/>
+   <glyph unicode="&gt;" horiz-adv-x="571" d="M50.8343 191.833l382.5 159.169 -382.5 182.167 0 72.831 469.333 -233.998 0 -47.8344 -469.333 -206.166 0 73.8322z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Open Sans";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:#EF7F1A;stroke-width:150;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:#EF7F1A}
+    .fnt0 {font-weight:normal;font-size:2746.77px;font-family:'Open Sans'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M4056.13 7186.68l-3163.75 0c-355.56,0 -646.44,-290.9 -646.44,-646.45l0 -3737.68c0,-355.55 290.88,-646.45 646.44,-646.45l4505.29 0c355.56,0 646.44,290.9 646.44,646.45l0 949.07"/>
+  <rect class="fil0 str0" x="2770.75" y="7186.68" width="748.55" height="659.72"/>
+  <line class="fil0 str0" x1="2314.9" y1="7912.55" x2="3975.16" y2= "7912.55" />
+  <path class="fil0 str0" d="M2233.93 7186.68l3163.75 0c355.56,0 646.44,-290.9 646.44,-646.45l0 -3737.68c0,-355.55 -290.88,-646.45 -646.44,-646.45l-4505.29 0c-355.56,0 -646.44,290.9 -646.44,646.45l0 949.07"/>
+  <text x="1071.22" y="5651.99"  class="fil1 fnt0">&lt;/&gt;</text>
+  <path class="fil0 str0" d="M5886.35 2485.24l831.83 0 4.99 540.88 277.88 198.56 451.58 -382.14 545.88 550.85 -357.29 357.29 153.83 392.03 586.98 0 0 511.13m-2495.66 2160.68l831.81 0 4.99 -540.88 277.88 -198.56 451.58 382.14 545.88 -550.85 -357.29 -357.29 153.83 -392.03 586.98 0 0 -511.13"/>
+  <path class="fil0 str0" d="M7355.25 4649.2c0,648.33 -525.5,1173.86 -1173.82,1173.87m1173.82 -1172.57c0,-648.33 -525.5,-1173.86 -1173.82,-1173.87"/>
+ </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="103mm" height="81mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10300 8100"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="632" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Open Sans">
+		<font-face-src>
+			<font-face-name name="Open Sans"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="+" horiz-adv-x="571" d="M319.002 386.001l201.166 0 0 -66.9992 -201.166 0 0 -208.001 -68.0018 0 0 208.001 -200.167 0 0 66.9992 200.167 0 0 209 68.0018 0 0 -209z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Open Sans";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:#EF7F1A;stroke-width:150;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil2 {fill:#EF7F1A}
+    .fil1 {fill:#EF7F1A;fill-rule:nonzero}
+    .fnt0 {font-weight:normal;font-size:2732.87px;font-family:'Open Sans'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M5739.62 4883.29l0 -2050.95c0,-552.79 -452.28,-1005.07 -1005.07,-1005.07l-3261.16 0c-552.79,0 -1005.07,452.28 -1005.07,1005.07l0 3202.01c0,552.79 452.28,1005.07 1005.07,1005.07l2125.21 0"/>
+  <line class="fil0 str0" x1="493.79" y1="2737.83" x2="5826.68" y2= "2737.83" />
+  <line class="fil0 str0" x1="2631.07" y1="2347.83" x2="3689.39" y2= "2347.83" />
+  <path class="fil1" d="M6508.07 6060.09l-0.08 -0.5c-65.92,-413.54 -293.32,-761.41 -607.7,-989.5 -314.54,-228.19 -716.02,-336.43 -1129.82,-270.61 -827.82,131.69 -1392.28,909.76 -1260.59,1737.61 65.82,413.77 293.29,761.82 607.79,989.98 314.54,228.19 716.02,336.43 1129.81,270.61l0.52 -0.08c413.53,-65.94 761.39,-293.34 989.46,-607.71 228.19,-314.54 336.43,-716.01 270.61,-1129.8zm148.83 -15.77c69.8,452.07 -49.04,890.08 -298.16,1233.47 -250.56,345.37 -632.99,595.19 -1087.8,667.55l-7.69 1.17c-452.07,69.8 -890.09,-49.03 -1233.48,-298.16 -345.37,-250.56 -595.2,-632.98 -667.55,-1087.82 -144.66,-909.35 475.43,-1764.05 1384.81,-1908.71 454.8,-72.34 895.83,46.45 1241.16,296.99 345.37,250.57 595.19,633 667.54,1087.82l1.17 7.69z"/>
+  <text x="4228.74" y="7263.29"  class="fil2 fnt0">+</text>
+ </g>
+</svg>

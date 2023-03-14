@@ -1,0 +1,355 @@
+{
+	
+	"site_types": {
+		
+		"corporate_catalog": "Корпоративный сайт/<br>Сайт-каталог",
+		"store": "Интернет-магазин",
+		"bitrix24": "Битрикс24 \"Коробка\""
+	},
+	"table_services": [
+		"Контроль и мониторинг работоспособности сайта",
+		"Резервное копирование и восстановление",
+		"Взаимодействие с хостинг-провайдером",
+		"Администрирование сервера",
+		"Консультирование по работе с Битрикс",
+		"Консультации/работы по SEO",
+		"Разработка плана по улучшению сайта",
+		"Ведение 1 рекламной компании в Яндекс либо Google",
+		"Услуги любого специалиста <br> (программиста, дизайнера, контент-менеджера)"
+	],
+	"tariffs": [
+		{
+			"name": "Эконом",
+			"hours": 1,
+			"price": { 
+				"landing": 1800,
+				"corporate_catalog": 2800,
+				"store": 3200,
+				"bitrix24": 6400
+			},
+			"service": [
+				"+",
+				"+",
+				"+",
+				"+",
+				"0.5ч",
+				"-",
+				"-",
+				"-",
+				"-"
+			]
+		},
+		{
+			"name": "Стандарт",
+			"hours": 4,
+			"price": {
+				"landing": 7200,
+				"corporate_catalog": 8800,
+				"store": 10000,
+				"bitrix24": 14000
+			},
+			"service": [
+				"+",
+				"+",
+				"+",
+				"+",
+				"1ч",
+				"-",
+				"-",
+				"-",
+				"3ч"
+			]
+		},
+		{
+			"name": "Эксперт",
+			"hours": 16,
+			"price": {
+				"landing": "-",
+				"corporate_catalog": 32000,
+				"store": 33800,
+				"bitrix24": "-"
+			},
+			"service": [
+				"+",
+				"+",
+				"+",
+				"+",
+				"2ч",
+				"2ч",
+				"2ч",
+				"-",
+				"10ч"
+			]
+		},
+		{
+			"name": "Бизнес",
+			"hours": 36,
+			"price": {
+				"landing": "-",
+				"corporate_catalog": "-",
+				"store": 60000,
+				"bitrix24": "-"
+			},
+			"service": [
+				"+",
+				"+",
+				"+",
+				"+",
+				"2ч",
+				"8ч",
+				"2ч",
+				"6ч",
+				"14ч"
+			]
+		}
+	],
+
+	"packages": [
+		{
+			"name": "Бизнес",
+			"hours": 80, 
+			"hour_price": 1800, 
+			"validity_period": 6, 
+			"is_free": false, 
+			"free_audit": true
+		},
+		{
+			"name": "Стандарт",
+			"hours": 40,
+			"hour_price": 2000,
+			"validity_period": 3,
+			"is_free": false,
+			"free_audit": false
+		},
+		{
+			"name": "Базовый",
+			"hours": 20,
+			"hour_price": 2200,
+			"validity_period": 1,
+			"is_free": false,
+			"free_audit": false
+		},
+		{
+			"name": "Свободный",
+			"hours": "до 20",
+			"hour_price": 2400,
+			"validity_period": "-",
+			"is_free": true,
+			"free_audit": false
+		}
+	],
+	"services": {
+		"Размещение новостей/акций/статей": 0.5,
+		"Размещение товаров в каталоге": 0.25,
+		"Ведение 1 рекламной кампании в Яндекс либо Google": 6,
+		"Консультации по SEO": 2,
+		"Разработка баннера": 1.5,
+		"Разработка инфографики": 1.5,
+		"Разработка формы": 2,
+		"Подключение службы доставки": 1.5,
+		"Перенос сайта на другой домен": 2,
+		"Подключение внешних виджетов, чатов и систем аналитики": 1.5,
+		"Дизайн объявления для рекламной компании": 2
+	},
+	"all_support_services": [
+		{
+			"title": "Устаревший CMS или самописный код",
+			"description": "Сайты, сделанные 10 лет назад, почти всегда нуждаются в переделке. Пытаться разобраться с кодом или старым движком очень долго и трудозатратно."
+		},
+		{
+			"title": "Планируется CRM",
+			"description": "Работа с покупателями через интернет, автоматизированные рассылки, взаимодействия внутри команды. «1С-Битрикс» поможет организовать процессы."
+		},
+		{
+			"title": "Быстрые лендинги",
+			"description": "Хотите сделать некоторые страницы лендингами? Почему нет! С «1С-Битрикс» сделать это быстро, удобно и просто."
+		},
+		{
+			"title": "Большой ассортимент товаров",
+			"description": "Планируете, что в интернет-магазине будет больше 100 000 товаров? Работайте с ними легко и удобно с помощью «1С-Битрикс»."
+		},
+		{
+			"title": "Нужно SEO",
+			"description": "«1С-Битрикс» позволяет внедрить SEO без покупки дополнительных модулей - теговые страницы, шаблоны мета тегов и ЧПУ URL."
+		},
+		{
+			"title": "Готовый шаблон",
+			"description": "Для «1С-Битрикс» разрабатываются универсальные шаблоны. Они закрывают большинство требований к сайту."
+		}
+	],
+	"all_advantages": [
+		{
+			"title": "Оперативная техподдержка",
+			"description": "Быстрая помощь в решении возникающих проблем",
+			"image": "img/advantages/support.png"
+		},
+		{
+			"title": "Безопасность",
+			"description": "Постоянное тестирование на взломоустойчивость",
+			"image": "img/advantages/security.png"
+		},
+		{
+			"title": "Автоматизация торговли",
+			"description": "Интеграция с «1C:Предприятие» и «МойСклад»",
+			"image": "img/advantages/automation.png"
+		},
+		{
+			"title": "Расширенная вебаналитика",
+			"description": "Отслеживайте действия посетителей и совершенствуйте продажи",
+			"image": "img/advantages/webAnalitics.png"
+		},
+		{
+			"title": "Легкое администрирование",
+			"description": "Интуитивно понятная административная панель",
+			"image": "img/advantages/administration.png"
+		},
+		{
+			"title": "Сохранение результатов продвижения",
+			"description": "Точный перенос URL , чтобы избежать просадки в поисковой выдаче",
+			"image": "img/advantages/save.png"
+		}
+	],
+
+	"YM_ID": 54779350,
+
+	"YM_GOALS": {
+
+		"main_page": {
+
+			"CLICK": {
+			
+				".hamburger": "click.open_menu", 
+				
+				"[data-b24-crm-button-cont]": "click.open_widget", 
+				"button.bx-im-textarea-send-button": "submit.widget", 
+				
+				".menu [href='#aboutServices']": "click.menu.to_aboutServices", 
+				".menu [href='#subscription']": "click.menu.to_subscription", 
+				".menu [href='#support']": "click.menu.to_support", 
+				".menu [href='#support-services']": "click.menu.to_support-services", 
+				".menu [href='#recommend']": "click.menu.to_recommend", 
+				".menu [href='#footer']": "click.menu.to_footer", 
+				".menu .menu-list": "click.menu_item", 
+
+				"header.header [data-target='#calculateTheCostModal']": "click.header.call_calculateTheCostModal", 
+				".header-phone": "click.header_phone",
+		
+				".highlights [href='#aboutServices']": "click.highlights.to_aboutServices", 
+				
+				"section.support-services [data-target='#ModalRequest']": "click.support-services.call_ModalRequest",
+				
+				"section.about-services [data-target='#calculateTheCostModal']": "click.about-services.call_calculateTheCostModal", 
+				"section.about-services [href='#subscription']": "click.about-services.href_subscription", 
+				"section.about-services [href='#support']": "click.about-services.href_support", 
+				"section.about-services [data-target='#firstMonthModal']": "click.about-services.call_firstMonthModal", 
+				"section.about-services [data-target='#auditModal']": "click.about-services.call_auditModal", 
+				
+				"section.agency [data-target='#ModalCollaboration']": "click.agency.call_ModalCollaboration", 
+				
+				"section.subscription [data-target='#ModalLong'][tariffid='0']": "click.subscription.call_ModalLong.0",
+				"section.subscription [data-target='#ModalLong'][tariffid='1']": "click.subscription.call_ModalLong.1", 
+				"section.subscription [data-target='#ModalLong'][tariffid='2']": "click.subscription.call_ModalLong.2",
+				"section.subscription [data-target='#ModalLong'][tariffid='3']": "click.subscription.call_ModalLong.3", 
+				"section.subscription [data-target='#ModalCalculator']": "click.subscription.call_ModalCalculator", 
+				
+				"section.support [data-target='#ModalPackage'][packageid='0']": "click.support.call_ModalPackage.0", 
+				"section.support [data-target='#ModalPackage'][packageid='1']": "click.support.call_ModalPackage.1", 
+				"section.support [data-target='#ModalPackage'][packageid='2']": "click.support.call_ModalPackage.2", 
+				"section.support [data-target='#ModalPackage'][packageid='3']": "click.support.call_ModalPackage.3", 
+				"section.support [data-target='#auditModal']": "click.support.call_auditModal", 
+				
+				"section.about-us [alt='1C-Bitrix Gold Partner']": "href.about-us.we_are_gold_partner", 
+				"section.about-us [alt='Monitoring Participant']": "href.about-us.we_are_monitoring_participant", 
+				"section.about-us [alt='Kompozit']": "href.about-us.we_do_kompozit", 
+				"section.about-us [alt='1c-integration']": "href.about-us.we_do_1c-integration", 
+				
+				"footer.footer .footer-bottom-privacy": "href.footer.href_privacy", 
+				"footer.footer [href='/policy.php']": "href.footer.href_policy",
+				".footer-phone1": "click.footer_phone1",
+				".footer-phone2": "click.footer_phone2",
+				".footer-email": "click.footer_email",
+				
+				"#ModalCalculator .requestBtn": "submit.calculator" 
+			},
+			
+			"MODAL_SHOW": {
+				
+				"#calculateTheCostModal": "show.form.calculation_form", 
+				"#ModalLong": "show.form.form.popup_form",
+				"#auditModal": "show.popup_form-audit", 
+				"#ModalPackage": "show.form.package_form.0", 
+				"#ModalCollaboration": "show.form.collaboration_form", 
+				"#firstMonthModal": "show.form.popup_form-freeMonth", 
+				"#ModalRequest": "show.form.request_form-form", 
+				
+				"#ModalCalculator": "show.calculator" 
+			},
+			
+			"FORM_INPUT": {
+				"calculation_form": "input.form.calculation_form", 
+				"popup_form": "input.form.popup_form",
+				"popup_form-audit": "input.form.popup_form-audit", 
+				"package_form": "input.form.package_form",
+				"collaboration_form": "input.form.collaboration_form", 
+				"popup_form-freeMonth": "input.form.popup_form-freeMonth", 
+				
+				"request_form-form": "input.form.request_form-form" 
+			},
+			
+			"FORM_SUBMIT": {
+				"calculation_form": "submit.form.calculation_form", 
+				"popup_form": "submit.form.popup_form", 
+				"popup_form-audit": "submit.form.popup_form-audit", 
+				"package_form": "submit.form.package_form", 
+				"collaboration_form": "submit.form.collaboration_form", 
+				"popup_form-freeMonth": "submit.form.popup_form-freeMonth", 
+				
+				"request_form-form": "submit.form.request_form-form" 
+			},
+			
+			"FORM_SUCCESS": {
+				"calculation_form": "success.form.calculation_form", 
+				"popup_form": "success.form.popup_form", 
+				"popup_form-audit": "success.form.popup_form-audit", 
+				"package_form": "success.form.package_form", 
+				"collaboration_form": "success.form.collaboration_form", 
+				"popup_form-freeMonth": "success.form.popup_form-freeMonth", 
+				"request_form-form": "success.form.request_form-form" 
+			},
+			
+			"FORM_ERROR": {
+				"calculation_form": "error.form.calculation_form", 
+				"popup_form": "error.form.popup_form", 
+				"popup_form-audit": "error.form.popup_form-audit", 
+				"package_form": "error.form.package_form", 
+				"collaboration_form": "error.form.collaboration_form", 
+				"popup_form-freeMonth": "error.form.popup_form-freeMonth",
+				"request_form-form": "error.form.request_form-form" 
+			}
+		},
+		"send_page": {
+			
+			"CLICK": {
+				
+				"footer.footer .footer-bottom-privacy": "href.footer.href_privacy", 
+				"footer.footer [href='/policy.php']": "href.footer.href_policy" 
+			},
+			
+			"FORM_INPUT": {
+				"send_page_calc_form": "input.form.send_page_calc_form" 
+			},
+			
+			"FORM_SUBMIT": {
+				"send_page_calc_form": "submit.form.send_page_calc_form" 
+			},
+			
+			"FORM_SUCCESS": {
+				"send_page_calc_form": "success.form.send_page_calc_form" 
+			},
+			
+			"FORM_ERROR": {
+				"send_page_calc_form": "error.form.send_page_calc_form"
+			}
+		}
+	}
+}

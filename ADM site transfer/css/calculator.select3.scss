@@ -1,0 +1,209 @@
+.calculator {
+	.S3_MainDisplay
+	{
+		//background: antiquewhite;
+		//background: #f2f9ff;
+		//max-width: 240px;
+		width: 100%;
+		min-height: 45px;
+		cursor: auto;
+
+		display: flex;
+		align-items: center;
+		padding-left: 40px;
+		outline: none;
+
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border: 1px solid black;
+	}
+	.S3_MainDisplay.hide
+	{
+		cursor: pointer;
+		background: none;
+
+		border: none;
+		border-radius: 0;
+	}
+
+	.S3_MainDisplay_n_ArrowWrap
+	{
+		//background: darkcyan;
+		width: 100%;
+
+		//min-height: 1.3em;
+		overflow: hidden;
+		position: relative;
+		min-height: 45px;
+		display: flex;
+	}
+
+	.S3_Option
+	{
+		//background: beige;
+		width: auto;
+		//border: 1px solid #e0e0e0;
+		border-bottom: 1px solid white;
+		border-top: 2px solid white;
+		//margin: 1px 0px;
+		color:#676767;
+		/* outline: 1px solid black; */
+		cursor: pointer;
+
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 5px;
+		padding-bottom: 14px;
+	}
+	.S3_Option:hover,
+	.S3_Option:focus
+	{
+		//background: #bdc797;
+		//background: rebeccapurple;
+		background: white;
+		//font-weight: bold;
+		color:black;
+		//text-shadow: 1px 0px black;
+	}
+
+	.S3_Option:hover:not(:focus)
+	{
+		background: #fffdf6;
+		font-weight: normal;
+	}
+
+	.S3_Option[checked]
+	{
+		//background: green;
+		background: #ff9639;
+		color:black;
+		font-weight: bold;
+	}
+	.S3_Option[checked]:hover, 
+	.S3_Option[checked]:focus
+	{
+		//background: #5a8449;
+		background: #ef7f1a;
+		font-weight: bold;
+		//text-shadow: none;
+	}
+	.S3_Option.hide
+	{
+		display: none;
+	}
+
+	.S3_OptionsWrap
+	{
+		//max-width: 300px;
+		width: 100%;
+		max-height: 150px;
+		height: 150px;
+		overflow-x: visible;
+		overflow-y: auto;
+		transition: height ease-in-out 0.1s;
+		//background: gray;
+		background: #f2f9ff;
+		position: absolute;
+		z-index:20000;
+		border:1px solid black;
+		border-right: none;
+		border-top: none;
+		scrollbar-width: thin; /* firefox */
+		scrollbar-color :#ef7f1a #C2D2E4; /* firefox */
+	}
+	.S3_OptionsWrap::-webkit-scrollbar { /* webkit */
+		width: 6px;
+		background: black;
+		border-radius: 2px;
+		border-left: 2px solid #f2f9ff;
+		border-right: 2px solid white;
+	}
+	.S3_OptionsWrap::-webkit-scrollbar-thumb { /* webkit */
+		background: #ef7f1a;
+		box-shadow: inset 1px 1px 1px 0px #ffffffa3, inset -1px -1px 1px 0px #00000082;
+		border-radius: 3px;
+	}
+	.S3_OptionsWrap.hide
+	{
+		height: 0px;
+		border:none;
+	}
+
+	.S3_Arrow
+	{
+		width: 40px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		opacity: 0.3;
+		position: absolute;
+		transform: scale(1, -1);
+	}
+	.S3_Arrow:hover {
+		opacity: 1;
+	}
+	.S3_Arrow::before
+	{
+		content: '';
+		position: relative;
+		width: 0;
+		height: 0;
+		margin-bottom: -25%;
+		border: 6px solid transparent;
+		border-top: 9px solid black;
+	}
+	.S3_Arrow.hide
+	{
+		transform: none;
+	}
+	.S3_Placeholder
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		color: #676767;
+		padding-left: 40px;
+		transform: none;
+		opacity: 1;
+		transition: transform 0.3s, opacity 0.3s;
+		height: 100%;
+		align-items: center;
+		display: flex;
+	}
+	.S3_Placeholder.hide
+	{
+		transform: scale(0.8);
+		opacity: 0;
+	}
+
+	.S3_EachValueWrapper
+	{
+		float: left;
+		padding: 0px 5px;
+		border: 1px solid;
+		border-radius: 5px;
+		margin: 2px 3px;
+		position: relative;
+	}
+	.S3_EachValueWrapper:hover {
+		background: white;
+		cursor: text;
+	}
+	.S3_EachValueWrapper::after {
+		content: ',';
+		display: block;
+		position: absolute;
+		font-size: 12px;
+		font-weight: 600;
+		font-family: 'Times New Roman';
+		font-style: italic;
+		margin-left: 1px;
+		right: -5px;
+		top: 0;
+	}
+	.S3_EachValueWrapper:last-child::after { /* не показывать запятую на последнем */
+	display: none;
+	}
+}
